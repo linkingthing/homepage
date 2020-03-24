@@ -8,9 +8,13 @@ const config = require('../nuxt.config.js')
 config.dev = process.env.NODE_ENV !== 'production'
 
 // 业务代码
-const apis = require('./controller')
+const bodyParser = require('body-parser')
+
+const apis = require('./api')
+app.use(bodyParser.urlencoded({ extended: false }))
 app.use('/apis', apis)
 
+app.use(express.static('../apidoc'))
 async function start() {
   // Init Nuxt.js
   const nuxt = new Nuxt(config)
