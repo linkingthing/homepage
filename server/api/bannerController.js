@@ -116,12 +116,13 @@ router.delete('/:id', (req, res) => {
             code: 200,
             message: '删除成功'
         })
-
+    }).catch(err => {
+        res.json({
+            data: null,
+            code: 400,
+            message: err
+        }) 
     })
 })
-
-
-
-
 
 module.exports = router
