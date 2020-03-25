@@ -2,10 +2,12 @@
 const mongoose = require('../db')
 
 const company = {
-    title: String,
-    mainPicture: String,
-    content: String,
-    date: String,
+    tel: String,
+    fax: String,
+    email: String,
+    address: Array,
+    qcode: String,
+    about: String,
 }
 
 const companySchema = mongoose.Schema(company)
