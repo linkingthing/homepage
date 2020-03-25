@@ -1,5 +1,91 @@
 [
   {
+    "type": "post",
+    "url": "/common/upload",
+    "title": "上传文件",
+    "name": "UploadFile",
+    "group": "Common",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "File",
+            "optional": false,
+            "field": "file",
+            "description": "<p>文件名.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "mimetype",
+            "description": "<p>文件类型.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "filename",
+            "description": "<p>原文件名.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "fullpath",
+            "description": "<p>文件路径.</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "server/api/commonController.js",
+    "groupTitle": "Common"
+  },
+  {
+    "type": "Get",
+    "url": "/common/:fullpath",
+    "title": "下载文件",
+    "name": "downloadFile",
+    "group": "Common",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "fullpath",
+            "description": "<p>文件路径.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "File",
+            "description": "<p>文件.</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "server/api/commonController.js",
+    "groupTitle": "Common"
+  },
+  {
     "type": "get",
     "url": "/company/info",
     "title": "请求公司信息",
@@ -185,6 +271,13 @@
     "parameter": {
       "fields": {
         "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>公司 ID.</p>"
+          },
           {
             "group": "Parameter",
             "type": "String",
