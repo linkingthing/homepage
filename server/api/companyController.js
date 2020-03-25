@@ -98,11 +98,17 @@ router.put('/info/:id', (req, res) => {
         })
         .then(data => {
             res.json(
-                data
+                {
+                    data: data,
+                    code: 200,
+                    message: '更新成功'
+                }
             )
         }).catch(() => {
             res.json({
-                message: '更新失败'
+                code: 410,
+                message: '更新失败',
+                data: null
             })
         })
 })
