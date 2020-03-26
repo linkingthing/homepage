@@ -28,7 +28,12 @@ router.post('/', (req, res) => {
             code: 200,
             message: '创建成功'
         })
-
+    }).catch(err => {
+        res.json({
+            code: 400,
+            data: null,
+            message: err
+        })
     })
 })
 

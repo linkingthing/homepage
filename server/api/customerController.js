@@ -1,6 +1,6 @@
 const express = require('express')
 const Customer = require('../modal/customerModal')
-
+const sendEmail = require('../middleware/sendEmail')
 const router = express.Router()
 
 
@@ -31,6 +31,7 @@ const router = express.Router()
  * @apiSuccess {String} budget  预算.
  * @apiSuccess {String} describe  描述.
  */
+router.post('/', sendEmail)
 router.post('/', (req, res) => {
     Customer.create(req.body).then((data) => {
         console.log(data)

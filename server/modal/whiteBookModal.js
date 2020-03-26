@@ -8,6 +8,6 @@ const whiteBook = {
     company: String,
 }
 
-const whiteBookSchema = mongoose.Schema(whiteBook)
+const whiteBookSchema = mongoose.Schema(whiteBook);
 
 module.exports = mongoose.model('WhiteBook', whiteBookSchema);

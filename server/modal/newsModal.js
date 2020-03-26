@@ -1,11 +1,15 @@
 
+const moment = require('moment')
 const mongoose = require('../db')
 
 const anew = {
     title: String,
     mainPicture: String,
     content: String,
-    date: String,
+    date: {
+        type: String,
+        default: moment().format('YYYY-MM-DD')
+    },
     type: String
 }
 

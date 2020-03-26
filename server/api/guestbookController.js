@@ -1,6 +1,6 @@
 const express = require('express')
 const Guestbook = require('../modal/guestbookModal')
-
+const sendEmail = require('../middleware/sendEmail')
 const router = express.Router()
 
 /**
@@ -16,6 +16,7 @@ const router = express.Router()
  * @apiSuccess {String} email 邮箱.
  * @apiSuccess {String} message 内容.
  */
+router.post('/', sendEmail)
 router.post('/', (req, res) => {
     Guestbook.create(req.body).then((data) => {
         console.log(data)

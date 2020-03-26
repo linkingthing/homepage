@@ -1,7 +1,7 @@
 
 const express = require('express')
 const WhiteBook = require('../modal/whiteBookModal')
-
+const sendEmail = require('../middleware/sendEmail')
 const router = express.Router()
 
 /**
@@ -19,6 +19,7 @@ const router = express.Router()
  * @apiSuccess {String} phone 手机.
  * @apiSuccess {String} company 公司.
  */
+router.post('/', sendEmail)
 router.post('/', (req, res) => {
     WhiteBook.create(req.body).then((data) => {
         console.log(data)
