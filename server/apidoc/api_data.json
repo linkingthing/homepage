@@ -1320,5 +1320,127 @@
     "version": "0.0.0",
     "filename": "server/api/newsController.js",
     "groupTitle": "News"
+  },
+  {
+    "type": "get",
+    "url": "/whiteBook",
+    "title": "请求白皮书下载者信息列表",
+    "name": "GetWhiteBook",
+    "group": "WhiteBook",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "cname",
+            "description": "<p>姓名.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "email",
+            "description": "<p>邮箱.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "phone",
+            "description": "<p>手机.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "company",
+            "description": "<p>公司.</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "server/api/whiteBookController.js",
+    "groupTitle": "WhiteBook"
+  },
+  {
+    "type": "Post",
+    "url": "/whiteBook",
+    "title": "创建白皮书下载者信息",
+    "name": "PostWhiteBook",
+    "group": "WhiteBook",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "cname",
+            "description": "<p>姓名.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "email",
+            "description": "<p>邮箱.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "phone",
+            "description": "<p>手机.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "company",
+            "description": "<p>公司.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "cname",
+            "description": "<p>姓名.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "email",
+            "description": "<p>邮箱.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "phone",
+            "description": "<p>手机.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "company",
+            "description": "<p>公司.</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "server/api/whiteBookController.js",
+    "groupTitle": "WhiteBook"
   }
 ]
