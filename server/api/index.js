@@ -7,5 +7,6 @@ router.use('/common', require('./commonController'))
 router.use('/customer', require('./customerController'))
 router.use('/guestbook', require('./guestbookController'))
 router.use('/whitebook', require('./whiteBookController'))
+router.use('/cooperate', require('./cooperateController'))
 
 module.exports = router
