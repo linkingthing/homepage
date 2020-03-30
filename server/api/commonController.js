@@ -6,6 +6,7 @@ const upload = multer({ dest: 'uploads/' })
 const router = express.Router()
 
 const uploadFileSchema = require('../modal/uploadFileSchema')
+const authMiddleware = require('../middleware/authMiddleware')
 
 
 /**
@@ -19,6 +20,7 @@ const uploadFileSchema = require('../modal/uploadFileSchema')
  * @apiSuccess {String} filename  原文件名.
  * @apiSuccess {String} fullpath  文件路径.
  */
+router.post('/uploads', authMiddleware)
 router.post('/upload', upload.single('file'), (req, res) => {
     const extname = path.extname(req.file.originalname);
     const fullpath = req.file.filename + new Date() * 1 + extname

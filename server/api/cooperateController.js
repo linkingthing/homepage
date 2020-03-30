@@ -1,6 +1,7 @@
 const express = require('express')
 const CooperateAuth = require('../modal/cooperateAuthModal')
 const sendEmail = require('../middleware/sendEmail')
+const authMiddleware = require('../middleware/authMiddleware')
 
 const router = express.Router()
 
@@ -75,6 +76,7 @@ router.post('/', (req, res) => {
  * @apiSuccess {String} IDBackPicture  身份证背面.
  * @apiSuccess {String} licensePicture  营业执照.
  */
+router.get('/', authMiddleware)
 router.get('/', (req, res) => {
     CooperateAuth.find(req.query).then((data) => {
         res.json({

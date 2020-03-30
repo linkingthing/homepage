@@ -1,5 +1,6 @@
 const express = require('express')
 const News = require('../modal/newsModal')
+const authMiddleware = require('../middleware/authMiddleware')
 
 const router = express.Router()
 
@@ -21,6 +22,7 @@ const router = express.Router()
  * @apiSuccess {String} date  日期.
  * @apiSuccess {String} type  类型.
  */
+router.post('/', authMiddleware)
 router.post('/', (req, res) => {
     News.create(req.body).then((data) => {
         console.log(data)
@@ -76,7 +78,7 @@ router.get('/', (req, res) => {
  * @apiSuccess {String} date  日期.
  * @apiSuccess {String} type  类型.
  */
-
+router.put('/:id', authMiddleware)
 router.put('/:id', (req, res) => {
     News
         .findByIdAndUpdate({
@@ -111,6 +113,7 @@ router.put('/:id', (req, res) => {
  *
  * @apiParam {Number} id 文章 ID.
  */
+router.delete('/:id', authMiddleware)
 router.delete('/:id', (req, res) => {
     News.deleteOne({ _id: req.params.id }).then(() => {
         res.json({

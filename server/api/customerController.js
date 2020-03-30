@@ -1,6 +1,7 @@
 const express = require('express')
 const Customer = require('../modal/customerModal')
 const sendEmail = require('../middleware/sendEmail')
+const authMiddleware = require('../middleware/authMiddleware')
 const router = express.Router()
 
 
@@ -59,6 +60,7 @@ router.post('/', (req, res) => {
  * @apiSuccess {String} budget  预算.
  * @apiSuccess {String} describe  描述.
  */
+router.get('/', authMiddleware)
 router.get('/', (req, res) => {
     Customer.find(req.query).then((data) => {
         res.json({

@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
-
 const Banner = require('../modal/bannerModal')
+const authMiddleware = require('../middleware/authMiddleware')
 
 /**
  * @api {Post} /banner 创建Banner
@@ -20,6 +20,7 @@ const Banner = require('../modal/bannerModal')
  * @apiSuccess {String} address  公司地址.
  * @apiSuccess {Boolean} active  banner状态.
  */
+router.post('/', authMiddleware)
 router.post('/', (req, res) => {
     Banner.create(req.body).then((data) => {
         console.log(data)
@@ -80,7 +81,7 @@ router.get('/list', (req, res) => {
  * @apiSuccess {String} address  公司地址.
  * @apiSuccess {Boolean} active  banner状态.
  */
-
+router.put('/', authMiddleware)
 router.put('/:id', (req, res) => {
     Banner
         .findByIdAndUpdate({
@@ -114,6 +115,7 @@ router.put('/:id', (req, res) => {
  *
  * @apiParam {Number} id banner ID.
  */
+router.delete('/', authMiddleware)
 router.delete('/:id', (req, res) => {
     Banner.deleteOne({_id: req.params.id}).then(() => {
         res.json({

@@ -2,6 +2,7 @@ const express = require('express')
 const Company = require('../modal/companyModal')
 
 const router = express.Router()
+const authMiddleware = require('../middleware/authMiddleware')
 
 /**
  * @api {get} /company/info 请求公司信息
@@ -43,6 +44,7 @@ router.get('/info', (req, res) => {
  * @apiSuccess {String} qcode  qcode（微信）.
  * @apiSuccess {String} about  关于公司.
  */
+router.post('/info', authMiddleware)
 router.post('/info', (req, res) => {
     Company.findOne({}).then(data => {
         console.log(data)
@@ -86,7 +88,7 @@ router.post('/info', (req, res) => {
  * @apiSuccess {String} qcode  qcode（微信）.
  * @apiSuccess {String} about  关于公司.
  */
-
+router.put('/info/:id', authMiddleware)
 router.put('/info/:id', (req, res) => {
     Company
         .findByIdAndUpdate({

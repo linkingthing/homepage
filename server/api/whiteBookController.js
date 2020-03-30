@@ -2,6 +2,8 @@
 const express = require('express')
 const WhiteBook = require('../modal/whiteBookModal')
 const sendEmail = require('../middleware/sendEmail')
+const authMiddleware = require('../middleware/authMiddleware')
+
 const router = express.Router()
 
 /**
@@ -41,6 +43,7 @@ router.post('/', (req, res) => {
  * @apiSuccess {String} phone 手机.
  * @apiSuccess {String} company 公司.
  */
+router.get('/', authMiddleware)
 router.get('/', (req, res) => {
     WhiteBook.find(req.query).then((data) => {
         res.json({
