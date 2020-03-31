@@ -1,0 +1,14 @@
+.my-form .el-form-item {
+    margin-bottom: 36px;
+}
+
+.my-form .el-input__inner {
+    background: #f0f0f0;
+    height: 60px;
+    line-height: 60px;
+}
+
+.my-form .el-textarea__inner {
+    background: #f0f0f0;
+    padding: 15px;
+}
