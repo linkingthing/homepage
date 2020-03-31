@@ -12,3 +12,7 @@
     background: #f0f0f0;
     padding: 15px;
 }
+
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+    background-color: #ee3434;
+  }
