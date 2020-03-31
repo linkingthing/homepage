@@ -1,6 +1,6 @@
 <template>
   <div class="bigPic" :style="`background-image: url(${url})`">
-    <slot name="header"></slot>
+    <slot></slot>
   </div>
 </template>
 
