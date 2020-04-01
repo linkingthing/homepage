@@ -3,16 +3,27 @@
 }
 
 .my-form .el-input__inner {
-    background: #f0f0f0;
-    height: 60px;
+    background : #f0f0f0;
+    height     : 60px;
     line-height: 60px;
 }
 
 .my-form .el-textarea__inner {
     background: #f0f0f0;
-    padding: 15px;
+    padding   : 15px;
 }
 
 .el-pagination.is-background .el-pager li:not(.disabled).active {
     background-color: #ee3434;
-  }
+}
+
+.my-form .el-button {
+    display   : block;
+    width     : 100%;
+    margin-top: 44px;
+    height    : 60px;
+    background: linear-gradient(-39deg,
+            rgba(238, 52, 52, 1),
+            rgba(255, 142, 142, 1));
+    border-radius: 4px;
+}

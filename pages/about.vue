@@ -254,7 +254,7 @@ export default {
       }
     }
     .form-body {
-      padding: 50px 66px 60px;
+      padding: 50px 66px 40px;
       .el-button {
         display: block;
         width: 100%;
