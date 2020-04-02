@@ -42,13 +42,13 @@ module.exports = {
   modules: [
     // '@nuxtjs/axios',
   ],
-  // axios: {
-  //   proxy: true, // 表示开启代理
-  // },
+  axios: {
+    proxy: true, // 表示开启代理
+  },
 
-  // proxy: {
-  //   '/': 'http://10.0.0.137:3000'
-  // },
+  proxy: {
+    '/': 'http://10.0.0.137:3000'
+  },
   /*
   ** Build configuration
   */
@@ -66,7 +66,7 @@ module.exports = {
   },
 
   server: {
-    port: 8000, // default: 3000
+    port: 8082, // default: 3000
     host: '0.0.0.0' // default: localhost,
   }
 }
