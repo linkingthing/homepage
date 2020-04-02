@@ -22,7 +22,8 @@ app.use(session({
     maxAge: 2 * 60 * 60 * 1000  // 过期时间，单位毫秒
   }
 }));
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true  }))
 app.use('/apis', require('./api'))
 
 app.use(express.static('../apidoc'))

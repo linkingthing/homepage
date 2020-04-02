@@ -40,7 +40,15 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
+    // '@nuxtjs/axios',
   ],
+  // axios: {
+  //   proxy: true, // 表示开启代理
+  // },
+
+  // proxy: {
+  //   '/': 'http://10.0.0.137:3000'
+  // },
   /*
   ** Build configuration
   */
@@ -49,11 +57,16 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
-    extend (config, ctx) {
+    extend(config, ctx) {
     }
   },
 
   env: {
-    baseUrl: process.env.BASE_URL || 'http://localhost:3000'
+    baseUrl: process.env.BASE_URL //|| 'http://10.0.0.137:8000'
+  },
+
+  server: {
+    port: 8000, // default: 3000
+    host: '0.0.0.0' // default: localhost,
   }
 }

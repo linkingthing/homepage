@@ -19,6 +19,8 @@ const router = express.Router()
  */
 router.post('/', sendEmail)
 router.post('/', (req, res) => {
+    console.log('===========')
+    console.log(req.body)
     Guestbook.create(req.body).then((data) => {
         console.log(data)
         res.json({

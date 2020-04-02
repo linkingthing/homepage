@@ -21,6 +21,9 @@ transporter.verify(function (error, success) {
 
 
 module.exports = function sendEmail(req, res, next) {
+    console.log(2)
+    console.log(req)
+    console.log(req.body)
 
     const html = render(req.body)
     console.log(html)
@@ -32,12 +35,12 @@ module.exports = function sendEmail(req, res, next) {
         html: html
     };
 
-    transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-            return console.log(error);
-        }
-        console.log('Message sent: %s', info.messageId);
-    });
+    // transporter.sendMail(mailOptions, (error, info) => {
+    //     if (error) {
+    //         return console.log(error);
+    //     }
+    //     console.log('Message sent: %s', info.messageId);
+    // });
     next()
 }
 

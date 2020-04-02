@@ -104,7 +104,7 @@ export default {
       rules: {
         cname: [
           { required: true, message: "请输入姓名" },
-          { min: 2, max: 5, message: "长度在 3 到 5 个字符" }
+          { min: 2, max: 5, message: "长度在 2 到 5 个字符" }
         ],
         email: [
           { required: true, message: "请输入邮箱地址" },
@@ -129,7 +129,6 @@ export default {
             .then(res => {
               if (res.data.code === 200) {
                 this.$message.success("留言成功");
-                this.form = {};
               } else {
                 this.$message.error("留言成功");
               }
