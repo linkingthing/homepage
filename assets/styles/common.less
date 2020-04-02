@@ -56,6 +56,36 @@
     background-color: #35495e;
 }
 
+.button--red{
+    color: #fff;
+    height:48px;
+    padding: 0 28px;
+    background:linear-gradient(-39deg,rgba(238,52,52,1),rgba(255,142,142,1));
+    box-shadow:6px 12px 27px 0px rgba(67,24,24,0.25);
+    border-radius:2px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    i{
+        margin-left: 11px;
+        font-size: 18px;
+        font-weight: 600;
+        vertical-align: middle;
+    }
+
+    &:hover{
+        background:linear-gradient(-39deg,rgba(238,52,52, .75),rgba(255,142,142, .75));
+    }
+
+    &:focus{
+        outline: none;
+    }
+}
+
 .banner{
     width: 100%;
     height: 558px;
