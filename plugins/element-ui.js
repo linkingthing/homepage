@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Element from 'element-ui'
 import locale from 'element-ui/lib/locale/lang/en'
-import '~/assets/styles/reset.css'
+import '~/assets/styles/index.less';
+
 Vue.use(Element, { locale })
