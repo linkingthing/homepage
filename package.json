@@ -25,7 +25,9 @@
     "mongoose": "^5.9.5",
     "multer": "^1.4.2",
     "nodemailer": "^6.4.6",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "swiper": "^5.3.6",
+    "vue-awesome-swiper": "^4.1.0"
   },
   "devDependencies": {
     "apidoc": "^0.20.1",
@@ -38,5 +40,4 @@
     "title": "接口文档",
     "url": "http://localhost:3000"
   }
-
 }
