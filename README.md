@@ -20,3 +20,7 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+## 备注
+
+- 开发时候用自己的ip打开，不然无法访问

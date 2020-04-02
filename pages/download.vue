@@ -30,7 +30,7 @@
 
 <script>
 import axios from "~/plugins/axios";
-
+import { name, email, phone, company } from "~/utils/validate";
 export default {
   components: {},
   props: {},
@@ -38,28 +38,10 @@ export default {
     return {
       form: {},
       rules: {
-        name: [
-          { required: true, message: "请输入姓名" },
-          { min: 2, max: 5, message: "长度在 2 到 5 个字符" }
-        ],
-        email: [
-          { required: true, message: "请输入邮箱地址" },
-          {
-            type: "email",
-            message: "请输入正确的邮箱地址"
-          }
-        ],
-        phone: [
-          { required: true, message: "请填写手机号码" },
-          {
-            pattern: /^1\d{10}$/,
-            message: "目前只支持中国大陆的手机号码"
-          }
-        ],
-        company: [
-          { required: true, message: "请填写公司名称" },
-          { min: 2, max: 20, message: "长度在 2 到 20 个字符" }
-        ]
+        name,
+        email,
+        phone,
+        company
       }
     };
   },
