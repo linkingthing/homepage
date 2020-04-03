@@ -87,7 +87,6 @@
 </template>
 
 <script>
-import Banner from "./components/banner";
 import TitleGroup from "~/components/TitleGroup";
 
 import arrowRightSrc from "~/assets/images/home-page-news-arrow.png";
@@ -98,7 +97,6 @@ import newSrc from "~/assets/images/home-page-news.png";
 
 export default {
     components:{
-        Banner,
         TitleGroup
     },
 
