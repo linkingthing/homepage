@@ -1,0 +1,197 @@
+.monitor-platform{   
+    .banner{
+        background: url(./../../assets/images/monitor-platform-banner.png);
+        background-size: cover;
+        width: 100%;
+        padding-left: 360px;
+        margin-bottom: 144px;
+
+        &-main-text{
+            padding-top: 219px;
+            font-size: 54px;
+            margin-bottom: 26px;
+            line-height: 1;
+            color: #fff;
+        }
+
+        &-sub-text{
+            padding-top: 53px;
+            font-size: 18px;
+            color: #fff;
+            opacity: .5;
+            line-height: 1;
+        }
+    }
+
+    .content-row-1-title{
+        margin-left: 360px;
+    }
+
+    .content-row-1{
+        margin: 62px 0 142px;
+        display: flex;
+        align-items: center;
+        padding: 0 360px;
+
+        img{        
+            margin-right: 65px;
+        }
+
+        .row-1-content{
+            p{
+                font-size: 15px;
+                color: #333;
+                line-height: 34px;
+                margin-bottom: 44px;
+            }
+    
+            div{
+                color: #808080;
+                font-size: 14px;
+                margin-bottom: 38px;
+                line-height: 1;
+                position: relative;
+                padding-left: 19px;
+    
+                &:before{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    content:" ";
+                    width:8px;
+                    height:8px;
+                    background:rgba(19,123,255,0.5);
+                    border-radius:50%;
+                }
+            }
+        }
+
+        .button--red{
+            margin-top: 24px;
+        }
+    }
+
+    .content-row-2-title{
+        margin-left: 360px;
+    }
+
+    .content-row-2{
+        padding: 0 360px;
+        position: relative;
+        margin-top: 73px;
+
+        .row-2-content{
+            height: 410px;
+            position: relative;
+        }
+
+        .content-item{
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            display: flex;
+            align-items: flex-start;
+            visibility: hidden;
+            transition: visibility .3s linear, opacity .3s linear;
+
+            img{
+                height: 400px;
+                width: 100%;
+                margin-right: 10px;
+            }
+
+            &.is-show{
+                visibility: visible;
+                opacity: 1;
+            }
+
+            .detail-title{
+                line-height: 1;
+                color:#333;
+                font-size: 18px;
+                margin: 47px 0 40px;
+            }
+
+            .detail-content{
+                line-height: 34px;
+                font-size: 14px;
+                color: #808080;
+            }
+        }
+
+        .row-2-content-footer{
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 482px;
+
+            .footer-pager{
+                font-size: 20px;
+                color: #808080;
+
+                label{
+                    color: #EE3434;
+                    font-size: 48px;
+                }
+            }
+
+            .footer-arrow-item{
+                cursor: pointer;
+                font-size: 22px;
+                color:#333;
+                margin-right: 46px;
+                font-weight: 600;
+
+                &:last-child{
+                    margin-right: 0;
+                }
+
+                &:hover{
+                    color: rgba(51,51,51, .75);
+                }
+
+                &.is-disabled{
+
+                }
+            }
+        }
+    }
+
+    .content-row-3{
+        background: url(./../../assets/images/monitor-img-5.png);
+        background-size: cover;
+        width: 100%;
+        height: 739px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        &-title{
+            margin-top: 156px;
+            margin-right: 392px;
+
+            h2{
+                width: 600px;
+            }
+        }
+
+        .row-3-text{
+            margin-top: 66px;
+            margin-right: 363px;
+            line-height: 43px;
+            font-size: 14px;
+            color: #808080;
+            width: 629px;
+        }
+
+        .button--red{
+            margin-top:60px;
+            margin-right: 698px;
+        }
+    }
+}
