@@ -1,9 +1,13 @@
 .promotion-manage{
+    .manage-section{
+        margin: 0 auto;
+        width: 1200px;
+    }
+
     .banner{
         background: url(./../../assets/images/promption-manage-banner.png);
         background-size: cover;
         width: 100%;
-        padding-left: 360px;
         color: #fff;
 
         p{
@@ -108,19 +112,24 @@
         position: relative;
         height: 980px;
         background-color: #F6F6F6;
-        padding: 106px 168px;
+        overflow: hidden;
 
         .titleGroup{
-            padding: 20px 0 58px;
-            margin-left: 192px;
+            padding: 127px 0 58px;
+        }
+
+        &-bg{
+            position: absolute;
+            height: 600px;
+            top: 274px;
+            left: 50%;
+            transform: translateX(-50%);
         }
 
         &-main{
-            background: url(./../../assets/images/promption-section-2-bg.png);
-            background-size: cover;
-            height: 600px;
-            padding-left: 192px;
-        
+            position: relative;
+            z-index: 1;
+
             .main-title{
                 font-size: 36px;
                 font-weight: 600;
@@ -146,8 +155,13 @@
 
         &-infos{
             position: absolute;
-            right: 360px;
-            top: 132px;
+            right: 0;
+            top: -141px;
+
+            p{
+                width: auto;
+                margin-bottom: 0;
+            }
 
             .info-item{
                 margin-bottom: 38px;
@@ -181,7 +195,7 @@
     }
 
     .section-3{
-        padding: 0 360px 88px;
+        padding: 0 0 88px;
         position: relative;
 
         .background-text{
@@ -190,7 +204,7 @@
             font-weight:bold;
             color: #333;
             opacity:0.02;
-            left: 429px;
+            right: 0;
             top: 20px;
             letter-spacing: 36px;
         }
@@ -261,7 +275,6 @@
         background: url(./../../assets/images/promption-section-4-banner.png);
         background-size: cover;
         height: 720px;
-        padding: 0 360px;
 
         .titleGroup{
             padding: 122px 0 32px;
@@ -283,9 +296,11 @@
         .list-item{
             border-right: 1px solid rgba(219,219,219, .6);
             margin-right: 50px;
+            width: 100%;
 
             &:last-child{
                 margin-right: 0;
+                border-right: none;
             }
 
             img{

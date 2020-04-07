@@ -8,7 +8,7 @@
       </div>
     </div>
 
-    <div class="ddi-management">
+    <div class="ddi-management ddi-section">
       <div class="ddi-management-row-1">
         <div>
           <TitleGroup main-title="创新的 CLXOne™ DDI 云管理" subtitle="CLOUD MANAGEMENT" />
@@ -74,74 +74,76 @@
     </div>
 
     <div class="ddi-feature">
-      <TitleGroup main-title="DDI的关键特性" subtitle="DDI FEATURES" />
+      <TitleGroup class="ddi-feature-title" main-title="DDI的关键特性" subtitle="DDI FEATURES" />
 
       <div class="ddi-feature-content">
-        <div class="feature-left">
-          <div class="feature-item">
-            <div class="feature-title">一致的集中式用户界面</div>
-            <div class="feature-content">通过用于DNS，DHCP，IPAM，DNS流量控制和DNS安全性的统一 UI 整合管理。</div>
+        <div class="ddi-section">
+          <div class="feature-left">
+            <div class="feature-item">
+              <div class="feature-title">一致的集中式用户界面</div>
+              <div class="feature-content">通过用于DNS，DHCP，IPAM，DNS流量控制和DNS安全性的统一 UI 整合管理。</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-title">灵活的元数据标记</div>
+              <div class="feature-content">利用可扩展的元数据属性来标记关键 IP 资源，以更有效地组织和共享数据。</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-title">自定义报告和警报</div>
+              <div class="feature-content">获得针对设备，IP地址和其他网络资产的多功能报告和警报功能。</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-title">通过高可用性配对实现业务连续性</div>
+              <div class="feature-content">即使在故障转移和升级期间，也可以确保持续的服务可用性。</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-title">可定制的模板</div>
+              <div class="feature-content">快速配置新服务并减少配置开销，如具有多宿主、多网络视图的接口的 DNS 和 DHCP 超级主机分组，IPv4 Filter 模板、DHCP Option/Space 模板、ACL模板等。</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-title">资源委派</div>
+              <div class="feature-content">轻松将DNS区域、IP地址空间的所有权委派给不同的用户，以优化团队资源。</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-title">工作流程自动化</div>
+              <div class="feature-content">使用可定制的工作流来自动化您当前手动执行的各种 IT 流程。</div>
+            </div>
           </div>
-          <div class="feature-item">
-            <div class="feature-title">灵活的元数据标记</div>
-            <div class="feature-content">利用可扩展的元数据属性来标记关键 IP 资源，以更有效地组织和共享数据。</div>
-          </div>
-          <div class="feature-item">
-            <div class="feature-title">自定义报告和警报</div>
-            <div class="feature-content">获得针对设备，IP地址和其他网络资产的多功能报告和警报功能。</div>
-          </div>
-          <div class="feature-item">
-            <div class="feature-title">通过高可用性配对实现业务连续性</div>
-            <div class="feature-content">即使在故障转移和升级期间，也可以确保持续的服务可用性。</div>
-          </div>
-          <div class="feature-item">
-            <div class="feature-title">可定制的模板</div>
-            <div class="feature-content">快速配置新服务并减少配置开销，如具有多宿主、多网络视图的接口的 DNS 和 DHCP 超级主机分组，IPv4 Filter 模板、DHCP Option/Space 模板、ACL模板等。</div>
-          </div>
-          <div class="feature-item">
-            <div class="feature-title">资源委派</div>
-            <div class="feature-content">轻松将DNS区域、IP地址空间的所有权委派给不同的用户，以优化团队资源。</div>
-          </div>
-          <div class="feature-item">
-            <div class="feature-title">工作流程自动化</div>
-            <div class="feature-content">使用可定制的工作流来自动化您当前手动执行的各种 IT 流程。</div>
-          </div>
-        </div>
 
-        <div class="feature-right">
-          <div class="feature-item">
-            <div class="feature-title">任播支持</div>
-            <div class="feature-content">通过 Anycast 功能确保多个 DNS 服务器之间的高可用性。 好处还包括更高 的查询性能，冗余和负载平衡。</div>
-          </div>
-          <div class="feature-item">
-            <div class="feature-title">虚拟设备</div>
-            <div class="feature-content">CLXOne™ DDI 在 VMware上可用作虚拟机（VM），在Docker上可用作容器。</div>
-          </div>
-          <div class="feature-item">
-            <div class="feature-title">专用设备</div>
-            <div class="feature-content">连星科技提供专业的硬件设备。</div>
-          </div>
-          <div class="feature-item">
-            <div class="feature-title">规模</div>
-            <div class="feature-content">CLXOne™ DDI 可通过硬件设备，VM 或容器进行水平扩展。</div>
-          </div>
-          <div class="feature-item">
-            <div class="feature-title">灵活的 API</div>
-            <div class="feature-content">通过用户可访问的 API 支持所有 UI 功能。 API 调用是针对云的，而不是直接针对 CLXOne™ DDI 设备。 使用 API 需要用户凭据，并且需要相应的权限。</div>
-          </div>
-          <div class="feature-item">
-            <div class="feature-title">高可用性</div>
-            <div class="feature-content">远程位置的两个 CLXOne™ DDI 实例共享信息和职责，因此，如果由于某种原因一 个出现故障，另一个实例将接管该站点的 DDI 服务职责。</div>
-          </div>
-          <div class="feature-item">
-            <div class="feature-title">零接触配置（ZTP）</div>
-            <div class="feature-content">ZTP可以实现自动化，并极大地简化了CLXOne™ DDI 的大规模部署。 CLXOne™ DDI 设备可通过在所有远程站点上进行全局身份验证，下载和部署配置。</div>
+          <div class="feature-right">
+            <div class="feature-item">
+              <div class="feature-title">任播支持</div>
+              <div class="feature-content">通过 Anycast 功能确保多个 DNS 服务器之间的高可用性。 好处还包括更高 的查询性能，冗余和负载平衡。</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-title">虚拟设备</div>
+              <div class="feature-content">CLXOne™ DDI 在 VMware上可用作虚拟机（VM），在Docker上可用作容器。</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-title">专用设备</div>
+              <div class="feature-content">连星科技提供专业的硬件设备。</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-title">规模</div>
+              <div class="feature-content">CLXOne™ DDI 可通过硬件设备，VM 或容器进行水平扩展。</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-title">灵活的 API</div>
+              <div class="feature-content">通过用户可访问的 API 支持所有 UI 功能。 API 调用是针对云的，而不是直接针对 CLXOne™ DDI 设备。 使用 API 需要用户凭据，并且需要相应的权限。</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-title">高可用性</div>
+              <div class="feature-content">远程位置的两个 CLXOne™ DDI 实例共享信息和职责，因此，如果由于某种原因一 个出现故障，另一个实例将接管该站点的 DDI 服务职责。</div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-title">零接触配置（ZTP）</div>
+              <div class="feature-content">ZTP可以实现自动化，并极大地简化了CLXOne™ DDI 的大规模部署。 CLXOne™ DDI 设备可通过在所有远程站点上进行全局身份验证，下载和部署配置。</div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="ddi-solution">
+    <div class="ddi-solution ddi-section">
       <TitleGroup main-title="相关解决方案" subtitle="THE SOLUTIONS" />
 
       <div class="solution-list">

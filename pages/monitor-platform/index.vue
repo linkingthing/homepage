@@ -1,20 +1,22 @@
 <template>
   <div class="monitor-platform">
-      <div class="banner">
-        <div class="banner-main-text">
-          懂你的网络，更懂你的压力
+      <section class="banner">
+        <div class="platform-section">
+          <div class="banner-main-text">
+            懂你的网络，更懂你的压力
+          </div>
+          <div class="banner-sub-text">
+            全面监测和深入分析，掌控IPv6发展状况
+          </div>
         </div>
-        <div class="banner-sub-text">
-          全面监测和深入分析，掌控IPv6发展状况
-        </div>
-      </div>
+      </section>
 
-      <TitleGroup class="content-row-1-title" main-title="CLXOne™ IPv6监测让您能够更智能地开展工作" subtitle="TO BEGIN THE WORK" />
+      <TitleGroup class="platform-section" main-title="CLXOne™ IPv6监测让您能够更智能地开展工作" subtitle="TO BEGIN THE WORK" />
 
-      <div class="content-row-1">
+      <section class="section-1 platform-section">
         <img :src="src1" />
 
-        <div class="row-1-content">
+        <div class="section-1-content">
           <p>
             IPv6规模部署工作时间紧、任务重、跨度长、技术性强。组织在整个IPv6代际升迁的过程中，需要承担诸多职责、满足各种需求。您必须始终掌控持续动态的网络状况，以及安全、简单而灵活地应对方案。所有的这一切，是基于对您当前IPv6发展状况的了解。CLXOne™ IPv6发展监测平台让您更智能更安全的开展工作。
           </p>
@@ -25,12 +27,12 @@
 
           <button class="button--red">阅读概览</button>
         </div>
-      </div>
+      </section>
 
-      <TitleGroup class="content-row-2-title" main-title="通过 CLXOne™ IPv6 监测展示创新成果" subtitle="INNOVATION RESULTS" />
+      <TitleGroup class="platform-section" main-title="通过 CLXOne™ IPv6 监测展示创新成果" subtitle="INNOVATION RESULTS" />
 
-      <div class="content-row-2">
-        <div class="row-2-content" @mouseenter="stopPlay" @mouseleave="play">
+      <section class="section-2 platform-section">
+        <div class="section-2-content" @mouseenter="stopPlay" @mouseleave="play">
           <template v-for="(item,idx) in row2Content">
             <div class="content-item" :key="idx" :class="{'is-show': idx === row2Index}">
               <img :src="item.img">
@@ -41,7 +43,7 @@
             </div>
           </template>
 
-          <div class="row-2-content-footer">
+          <div class="section-2-footer">
             <div class="footer-pager">
               <label>0{{row2Index + 1}}</label>
               /0{{row2ContentLength}}
@@ -59,15 +61,17 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="content-row-3">
-        <TitleGroup class="content-row-3-title" main-title="利用连星CLXOne™ IPv6 监测平台 加速您的创新" subtitle="ACCELORATE INNOVATION" />
+      <section class="section-3">
+        <div class="section-3-content platform-section">
+          <TitleGroup class="section-3-title" main-title="利用连星CLXOne™ IPv6 监测平台 加速您的创新" subtitle="ACCELORATE INNOVATION" />
 
-        <div class="row-3-text">利用我们的专家指导、久经验证的经验、最佳实践和创新工具，您可以充满信心地迁移到下一代新技术网络</div>
-  
-        <button class="button--red">平台定制服务，请联系我们的业务专家</button>
-      </div>
+          <div class="section-3-text">利用我们的专家指导、久经验证的经验、最佳实践和创新工具，您可以充满信心地迁移到下一代新技术网络</div>
+    
+          <button class="button--red">平台定制服务，请联系我们的业务专家</button>
+        </div>
+      </section>
   </div>
 </template>
 

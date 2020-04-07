@@ -1,12 +1,14 @@
 <template>
   <article class="promotion-manage">
     <section class="banner">
-      <p>通过网络可见性</p>
-      <p>驱动下一代技术网络敏捷演进</p>
-      <label>连星 CLXOne™ IPv6+ 协助组织持续代际升迁，实现规模部署</label>
+      <div class="manage-section">
+        <p>通过网络可见性</p>
+        <p>驱动下一代技术网络敏捷演进</p>
+        <label>连星 CLXOne™ IPv6+ 协助组织持续代际升迁，实现规模部署</label>
+      </div>
     </section>
 
-    <section class="section-1">
+    <section class="section-1 manage-section">
       <TitleGroup main-title="IPv6+：使能万物智慧互联的基石" subtitle="BACKGROUND INTRODUCTION" />
 
       <p class="sub-title">数字化变革进入快车道，网络基础设施面临巨大挑战</p>
@@ -29,28 +31,30 @@
     </section>
 
     <section class="section-2">
-      <TitleGroup main-title="IPv6+方案介绍" subtitle="INTRODUCTION OF THE PLAN" />
+      <TitleGroup class=" manage-section" main-title="IPv6+方案介绍" subtitle="INTRODUCTION OF THE PLAN" />
 
-      <div class="section-2-main">
+      <img :src="src2bg" class="section-2-bg" />
+      
+      <div class="section-2-main manage-section">
         <div class="main-title">前所未有的网络可见性使能 万物互联的基石</div>
         <p>连星 CLXOne™ IPv6+ 通过将DDI数据与网络基础设施数据、互联网基础服务全景数据集成在一起，提供可操作的网络智能管理</p>
         <p>实现以下方面的自动化IPv6目标：创建IPv6寻址规划、审核网络设备、IPv6基础网络架构管理、IPv6代际升迁管理以及通过IPv6提供应用等；同时通过可见的过程化管理帮助分析网络的内部和法规政策合规性</p>
 
         <button class="button--red">阅读概览</button>
-      </div>
 
-      <div class="section-2-infos">
-        <div class="info-item" v-for="(item,idx) in section2Items" :key="idx">
-          <img :src="item.src">
-          <div class="info-item-content">
-            <div class="item-title">{{item.title}}</div>
-            <p class="item-info">{{item.info}}</p>
+        <div class="section-2-infos">
+          <div class="info-item" v-for="(item,idx) in section2Items" :key="idx">
+            <img :src="item.src">
+            <div class="info-item-content">
+              <div class="item-title">{{item.title}}</div>
+              <p class="item-info">{{item.info}}</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section-3">
+    <section class="section-3 manage-section">
       <div class="background-text">SOLUTIONS</div>
       <TitleGroup main-title="解决方案" subtitle="SOLUTIONS" />
 
@@ -66,20 +70,22 @@
     </section>
 
     <section class="section-4">
-      <TitleGroup main-title="连星服务" subtitle="SERVICES" />
+      <div class="manage-section">
+        <TitleGroup main-title="连星服务" subtitle="SERVICES" />
 
-      <p class="section-4-main">通过关键交付能力、自动化工具和网络可见性来实施严格的IPv6实践</p>
-      <p class="section-4-main">利用我们的专家指导、久经验证的经验、最佳实践和创新工具，您可以充满信心地迁移到下一代新技术网络</p>
+        <p class="section-4-main">通过关键交付能力、自动化工具和网络可见性来实施严格的IPv6实践</p>
+        <p class="section-4-main">利用我们的专家指导、久经验证的经验、最佳实践和创新工具，您可以充满信心地迁移到下一代新技术网络</p>
 
-      <div class="section-4-list">
-        <div class="list-item" v-for="(item,idx) in setion4Items" :key="idx">
-          <img :src="item.src">
-          <div class="item-title">
-            <label>{{item.title}}</label>
-            <label class="title-important">{{item.important}}</label>
-          </div>
-          <div class="item-details" v-for="(child,index) in item.items" :key="index">
-            <label v-for="(last, i) in child" :key="i">{{last}}</label>
+        <div class="section-4-list">
+          <div class="list-item" v-for="(item,idx) in setion4Items" :key="idx">
+            <img :src="item.src">
+            <div class="item-title">
+              <label>{{item.title}}</label>
+              <label class="title-important">{{item.important}}</label>
+            </div>
+            <div class="item-details" v-for="(child,index) in item.items" :key="index">
+              <label v-for="(last, i) in child" :key="i">{{last}}</label>
+            </div>
           </div>
         </div>
       </div>
@@ -100,6 +106,7 @@ import src24 from "~/assets/images/promption-section-2-4.png";
 import src41 from "~/assets/images/promption-section-4-1.png";
 import src42 from "~/assets/images/promption-section-4-2.png";
 import src43 from "~/assets/images/promption-section-4-3.png";
+import src2bg from "~/assets/images/promption-section-2-bg.png";
 
 export default {
   components:{
@@ -119,6 +126,7 @@ export default {
       src41,
       src42,
       src43,
+      src2bg,
 
       section1Items:[
         {
