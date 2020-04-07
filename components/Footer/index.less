@@ -1,0 +1,135 @@
+.footer{
+    width: 100%;
+    color: #808080;
+    font-size: 12px;
+
+    &-section{
+        width: 1140px;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    &-top{
+        background-color: #262932;
+        height: 330px;
+
+        .footer-section{            
+            justify-content: space-between;
+        }
+    }
+
+    .title-line{
+        width:30px;
+        height:2px;
+        background:#EE3434;
+        margin-bottom: 40px;
+    }
+
+    .footer-item{
+        padding: 59px 0 40px;
+        width: 100%;
+        border-right: 1px solid rgba(255,255,255, .08);
+        margin-right: 30px;
+
+        &-title{
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1;
+            margin-bottom:25px;
+    
+            label{
+                color: #808080;
+                font-size: 14px;
+                font-weight: 400;
+                margin-left: 25px;
+            }
+        }
+
+        &:last-child{
+            border-right: 0;
+            margin-right: 0;
+        }
+
+        &:nth-child(1){
+            .item-content{
+                display: flex;
+                align-items: flex-end;
+
+                img{
+                    margin-right: 20px;
+                }
+
+                p{
+                    line-height: 1;
+
+                    &:first-child{
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+
+        &:nth-child(2){
+            p{
+                line-height: 1;
+                margin-bottom: 31.5px;
+
+                &:first-child{
+                    display: flex;
+                    align-items: center;
+                    margin-top: -4px;
+                }
+
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .website-nav{
+            display: flex;
+            flex-wrap: wrap;
+
+            label{
+                width: 60px;
+                margin: 0 48px 24px 0;
+            }
+        }
+
+        .website-nav-fun{
+            margin-top: 52px;
+
+            img{
+                &:first-child{
+                    width: 16px;
+                }
+
+                margin-right: 26px;
+            }
+        }
+
+        .hot-line{
+            background: linear-gradient(to right, #FF8E8E, #EE3434);
+            -webkit-background-clip: text;
+            color: transparent;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+    }
+
+    &-bottom{
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        background-color: #373A42;
+
+        .footer-section{
+            justify-content: center;
+        }
+
+        label{
+            margin-right: 28px;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.side-bar{
+    width:60px;
+    background:rgba(255,255,255,1);
+    box-shadow:-5px 5px 27px 0px rgba(107,107,107,0.13);
+    border-radius:4px;
+    position: fixed;
+    top: 738px;
+    right: 10px;
+    z-index: 1;
+
+    label{
+        font-size: 14px;
+        text-align: center;
+        height: 60px;
+        background-color: #EE3434;
+        padding: 0 10px;
+        display: block;
+        color: #fff;
+        padding-top: 10px;
+        line-height: 20px;
+        letter-spacing: 4px;
+        border-radius: 4px 4px 0 0;
+    }
+
+    div{
+        flex: 1;
+        margin: 0 12px;
+        height: 60px;
+        line-height: 72px;
+        text-align: center;
+        border-bottom: 1px solid #E0E0E0;
+        cursor: pointer;
+
+        &:last-child{
+            border: none;
+            border-radius: 0 0 4px 4px;
+        }
+    }
+}
