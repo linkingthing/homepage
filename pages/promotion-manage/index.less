@@ -7,10 +7,14 @@
         color: #fff;
 
         p{
+            padding-top: 0;
             font-size: 54px;
             line-height: 1;
-            padding-top: 162px;
             padding-bottom: 33px;
+
+            &:first-child{
+                padding-top: 162px;
+            }
         }
 
         label{
@@ -257,5 +261,61 @@
         background: url(./../../assets/images/promption-section-4-banner.png);
         background-size: cover;
         height: 720px;
+        padding: 0 360px;
+
+        .titleGroup{
+            padding: 122px 0 32px;
+        }
+
+        &-main{
+            color: #808080;
+            font-size: 18px;
+            line-height: 44px;
+        }
+
+        &-list{
+            margin-top: 58px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .list-item{
+            border-right: 1px solid rgba(219,219,219, .6);
+            margin-right: 50px;
+
+            &:last-child{
+                margin-right: 0;
+            }
+
+            img{
+                margin-bottom: 36px;
+            }
+
+            .item-title{
+                color: #333;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 1;
+                margin-bottom: 36px;
+            }
+
+            .title-important{
+                color: #EE3434;
+            }
+
+            .item-details{
+                margin-bottom: 30px;
+                display: flex;
+
+                label{
+                    color:#808080;
+                    font-size: 14px;
+                    display: block;
+                    width: 150px;
+                    line-height: 1;
+                }
+            }
+        }
     }
 }

@@ -68,18 +68,18 @@
     <section class="section-4">
       <TitleGroup main-title="连星服务" subtitle="SERVICES" />
 
-      <p>通过关键交付能力、自动化工具和网络可见性来实施严格的IPv6实践</p>
-      <p>利用我们的专家指导、久经验证的经验、最佳实践和创新工具，您可以充满信心地迁移到下一代新技术网络</p>
+      <p class="section-4-main">通过关键交付能力、自动化工具和网络可见性来实施严格的IPv6实践</p>
+      <p class="section-4-main">利用我们的专家指导、久经验证的经验、最佳实践和创新工具，您可以充满信心地迁移到下一代新技术网络</p>
 
       <div class="section-4-list">
         <div class="list-item" v-for="(item,idx) in setion4Items" :key="idx">
           <img :src="item.src">
           <div class="item-title">
-            <label>{{item.sub}}</label>
-            <label>{{item.main}}</label>
+            <label>{{item.title}}</label>
+            <label class="title-important">{{item.important}}</label>
           </div>
-          <div class="item-details">
-            <div class="detail-item" v-for="(child,index) in item.details" :key="index">{{child}}</div>
+          <div class="item-details" v-for="(child,index) in item.items" :key="index">
+            <label v-for="(last, i) in child" :key="i">{{last}}</label>
           </div>
         </div>
       </div>
@@ -202,7 +202,35 @@ export default {
         ]
       ],
 
-      setion4Items:[]
+      setion4Items:[
+        {
+          src:src41,
+          title:"更好的",
+          important:"可见性",
+          items:[ 
+            ["· 提高准确性", "· IP地址管理自动化"], 
+            ["· 提高安全性"] 
+          ]
+        },
+        {
+          src:src42,
+          title:"更好的",
+          important:"可控性",
+          items:[
+            ["· 减少操作时间", "· 角色管理与委派权限"],
+            ["· 实现自动化变更", "· 降低风险"]
+          ]
+        },
+        {
+          src:src43,
+          title:"更好的",
+          important:"可实践性",
+          items:[ 
+            ["· 保障合规性", "· 维护策略和标准"],
+            ["· 更好的规则", "· 发现潜在配置问题"]
+          ]
+        },
+      ]
     }
   }
 }
