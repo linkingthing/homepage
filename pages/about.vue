@@ -46,7 +46,7 @@
                 <span>/ Phone Number</span>
               </h3>
               <div>
-                <strong>400-666-789</strong>
+                <strong>010-88708872</strong>
               </div>
             </li>
             <li>
@@ -57,7 +57,7 @@
               </h3>
               <div>
                 <strong>
-                  <em>LinkingThing@163.com</em>
+                  <em>web@linkingthing.com</em>
                 </strong>
               </div>
             </li>
@@ -221,6 +221,10 @@ export default {
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
+
+        em{
+          line-height: initial;
+        }
       }
       div {
         margin-left: 44px;
