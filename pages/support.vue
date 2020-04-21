@@ -11,7 +11,7 @@
           src="../assets/images/apply.png"
           alt
         />
-        <p>如果您有新的支持需求，请提交请求支持；或者直接通过电话/邮件联系我们的专业技术支持人员（010- XXXXXXX； support@linkingthing.com），我们会尽快与您联系。带*的为必填项</p>
+        <p>如果您有新的支持需求，请提交请求支持；或者直接通过电话/邮件联系我们的专业技术支持人员（010-88708872； web@linkingthing.com），我们会尽快与您联系。带*的为必填项</p>
       </div>
       <div class>
         <el-form
@@ -33,7 +33,7 @@
               <el-form-item prop="email">
                 <el-input
                   v-model="form.email"
-                  placeholder="请输入您的邮箱*"
+                  placeholder="请输入您的邮箱"
                 ></el-input>
               </el-form-item>
             </el-col>
@@ -49,7 +49,7 @@
               <el-form-item prop="city">
                 <el-input
                   v-model="form.city"
-                  placeholder="请输入您所在的城市*"
+                  placeholder="请输入您所在的城市"
                 ></el-input>
               </el-form-item>
             </el-col>
@@ -65,7 +65,7 @@
               <el-form-item prop="industry">
                 <el-input
                   v-model="form.industry"
-                  placeholder="请选择您所在的行业*"
+                  placeholder="请输入您所在的行业"
                 ></el-input>
               </el-form-item>
             </el-col>
@@ -81,7 +81,7 @@
               <el-form-item prop="product">
                 <el-input
                   v-model="form.product"
-                  placeholder="请选择产品或解决方案"
+                  placeholder="请输入产品或解决方案"
                 ></el-input>
               </el-form-item>
             </el-col>
@@ -124,6 +124,7 @@
           </el-row>
           <el-form-item>
             <el-button
+              :disabled="!(isAccept&& isAgree)"
               type="danger"
               @click="handleSubmit('form')"
             >提交</el-button>
@@ -299,15 +300,15 @@ export default {
       form: {},
       rules: {
         cname: name,
-        email,
+        // email,
         phone,
         company,
-        city,
-        industry,
-        job,
-        product,
-        budget,
-        describe
+        // city,
+        // industry,
+        // job,
+        // product,
+        // budget,
+        // describe
       },
       swiperOptions: {
         navigation: {
@@ -489,6 +490,7 @@ export default {
 }
 
 .tool {
+  display: none;
   width: 1200px;
   margin: 0 auto;
   padding: 120px 0 100px;

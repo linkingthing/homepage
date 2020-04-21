@@ -55,7 +55,7 @@ import src from "~/assets/images/logo.png"
 export default {
   data() {
     return {
-      activeIndex: "1",
+      activeIndex: "/home",
       src,
       routes: [
         {
@@ -104,21 +104,18 @@ export default {
           index: "7"
         }
       ]
-    };
+    }
+
   },
 
   created() {
-    const path = this.routes.find(item => item.path === this.$router.currentRoute.path);
-
-    if (path) {
-      this.activeIndex = path.index;
-    }
+    const path = this.$router.currentRoute.path
+    const [, name] = path.split('/')
+    this.activeIndex = ['', name].join('/')
   },
 
   methods: {
     handleSelect(item) {
-      // this.   
-      console.log(item)
       this.$router.push({ path: item })
     }
   }

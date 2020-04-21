@@ -8,15 +8,15 @@
           <p>Cooperation</p>
           <span></span>
         </header>
+        <a href="/cooperate/auth">渠道合作伙伴认证</a>
         <a
           href="javascript:;"
           class="active"
-        >渠道合作伙伴认证</a>
-        <a href="/cooperate/cooper">专业化认证</a>
+        >专业化认证</a>
       </aside>
       <div class="content">
         <header>
-          <h1>渠道合作伙伴认证</h1>
+          <h1>专业化认证</h1>
           <p>请填写以下表单并上传相关资料，我们的工作人员会尽快与您联系；带*的为必填项</p>
         </header>
         <section>
@@ -427,6 +427,8 @@ export default {
   text-align: center;
 }
 .coopauth {
-
+  .el-input__inner {
+    border: none;
+  }
 }
 </style>

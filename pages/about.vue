@@ -10,6 +10,7 @@
         <section class>
           <p>北京连星科技有限公司聚焦下一代信息技术数据服务，围绕IPv6技术的数据化、网络化、智能化的突出特征做深度挖掘</p>
           <p>公司坚持技术创新，运用新一代通信技术、数据挖掘、人工智能和云计算等新技术，实现各种技术的相互渗透和融合，为用户搭建终端、网络、数据和应用互连互通的超融合数字服务平台，协同推进信息技术产业和服务的代际升迁</p>
+          <img :src="require('~/assets/images/bar.png')" alt="" style="margin-top: 46px">
         </section>
       </div>
     </div>
@@ -201,7 +202,7 @@ export default {
   .intro-content {
     position: absolute;
     left: 50%;
-    width: 450px;
+    width: 500px;
   }
   section {
     padding-top: 80px;

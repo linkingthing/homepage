@@ -1,12 +1,19 @@
 <template>
   <div class="side-bar">
-      <label>如何购买</label>
-      <div>
-        <img :src="search" />
-      </div>
-      <div>
-        <img :src="phone" />
-      </div>
+    <label>如何购买</label>
+    <div>
+      <img :src="search" />
+    </div>
+    <div>
+      <el-popover
+        placement="left"
+        trigger="hover"
+        popper-class="tel"
+        content="400-666-789"
+      >
+        <img :src="phone" slot="reference"/>
+      </el-popover>
+    </div>
   </div>
 </template>
 
@@ -15,12 +22,12 @@ import phone from "~/assets/images/phone.png";
 import search from "~/assets/images/search.png";
 
 export default {
-    data(){
-        return {
-            phone,
-            search
-        }
+  data() {
+    return {
+      phone,
+      search
     }
+  }
 }
 </script>
 

@@ -7,7 +7,7 @@
       <section class="news-list">
         <ul>
           <li>
-            <router-link to="/about">
+            <router-link to="/news/info">
               <div class="news-item">
                 <div
                   class="news-pic"
@@ -127,7 +127,7 @@
             </router-link>
           </li>
         </ul>
-        <el-pagination class="page" background layout="prev, pager, next" :total="1000"></el-pagination>
+        <!-- <el-pagination class="page" background layout="prev, pager, next" :total="1000"></el-pagination> -->
       </section>
     </div>
   </div>

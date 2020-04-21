@@ -75,7 +75,7 @@
         }
 
         .list-item-top{
-            border: 2px solid #B1C4ED;
+            border: 2px solid #ccc;
             height: 40px;
             display: inline-flex;
             align-items: center;
@@ -95,8 +95,10 @@
             font-size: 48px;
             font-weight: 600;
             line-height: 1;
+            // font-family:DIN Alternate;
 
             span{
+                padding-left: 6px;
                 font-size: 18px;
             }
         }
@@ -133,12 +135,13 @@
 
             .main-title{
                 font-size: 36px;
-                font-weight: 600;
+                font-weight: 400;
                 line-height: 54px;
                 padding-top: 87px;
-                width: 460px;
+                width: 480px;
                 color: #fff;
                 margin-bottom: 50px;
+                letter-spacing: 3px;
             }
 
             p{
@@ -147,6 +150,7 @@
                 color: #fff;
                 line-height: 33px;
                 margin-bottom: 20px;
+                letter-spacing: 2px;
             }
 
             .button--red{
@@ -191,6 +195,7 @@
                 line-height: 30px;
                 color: #808080;
                 font-size: 14px;
+                letter-spacing: 2px;
             }
         }
     }
@@ -205,9 +210,9 @@
             font-weight:bold;
             color: #333;
             opacity:0.02;
-            right: 0;
+            right: 15px;
             top: 20px;
-            letter-spacing: 36px;
+            letter-spacing: 20px;
         }
         
         .titleGroup{
@@ -218,7 +223,7 @@
             >div{
                 display: flex;
             }
-
+           
             .list-item{
                 background-size: cover;
                 width: 580px;
@@ -229,23 +234,34 @@
                 margin-right: 40px;
                 margin-bottom: 40px;
                 padding: 0 42px;
+                background-size: cover;
 
                 &:nth-child(1){
-                    background: url(./../../assets/images/promption-section-3-1.png);
+                    background-image: url(./../../assets/images/promption-section-3-1.png);
                 }
 
                 &:nth-child(2){
-                    background: url(./../../assets/images/promption-section-3-2.png);
+                    background-image: url(./../../assets/images/promption-section-3-2.png);
                 }
 
-                &:nth-child(3){
-                    background: url(./../../assets/images/promption-section-3-3.png);
-                }
-
-                &:nth-child(4){
-                    background: url(./../../assets/images/promption-section-3-4.png);
-                }
+               
             }
+            .list-item-content{
+            
+              &:last-child {
+                .list-item {
+                  &:nth-child(1){
+                    background-image: url(./../../assets/images/promption-section-3-3.png);
+                }
+  
+                &:nth-child(2){
+                  background-image: url(./../../assets/images/promption-section-3-4.png);
+              }
+              }
+             
+              }
+            }
+            
 
             .list-item-index{
                 font-size: 100px;

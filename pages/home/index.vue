@@ -18,17 +18,17 @@
               这是一句文字描述，这是一句文字描述，这是一句文字描述，这是一句
             </div>
 
-            <button class="button--red">了解详情</button>
+            <button class="button--red" @click="$router.push({path: '/clxone-ddi'})">了解详情</button>
 
-            <div class="banner-pager">
+            <!-- <div class="banner-pager">
               <span>01</span>
-              /02
-            </div>
+              /01
+            </div> -->
           </div>
         </div>
       </el-carousel-item>
 
-      <el-carousel-item>
+      <!-- <el-carousel-item>
         <div class="banner-item-2 banner-item">
           <div class="banner-item-content">
             <div class="banner-pager">
@@ -37,7 +37,7 @@
             </div>
           </div>
         </div>
-      </el-carousel-item>
+      </el-carousel-item> -->
     </el-carousel>
 
     <div class="home-page-dynamic">

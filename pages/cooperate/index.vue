@@ -23,7 +23,7 @@
           <img src="../../assets/images/profession.png" alt />
           <div class="auth-item">
             <h3>专业化认证</h3>
-            <a href="/cooperate/auth">我要去认证</a>
+            <a href="/cooperate/cooper">我要去认证</a>
           </div>
         </li>
       </ul>

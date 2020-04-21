@@ -22,8 +22,7 @@
             {{item.imgText}}
           </div>
           <div class="list-item-main">
-            {{item.main}}
-            <span>{{item.unit}}</span>
+            {{item.main}}<span>{{item.unit}}</span>
           </div>
           <div class="list-item-sub">{{item.sub}}</div>
         </div>
@@ -36,7 +35,7 @@
       <img :src="src2bg" class="section-2-bg" />
       
       <div class="section-2-main manage-section">
-        <div class="main-title">前所未有的网络可见性使能 万物互联的基石</div>
+        <div class="main-title">前所未有的网络可见性使能万物互联的基石</div>
         <p>连星 CLXOne™ IPv6+ 通过将DDI数据与网络基础设施数据、互联网基础服务全景数据集成在一起，提供可操作的网络智能管理</p>
         <p>实现以下方面的自动化IPv6目标：创建IPv6寻址规划、审核网络设备、IPv6基础网络架构管理、IPv6代际升迁管理以及通过IPv6提供应用等；同时通过可见的过程化管理帮助分析网络的内部和法规政策合规性</p>
 
@@ -59,9 +58,9 @@
       <TitleGroup main-title="解决方案" subtitle="SOLUTIONS" />
 
       <div class="section-3-list">
-        <div v-for="(child,idx) in setion3Items" :key="idx">
+        <div class="list-item-content" v-for="(child,idx) in setion3Items" :key="idx">
           <div class="list-item" v-for="(item,index) in child" :key="index">
-            <div class="list-item-index">{{item.index}}</div>
+            <!-- <div class="list-item-index">{{item.index}}</div> -->
             <div class="item-title">{{item.title}}</div>
             <div class="item-content">{{item.content}}</div>
           </div>
