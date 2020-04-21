@@ -3,7 +3,10 @@
     <div class="banner bg"></div>
     <div class="introduce bg">
       <div class="intro-content">
-        <TitleGroup mainTitle="关于我们" subtitle="ABOUT US" />
+        <TitleGroup
+          mainTitle="关于我们"
+          subtitle="ABOUT US"
+        />
         <section class>
           <p>北京连星科技有限公司聚焦下一代信息技术数据服务，围绕IPv6技术的数据化、网络化、智能化的突出特征做深度挖掘</p>
           <p>公司坚持技术创新，运用新一代通信技术、数据挖掘、人工智能和云计算等新技术，实现各种技术的相互渗透和融合，为用户搭建终端、网络、数据和应用互连互通的超融合数字服务平台，协同推进信息技术产业和服务的代际升迁</p>
@@ -15,12 +18,23 @@
         <header>
           <h3>给连星留言</h3>
         </header>
-        <el-form ref="form" :model="form" :rules="rules" class="form-body my-form">
+        <el-form
+          ref="form"
+          :model="form"
+          :rules="rules"
+          class="form-body my-form"
+        >
           <el-form-item prop="cname">
-            <el-input v-model="form.cname" placeholder="请输入您的姓名"></el-input>
+            <el-input
+              v-model="form.cname"
+              placeholder="请输入您的姓名"
+            ></el-input>
           </el-form-item>
           <el-form-item prop="email">
-            <el-input v-model="form.email" placeholder="请输入您的邮箱"></el-input>
+            <el-input
+              v-model="form.email"
+              placeholder="请输入您的邮箱"
+            ></el-input>
           </el-form-item>
           <el-form-item prop="message">
             <el-input
@@ -31,17 +45,26 @@
             ></el-input>
           </el-form-item>
           <el-form-item>
-            <el-button type="danger" @click="handleSubmit('form')">提交</el-button>
+            <el-button
+              type="danger"
+              @click="handleSubmit('form')"
+            >提交</el-button>
           </el-form-item>
         </el-form>
       </div>
       <div class="contact-way">
-        <TitleGroup mainTitle="联系我们" subtitle="CONTACT US" />
+        <TitleGroup
+          mainTitle="联系我们"
+          subtitle="CONTACT US"
+        />
         <section>
           <ul>
             <li>
               <h3>
-                <img src="../assets/images/tel.png" alt />
+                <img
+                  src="../assets/images/tel.png"
+                  alt
+                />
                 电话
                 <span>/ Phone Number</span>
               </h3>
@@ -51,7 +74,10 @@
             </li>
             <li>
               <h3>
-                <img src="../assets/images/email.png" alt />
+                <img
+                  src="../assets/images/email.png"
+                  alt
+                />
                 邮箱
                 <span>/ E-mail</span>
               </h3>
@@ -63,20 +89,26 @@
             </li>
             <li>
               <h3>
-                <img src="../assets/images/location.png" alt />
+                <img
+                  src="../assets/images/location.png"
+                  alt
+                />
                 地址
                 <span>/ Adress</span>
               </h3>
               <div>
                 <dl>
+                  <dd>北京市石景山区古城金融街长安中心城通街26号院4号楼1305</dd>
                   <dd>成都市·高新区·天府三街大源国际中心B2栋1404</dd>
-                  <dd>北京市·可是大·家互粉可视电话反馈副科级的咖啡馆看对方过得快</dd>
                 </dl>
               </div>
             </li>
             <li>
               <h3>
-                <img src="../assets/images/wechat.png" alt />
+                <img
+                  src="../assets/images/wechat.png"
+                  alt
+                />
                 微信公众号
                 <span>/ WeChat</span>
               </h3>
@@ -217,13 +249,15 @@ export default {
         display: block;
         font-size: 24px;
         line-height: 1;
-        background-image: -webkit-linear-gradient(bottom, red, #fd8403, yellow);
+        background-image: -webkit-linear-gradient(bottom, #ee3434, #ff8e8e);
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
+        color: #ee3434;
 
-        em{
+        em {
           line-height: initial;
+          font-style: normal;
         }
       }
       div {

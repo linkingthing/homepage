@@ -2,57 +2,95 @@
   <div class="support">
     <BigPicture :url="require('~/assets/images/bg-support.png')" />
     <section class="apply-support">
-      <TitleGroup mainTitle="技术支持申请" subtitle="APPLY FOR TECHNICAL SUPPORT" />
+      <TitleGroup
+        mainTitle="技术支持申请"
+        subtitle="APPLY FOR TECHNICAL SUPPORT"
+      />
       <div class="tips">
-        <img src="../assets/images/apply.png" alt />
+        <img
+          src="../assets/images/apply.png"
+          alt
+        />
         <p>如果您有新的支持需求，请提交请求支持；或者直接通过电话/邮件联系我们的专业技术支持人员（010- XXXXXXX； support@linkingthing.com），我们会尽快与您联系。带*的为必填项</p>
       </div>
       <div class>
-        <el-form ref="form" :model="form" :rules="rules" class="form-body my-form">
+        <el-form
+          ref="form"
+          :model="form"
+          :rules="rules"
+          class="form-body my-form"
+        >
           <el-row :gutter="36">
             <el-col :span="8">
               <el-form-item prop="cname">
-                <el-input v-model="form.cname" placeholder="请输入您的姓名*"></el-input>
+                <el-input
+                  v-model="form.cname"
+                  placeholder="请输入您的姓名*"
+                ></el-input>
               </el-form-item>
             </el-col>
             <el-col :span="8">
               <el-form-item prop="email">
-                <el-input v-model="form.email" placeholder="请输入您的邮箱*"></el-input>
+                <el-input
+                  v-model="form.email"
+                  placeholder="请输入您的邮箱*"
+                ></el-input>
               </el-form-item>
             </el-col>
             <el-col :span="8">
               <el-form-item prop="phone">
-                <el-input v-model="form.phone" placeholder="请输入您的联系电话*"></el-input>
+                <el-input
+                  v-model="form.phone"
+                  placeholder="请输入您的联系电话*"
+                ></el-input>
               </el-form-item>
             </el-col>
             <el-col :span="8">
               <el-form-item prop="city">
-                <el-input v-model="form.city" placeholder="请输入您所在的城市*"></el-input>
+                <el-input
+                  v-model="form.city"
+                  placeholder="请输入您所在的城市*"
+                ></el-input>
               </el-form-item>
             </el-col>
             <el-col :span="8">
               <el-form-item prop="company">
-                <el-input v-model="form.company" placeholder="请输入您的公司名称*"></el-input>
+                <el-input
+                  v-model="form.company"
+                  placeholder="请输入您的公司名称*"
+                ></el-input>
               </el-form-item>
             </el-col>
             <el-col :span="8">
               <el-form-item prop="industry">
-                <el-input v-model="form.industry" placeholder="请选择您所在的行业*"></el-input>
+                <el-input
+                  v-model="form.industry"
+                  placeholder="请选择您所在的行业*"
+                ></el-input>
               </el-form-item>
             </el-col>
             <el-col :span="8">
               <el-form-item prop="job">
-                <el-input v-model="form.job" placeholder="请输入您的职位"></el-input>
+                <el-input
+                  v-model="form.job"
+                  placeholder="请输入您的职位"
+                ></el-input>
               </el-form-item>
             </el-col>
             <el-col :span="8">
               <el-form-item prop="product">
-                <el-input v-model="form.product" placeholder="请选择产品或解决方案"></el-input>
+                <el-input
+                  v-model="form.product"
+                  placeholder="请选择产品或解决方案"
+                ></el-input>
               </el-form-item>
             </el-col>
             <el-col :span="8">
               <el-form-item prop="budget">
-                <el-input v-model="form.budget" placeholder="请输入您的预算"></el-input>
+                <el-input
+                  v-model="form.budget"
+                  placeholder="请输入您的预算"
+                ></el-input>
               </el-form-item>
             </el-col>
             <el-col :span="24">
@@ -68,10 +106,16 @@
             <el-col :span="24">
               <div class="check-confirm">
                 <p>
-                  <el-checkbox v-model="isAccept" class="tips-checkbox"></el-checkbox>我愿意收到连星科技及其授权合作伙伴的相关电子邮件信息。我知道我可以随时取消订阅
+                  <el-checkbox
+                    v-model="isAccept"
+                    class="tips-checkbox"
+                  ></el-checkbox>我愿意收到连星科技及其授权合作伙伴的相关电子邮件信息。我知道我可以随时取消订阅
                 </p>
                 <p>
-                  <el-checkbox v-model="isAgree" class="tips-checkbox"></el-checkbox>我理解并同意按照连星科技
+                  <el-checkbox
+                    v-model="isAgree"
+                    class="tips-checkbox"
+                  ></el-checkbox>我理解并同意按照连星科技
                   <a href="javascript:;">隐私保护条款</a> 和
                   <a href="javascript::">使用条款</a> 使用和传递我的个人信息。
                 </p>
@@ -79,7 +123,10 @@
             </el-col>
           </el-row>
           <el-form-item>
-            <el-button type="danger" @click="handleSubmit('form')">提交</el-button>
+            <el-button
+              type="danger"
+              @click="handleSubmit('form')"
+            >提交</el-button>
           </el-form-item>
         </el-form>
       </div>
@@ -95,48 +142,84 @@
             </div>
 
             <strong>01</strong>
-            <span>/ 05</span>
+            <span>/ 02</span>
           </div>
-          <TitleGroup mainTitle="最新资源下载" subtitle="DOWNLOAD THE LATEST RESOURCES" />
+          <TitleGroup
+            mainTitle="最新资源下载"
+            subtitle="DOWNLOAD THE LATEST RESOURCES"
+          />
         </header>
         <section class="swiper">
-          <swiper ref="mySwiper" :options="swiperOptions">
+          <swiper
+            ref="mySwiper"
+            :options="swiperOptions"
+          >
             <swiper-slide>
               <el-row :gutter="36">
                 <el-col :span="12">
                   <div class="card">
-                    <h3>这是一个资源标题</h3>
+                    <h3>CLXOne DDI 概要</h3>
                     <p>这是一句简单的表述，这是一句简单的表述，这是一句简单的表述，这是一句 简单的表述，这是一句简单的表述</p>
                   </div>
                 </el-col>
                 <el-col :span="12">
                   <div class="card">
-                    <h3>这是一个资源标题</h3>
+                    <h3>CLXOne DNS</h3>
                     <p>这是一句简单的表述，这是一句简单的表述，这是一句简单的表述，这是一句 简单的表述，这是一句简单的表述</p>
                   </div>
                 </el-col>
                 <el-col :span="12">
                   <div class="card">
-                    <h3>这是一个资源标题</h3>
+                    <h3>CLXOne IPAM</h3>
                     <p>这是一句简单的表述，这是一句简单的表述，这是一句简单的表述，这是一句 简单的表述，这是一句简单的表述</p>
                   </div>
                 </el-col>
                 <el-col :span="12">
                   <div class="card">
-                    <h3>这是一个资源标题</h3>
+                    <h3>产品规格</h3>
                     <p>这是一句简单的表述，这是一句简单的表述，这是一句简单的表述，这是一句 简单的表述，这是一句简单的表述</p>
                   </div>
                 </el-col>
               </el-row>
             </swiper-slide>
-            <swiper-slide>Slide 2</swiper-slide>
+            <swiper-slide>
+              <el-row :gutter="36">
+                <el-col :span="12">
+                  <div class="card">
+                    <h3>监测平台页面截图</h3>
+                    <p>这是一句简单的表述，这是一句简单的表述，这是一句简单的表述，这是一句 简单的表述，这是一句简单的表述</p>
+                  </div>
+                </el-col>
+                <el-col :span="12">
+                  <div class="card">
+                    <h3>CLXOne IPv6代际升迁</h3>
+                    <p>这是一句简单的表述，这是一句简单的表述，这是一句简单的表述，这是一句 简单的表述，这是一句简单的表述</p>
+                  </div>
+                </el-col>
+                <el-col :span="12">
+                  <div class="card">
+                    <h3>CLXOne IPv6监测平台</h3>
+                    <p>这是一句简单的表述，这是一句简单的表述，这是一句简单的表述，这是一句 简单的表述，这是一句简单的表述</p>
+                  </div>
+                </el-col>
+                <!-- <el-col :span="12">
+                  <div class="card">
+                    <h3>产品规格</h3>
+                    <p>这是一句简单的表述，这是一句简单的表述，这是一句简单的表述，这是一句 简单的表述，这是一句简单的表述</p>
+                  </div>
+                </el-col> -->
+              </el-row>
+            </swiper-slide>
           </swiper>
         </section>
       </div>
     </section>
 
     <section class="tool">
-      <TitleGroup mainTitle="相关工具" subtitle="RELATED TOOLS" />
+      <TitleGroup
+        mainTitle="相关工具"
+        subtitle="RELATED TOOLS"
+      />
       <ul>
         <li>
           <a href="javascript:;">这是一个工具名称，这是一个工具名称这是一个工具名称</a>
@@ -230,14 +313,19 @@ export default {
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev"
-        }
+        },
+        on: {
+          click: function () {
+            alert('你点了Swiper');
+          },
+        },
         // Some Swiper option/callback...
       }
     };
   },
   computed: {},
-  created() {},
-  mounted() {},
+  created() { },
+  mounted() { },
   methods: {
     handleSubmit(formName) {
       this.$refs[formName].validate(valid => {
@@ -415,8 +503,8 @@ export default {
       font-size: 14px;
       color: #333;
       margin-bottom: 26px;
-      &:hover{
-          color: #EE3434;
+      &:hover {
+        color: #ee3434;
       }
       a {
         text-decoration: none;
