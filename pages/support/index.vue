@@ -1,5 +1,8 @@
 <template>
-  <div class="support">
+  <div
+    class="support"
+    id="support"
+  >
     <BigPicture :url="require('~/assets/images/bg-support.png')" />
     <section class="apply-support">
       <TitleGroup
@@ -8,7 +11,7 @@
       />
       <div class="tips">
         <img
-          src="../assets/images/apply.png"
+          src="../../assets/images/apply.png"
           alt
         />
         <p>如果您有新的支持需求，请提交请求支持；或者直接通过电话/邮件联系我们的专业技术支持人员（010-88708872； web@linkingthing.com），我们会尽快与您联系。带*的为必填项</p>
@@ -132,7 +135,7 @@
         </el-form>
       </div>
     </section>
-
+    <h1 id="download"></h1>
     <section class="newlast-resource-download">
       <div class="wrapper">
         <header>
@@ -142,7 +145,7 @@
               <div class="swiper-button-next"></div>
             </div>
 
-            <strong>01</strong>
+            <strong>{{activeIndex}}</strong>
             <span>/ 02</span>
           </div>
           <TitleGroup
@@ -158,49 +161,70 @@
             <swiper-slide>
               <el-row :gutter="36">
                 <el-col :span="12">
-                  <div class="card">
-                    <h3>CLXOne DDI 概要</h3>
-                    <p>这是一句简单的表述，这是一句简单的表述，这是一句简单的表述，这是一句 简单的表述，这是一句简单的表述</p>
+                  <div
+                    class="card"
+                    title="CLXOne DDI 概要"
+                  >
+                    <h3 title="CLXOne DDI 概要">CLXOne DDI 概要</h3>
+                    <p title="CLXOne DDI 概要">连星 CLXOne™ DDI 构建了国内第一个可扩展企业级云平台，该平台通过云管 理的服务和应用程序形式提供DDI和安全功能等</p>
                   </div>
                 </el-col>
                 <el-col :span="12">
-                  <div class="card">
-                    <h3>CLXOne DNS</h3>
-                    <p>这是一句简单的表述，这是一句简单的表述，这是一句简单的表述，这是一句 简单的表述，这是一句简单的表述</p>
+                  <div
+                    class="card"
+                    title="CLXOne DNS"
+                  >
+                    <h3 title="CLXOne DNS">CLXOne DNS</h3>
+                    <p title="CLXOne DNS">高效管理的DNS服务，驱动您的数字业务</p>
                   </div>
                 </el-col>
                 <el-col :span="12">
-                  <div class="card">
-                    <h3>CLXOne IPAM</h3>
-                    <p>这是一句简单的表述，这是一句简单的表述，这是一句简单的表述，这是一句 简单的表述，这是一句简单的表述</p>
+                  <div
+                    class="card"
+                    title="CLXOne IPAM"
+                  >
+                    <h3 title="CLXOne IPAM">CLXOne IPAM</h3>
+                    <p title="CLXOne IPAM">CLXOne™ DHCP/IPAM 可以轻松应对最具挑战性的IPAM和DHCP要求</p>
                   </div>
                 </el-col>
                 <el-col :span="12">
-                  <div class="card">
-                    <h3>产品规格</h3>
-                    <p>这是一句简单的表述，这是一句简单的表述，这是一句简单的表述，这是一句 简单的表述，这是一句简单的表述</p>
+                  <div
+                    class="card"
+                    title="产品规格"
+                  >
+                    <h3 title="产品规格">产品规格</h3>
+                    <p title="产品规格">连星 LT CLX 6100（S）、LT CLX 6100H产品规格</p>
                   </div>
                 </el-col>
               </el-row>
             </swiper-slide>
             <swiper-slide>
               <el-row :gutter="36">
+                <!-- <el-col :span="12">
+                  <div
+                    class="card"
+                    title="监测平台页面截图"
+                  >
+                    <h3 title="监测平台页面截图">监测平台页面截图</h3>
+                    <p title="监测平台页面截图">国家IPv6发展监测平台、海南IPv6发展监测平台、金融行业IPv6发展监测平台 、工业互联网网络监测平台部分页面截图</p>
+                  </div>
+                </el-col> -->
                 <el-col :span="12">
-                  <div class="card">
-                    <h3>监测平台页面截图</h3>
-                    <p>这是一句简单的表述，这是一句简单的表述，这是一句简单的表述，这是一句 简单的表述，这是一句简单的表述</p>
+                  <div
+                    class="card"
+                    title="CLXOne IPv6代际升迁解决方案"
+                  >
+                    <h3 title="CLXOne IPv6代际升迁解决方案">CLXOne IPv6代际升迁解决方案</h3>
+                    <p title="CLXOne IPv6代际升迁解决方案">CLXOne™ IPv6代际升迁是一个IPv4向IPv6演进升迁各阶段管理的平台， 实现 以IPv6地址管理为权威源和业务流程</p>
                   </div>
                 </el-col>
                 <el-col :span="12">
-                  <div class="card">
-                    <h3>CLXOne IPv6代际升迁</h3>
-                    <p>这是一句简单的表述，这是一句简单的表述，这是一句简单的表述，这是一句 简单的表述，这是一句简单的表述</p>
-                  </div>
-                </el-col>
-                <el-col :span="12">
-                  <div class="card">
-                    <h3>CLXOne IPv6监测平台</h3>
-                    <p>这是一句简单的表述，这是一句简单的表述，这是一句简单的表述，这是一句 简单的表述，这是一句简单的表述</p>
+                  <div
+                    class="card"
+                    title="CLXOne IPv6监测解决方案"
+                  >
+                    <h3 title="CLXOne IPv6监测解决方案">CLXOne IPv6监测解决方案</h3>
+                    <p title="CLXOne IPv6监测解决方案">CLXOne™ IPv6发展监测平台，全面监测和深入分析互联网网络、应用、终端、 用户、流量等IPv6发展情况</p>
                   </div>
                 </el-col>
                 <!-- <el-col :span="12">
@@ -223,12 +247,18 @@
       />
       <ul>
         <li>
-          <a href="javascript:;">这是一个工具名称，这是一个工具名称这是一个工具名称</a>
+          <a
+            href="https://6map.infoblox.com/"
+            target="_blank"
+          >IPv6地址规划工具</a>
         </li>
         <li>
-          <a href="javascript:;">这是一个工具名称，这是一个工具名称这是一个工具名称</a>
+          <a
+            href="http://dns.measurement-factory.com/tools/index.html"
+            target="_blank"
+          >DNS工具</a>
         </li>
-        <li>
+        <!-- <li>
           <a href="javascript:;">这是一个工具名称，这是一个工具名称这是一个工具名称工具名称这是一个</a>
         </li>
         <li>
@@ -257,7 +287,7 @@
         </li>
         <li>
           <a href="javascript:;">这是一个工具名称，这是一个工具名称这是一个工具名称</a>
-        </li>
+        </li> -->
       </ul>
     </section>
   </div>
@@ -294,7 +324,9 @@ export default {
   },
   props: {},
   data() {
+    const self = this;
     return {
+      activeIndex: "01",
       isAccept: false,
       isAgree: false,
       form: {},
@@ -316,16 +348,34 @@ export default {
           prevEl: ".swiper-button-prev"
         },
         on: {
-          click: function () {
-            alert('你点了Swiper');
+          click: function (data) {
+            const { title } = data.target
+            self.$router.push({ path: '/support/download', query: { title } })
           },
+          slideChangeTransitionEnd: function (data) {
+            if (this.activeIndex === 0) {
+              self.activeIndex = "01"
+            } else {
+              self.activeIndex = "02"
+            }
+          }
         },
-        // Some Swiper option/callback...
       }
     };
   },
   computed: {},
-  created() { },
+  created() {
+    console.log(this.$route.hash === "#download")
+    if (this.$route.hash === "#download") {
+      if (process.browser) {
+        let support = document.getElementById('support');
+        console.log(support.scrollHeight)
+        support.scrollTop = support.scrollHeight + "px";
+        window.onscroll = function (e) {
+        }
+      }
+    }
+  },
   mounted() { },
   methods: {
     handleSubmit(formName) {
@@ -408,7 +458,7 @@ export default {
 .newlast-resource-download {
   height: 734px;
   background: center center no-repeat
-    url("../assets/images/bg-support-dwonload.png");
+    url("../../assets/images/bg-support-dwonload.png");
   background-size: cover;
   padding: 120px 0;
 
@@ -471,9 +521,19 @@ export default {
     .card {
       height: 160px;
       padding: 30px;
-      background: #fff;
+      background: rgba(255, 255, 255, 0.6);
       border-radius: 4px;
       margin-top: 36px;
+      transition: all 0.8s;
+      cursor: pointer;
+
+      &:hover {
+        background: #fff;
+        h3,
+        p {
+          color: #ee3434;
+        }
+      }
       h3 {
         font-size: 18px;
         color: #333;
@@ -489,7 +549,6 @@ export default {
 }
 
 .tool {
-  display: none;
   width: 1200px;
   margin: 0 auto;
   padding: 120px 0 100px;

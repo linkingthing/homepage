@@ -1,11 +1,9 @@
 <template>
   <div class="side-bar">
-    <label>
-      <nuxt-link to="/support">如何购买</nuxt-link>
-    </label>
-    <div>
+    <label @click="openBuyDialog">如何购买 </label>
+    <!-- <div>
       <nuxt-link to="/news"> <img :src="search" /></nuxt-link>
-    </div>
+    </div> -->
     <div>
       <el-popover
         placement="left"
@@ -25,6 +23,7 @@
 <script>
 import phone from "~/assets/images/phone.png";
 import search from "~/assets/images/search.png";
+import { mapMutations } from 'vuex'
 
 export default {
   data() {
@@ -32,7 +31,13 @@ export default {
       phone,
       search
     }
+  },
+  methods: {
+    ...mapMutations([
+      'openBuyDialog'
+    ]),
   }
+
 }
 </script>
 

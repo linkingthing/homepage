@@ -15,7 +15,7 @@
             </div>
 
             <div class="sub-title">
-              这是一句文字描述，这是一句文字描述，这是一句文字描述，这是一句
+              一致的集中式用户界面 · 灵活的元数据标记 · 自定义报告和警报 ·灵活的 API...
             </div>
 
             <button class="button--red" @click="$router.push({path: '/clxone-ddi'})">了解详情</button>
@@ -106,7 +106,7 @@
           </div>
         </div> -->
 
-        <NewList />
+        <NewList style="margin-bottom: 40px;padding-top: 0" />
       </div>
     </div>
   </div>

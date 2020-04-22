@@ -1,7 +1,7 @@
 <template>
   <div class="clxone-ddi">
     <div class="banner">
-      <div class="banner-text"> 
+      <div class="banner-text">
         <div class="banner-text-main">连星可扩展</div>
         <div class="banner-text-main">企业级云平台(CLXOne™DDI)</div>
         <div class="banner-text-sub">通过云管理的服务和应用程序形式提供DDI和安全功能等基础服务</div>
@@ -11,7 +11,10 @@
     <div class="ddi-management ddi-section">
       <div class="ddi-management-row-1">
         <div>
-          <TitleGroup main-title="创新的 CLXOne™ DDI 云管理" subtitle="CLOUD MANAGEMENT" />
+          <TitleGroup
+            main-title="创新的 CLXOne™ DDI 云管理"
+            subtitle="CLOUD MANAGEMENT"
+          />
 
           <p class="row-1-text">连星推动核心网络服务 DDI （DNS、DHCP 和 IP地址管理服务）从简单的数据库到分布式、高可用性解决方案的演进，再到当今创新的 CLXOne™ 云管理架构</p>
           <p class="row-1-text">CLXOne™ DDI 满足组织当前和未来的所有 DDI 需求。如集中控制 DDI 的同时，实现与云和虚拟化平台无缝集成；通过云管理和本地化部署来从根本上改善远程和分支机构的网络连接等</p>
@@ -35,7 +38,7 @@
             <p>在现有的威胁和安全基础架构指标之间共享威胁和情报的威胁指标，自动修复问题;</p>
             <p>通过利用 DDI 数据的实时预测分析来预防问题发生和识别可能的恶意的网络行为。</p>
           </div>
-          
+
           <div class="row-2-item">
             <div class="item-top">
               <img :src="managementSrc3" />
@@ -47,7 +50,7 @@
             <p>随时随地交付应用程序和服务；</p>
             <p>通过整个生态系统的可见性和实时情报采取行动。</p>
           </div>
-          
+
           <div class="row-2-item">
             <div class="item-top">
               <img :src="managementSrc4" />
@@ -62,19 +65,29 @@
           </div>
         </div>
 
-        <button class="button--red">阅读概览<i class="el-icon-right" /></button>
+        <button
+          class="button--red"
+          @click="$router.push({path: '/support/download', query: {title: 'CLXOne DDI 概要'}})"
+        >阅读概览<i class="el-icon-right" /></button>
       </div>
-      
+
       <div class="ddi-management-row-3">
         <div class="row-3-main">优秀产品助您发掘 CLXOne™ DDI 的全部价值</div>
         <div class="row-3-sub">CLXOne™ DDI 可通过硬件设备，VM 或容器进行水平扩展</div>
         <img :src="managementSrc5" />
-        <button class="button--red">深入了解产品</button>
+        <button
+          class="button--red"
+          @click="$router.push({path: '/support/download', query: {title: '产品规格'}})"
+        >深入了解产品</button>
       </div>
     </div>
 
     <div class="ddi-feature">
-      <TitleGroup class="ddi-feature-title" main-title="DDI的关键特性" subtitle="DDI FEATURES" />
+      <TitleGroup
+        class="ddi-feature-title"
+        main-title="DDI的关键特性"
+        subtitle="DDI FEATURES"
+      />
 
       <div class="ddi-feature-content">
         <div class="ddi-section">
@@ -144,25 +157,28 @@
     </div>
 
     <div class="ddi-solution ddi-section">
-      <TitleGroup main-title="相关解决方案" subtitle="THE SOLUTIONS" />
+      <TitleGroup
+        main-title="相关解决方案"
+        subtitle="THE SOLUTIONS"
+      />
 
       <div class="solution-list">
-        <div class="solution-item">
+        <div class="solution-item"  @click="$router.push({path: '/support/download', query: {title: 'CLXOne DNS'}})">
           <img :src="`${require('~/assets/images/solution01.png')}`" />
 
           <div class="solution-item-title">集中管理和自动化DNS</div>
         </div>
 
-        <div class="solution-item">
+        <div class="solution-item"  @click="$router.push({path: '/support/download', query: {title: 'CLXOne IPAM'}})">
           <img :src="`${require('~/assets/images/solution02.png')}`" />
 
           <div class="solution-item-title">以统一的方式管理不同网络环境下的IP地址</div>
         </div>
 
-        <div class="solution-item">
+        <div class="solution-item"  @click="$router.push({path: '/support#download'})">
           <img :src="`${require('~/assets/images/solution03.png')}`" />
 
-          <div class="solution-item-title">IPv6 地址规划 工具</div>
+          <div class="solution-item-title">IPv6 地址规划工具</div>
         </div>
       </div>
     </div>
@@ -179,11 +195,11 @@ import managementSrc5 from "./../../assets/images/ddi-manage-5.png";
 import solutionSrc from "./../../assets/images/home-page-news.png";
 
 export default {
-  components:{
+  components: {
     TitleGroup
   },
 
-  data(){
+  data() {
     return {
       managementSrc1,
       managementSrc2,

@@ -39,7 +39,7 @@
         <p>连星 CLXOne™ IPv6+ 通过将DDI数据与网络基础设施数据、互联网基础服务全景数据集成在一起，提供可操作的网络智能管理</p>
         <p>实现以下方面的自动化IPv6目标：创建IPv6寻址规划、审核网络设备、IPv6基础网络架构管理、IPv6代际升迁管理以及通过IPv6提供应用等；同时通过可见的过程化管理帮助分析网络的内部和法规政策合规性</p>
 
-        <button class="button--red">阅读概览</button>
+        <button class="button--red" @click="$router.push({path: '/support/download', query: {title: 'CLXOne IPv6代际升迁解决方案'}})">阅读概览</button>
 
         <div class="section-2-infos">
           <div class="info-item" v-for="(item,idx) in section2Items" :key="idx">

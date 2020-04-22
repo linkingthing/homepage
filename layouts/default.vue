@@ -7,6 +7,7 @@
     </div>
 
     <SideBar />
+    <BuyProduct />
   </div>
 </template>
 
@@ -14,12 +15,16 @@
 import Header from "~/components/Header";
 import Footer from "~/components/Footer";
 import SideBar from "~/components/SideBar";
+import BuyProduct from "~/components/BuyProduct";
+
+
 
 export default {
   components: {
     Header,
     Footer,
-    SideBar
+    SideBar,
+    BuyProduct
   }
 }
 </script>

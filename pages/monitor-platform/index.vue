@@ -1,77 +1,100 @@
 <template>
   <div class="monitor-platform">
-      <section class="banner">
-        <div class="platform-section">
-          <div class="banner-main-text">
-            懂你的网络，更懂你的压力
-          </div>
-          <div class="banner-sub-text">
-            全面监测和深入分析，掌控IPv6发展状况
-          </div>
+    <section class="banner">
+      <div class="platform-section">
+        <div class="banner-main-text">
+          懂你的网络，更懂你的压力
         </div>
-      </section>
-
-      <TitleGroup class="platform-section" main-title="CLXOne™ IPv6监测让您能够更智能地开展工作" subtitle="TO BEGIN THE WORK" />
-
-      <section class="section-1 platform-section">
-        <img :src="src1" />
-
-        <div class="section-1-content">
-          <p>
-            IPv6规模部署工作时间紧、任务重、跨度长、技术性强。组织在整个IPv6代际升迁的过程中，需要承担诸多职责、满足各种需求。您必须始终掌控持续动态的网络状况，以及安全、简单而灵活地应对方案。所有的这一切，是基于对您当前IPv6发展状况的了解。CLXOne™ IPv6发展监测平台让您更智能更安全的开展工作。
-          </p>
-
-          <div>对互联网网络、应用、终端、用户、流量等IPv6发展情况全面监测和分析</div>
-          <div>对IPv6支持度和部署率进行全面、多维度的监测及评估，定期发布监测报告</div>
-          <div>为IPv6规模部署工作推动提供技术支持和决策参考</div>
-
-          <button class="button--red">阅读概览</button>
+        <div class="banner-sub-text">
+          全面监测和深入分析，掌控IPv6发展状况
         </div>
-      </section>
+      </div>
+    </section>
 
-      <TitleGroup class="platform-section" main-title="通过 CLXOne™ IPv6 监测展示创新成果" subtitle="INNOVATION RESULTS" />
+    <TitleGroup
+      class="platform-section"
+      main-title="CLXOne™ IPv6监测让您能够更智能地开展工作"
+      subtitle="TO BEGIN THE WORK"
+    />
 
-      <section class="section-2 platform-section">
-        <div class="section-2-content" @mouseenter="stopPlay" @mouseleave="play">
-          <template v-for="(item,idx) in row2Content">
-            <div class="content-item" :key="idx" :class="{'is-show': idx === row2Index}">
-              <img :src="item.img">
-              <div class="content-item-detail">
-                <p class="detail-title">{{item.title}}</p>
-                <p class="detail-content">{{item.content}}</p>
-              </div>
+    <section class="section-1 platform-section">
+      <img :src="src1" />
+
+      <div class="section-1-content">
+        <p>
+          IPv6规模部署工作时间紧、任务重、跨度长、技术性强。组织在整个IPv6代际升迁的过程中，需要承担诸多职责、满足各种需求。您必须始终掌控持续动态的网络状况，以及安全、简单而灵活地应对方案。所有的这一切，是基于对您当前IPv6发展状况的了解。CLXOne™ IPv6发展监测平台让您更智能更安全的开展工作。
+        </p>
+
+        <div>对互联网网络、应用、终端、用户、流量等IPv6发展情况全面监测和分析</div>
+        <div>对IPv6支持度和部署率进行全面、多维度的监测及评估，定期发布监测报告</div>
+        <div>为IPv6规模部署工作推动提供技术支持和决策参考</div>
+
+        <button
+          class="button--red"
+          @click="$router.push({path: '/support/download', query: {title: 'CLXOne IPv6监测解决方案'}})"
+        >阅读概览</button>
+      </div>
+    </section>
+
+    <TitleGroup
+      class="platform-section"
+      main-title="通过 CLXOne™ IPv6 监测展示创新成果"
+      subtitle="INNOVATION RESULTS"
+    />
+
+    <section class="section-2 platform-section">
+      <div
+        class="section-2-content"
+        @mouseenter="stopPlay"
+        @mouseleave="play"
+      >
+        <template v-for="(item,idx) in row2Content">
+          <div
+            class="content-item"
+            :key="idx"
+            :class="{'is-show': idx === row2Index}"
+          >
+            <img :src="item.img">
+            <div class="content-item-detail">
+              <p class="detail-title">{{item.title}}</p>
+              <p class="detail-content">{{item.content}}</p>
             </div>
-          </template>
+          </div>
+        </template>
 
-          <div class="section-2-footer">
-            <div class="footer-pager">
-              <label>0{{row2Index + 1}}</label>
-              /0{{row2ContentLength}}
-            </div>
+        <div class="section-2-footer">
+          <div class="footer-pager">
+            <label>0{{row2Index + 1}}</label>
+            /0{{row2ContentLength}}
+          </div>
 
-            <div class="footer-arrow">
-              <i 
-                class="el-icon-arrow-left footer-arrow-item" 
-                @click="handleRow2ContentChange('prev')"
-              />
-              <i 
-                class="el-icon-arrow-right footer-arrow-item" 
-                @click="handleRow2ContentChange('next')"
-              />
-            </div>
+          <div class="footer-arrow">
+            <i
+              class="el-icon-arrow-left footer-arrow-item"
+              @click="handleRow2ContentChange('prev')"
+            />
+            <i
+              class="el-icon-arrow-right footer-arrow-item"
+              @click="handleRow2ContentChange('next')"
+            />
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section-3">
-        <div class="section-3-content platform-section">
-          <TitleGroup class="section-3-title" main-title="利用连星CLXOne™ IPv6 监测平台 加速您的创新" subtitle="ACCELORATE INNOVATION" />
+    <section class="section-3">
+      <div class="section-3-content platform-section">
+        <TitleGroup
+          class="section-3-title"
+          main-title="利用连星CLXOne™ IPv6 监测平台 加速您的创新"
+          subtitle="ACCELORATE INNOVATION"
+        />
 
-          <div class="section-3-text">利用我们的专家指导、久经验证的经验、最佳实践和创新工具，您可以充满信心地迁移到下一代新技术网络</div>
-    
-          <button class="button--red">平台定制服务，请联系我们的业务专家</button>
-        </div>
-      </section>
+        <div class="section-3-text">利用我们的专家指导、久经验证的经验、最佳实践和创新工具，您可以充满信心地迁移到下一代新技术网络</div>
+
+        <button class="button--red" @click="openBuyDialog">平台定制服务，请联系我们的业务专家</button>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -81,80 +104,86 @@ import src1 from "~/assets/images/monitor-img-1.png";
 import src2 from "~/assets/images/monitor-img-2.png";
 import src3 from "~/assets/images/monitor-img-3.png";
 import src4 from "~/assets/images/monitor-img-4.png";
-
+import { mapMutations } from 'vuex';
 export default {
-  components:{
+  components: {
     TitleGroup
   },
 
-  data(){
+  data() {
     return {
       src1,
       src2,
       src3,
       src4,
-      row2Content:[
+      row2Content: [
         {
-          img:src2,
-          title:"国家IPV6发展检测平台",
-          content:"这是一段文字内容这是一段文字内容这是一段文字内容这是，一段文字内容这是一段文字内容这是一段文字内容这是一段文字内容这，段文字内容这，是一段文字内容"
+          img: src2,
+          title: "国家IPV6发展检测平台",
+          content: `国家IPv6发展监测平台通过主动监测采集
+我国IPv6基础资源、网络基础设施、应用基础设施、互联网应用、IPv6用户等信息，
+客观、准确、全面的反映当前我国IPv6发展现状，为推进IPv6规模部署提供必要的依据，
+并最终形成中国IPv6发展监测体系`
         },
         {
-          img:src3,
-          title:"国家IPV8发展检测平台",
-          content:"这是一段文字内容这是一段文字内容这，段文字内容这是一段文字内容这是一段文字内容这，是一段文字内容"
+          img: src3,
+          title: "海南IPV6发展检测平台",
+          content: `海南IPv6发展监测平台通过主动监测采集海南省内Pv6基础资源、网络基础设施、应用基础设施、互联网应用、IPv6用户等信息，客观、准确、全面的反映当前海南IPv6发展现状，为推进IPv6规模部署提供必要的依据，并最终形成海南IPv6发展监测体系`
         },
         {
-          img:src4,
-          title:"国家IPV10发展检测平台",
-          content:"这是一段文字内容这是一段文字内容这是一段文字内容这是，一段文字内容这是一段。段文字内容段文字内容段文字内容段文字内容段文字内容"
+          img: src4,
+          title: "金融行业IPV6发展检测平台",
+          content: `人民银行运用“互联网+”思维，建设金融行业IPv6发展监测平台。实现金融行业2000多个监测点的动态监测，分地区、分类型的展示功能助力人民银行各级机构开展核查，可满足“定期开展企业、行业、区域应用情况评测”的需要，鼓励金融服务机构开展对照自查，在实现基本改造目标的前提下精益求精，提高门户网站和子域名网站及应用系统规模部署改造效果。`
         }
       ],
       row2ContentLength: 3,
       row2Index: 0,
-      autoPlay:true
+      autoPlay: true
     }
   },
 
-  beforeDestroy(){
+  beforeDestroy() {
     this.stopPlay();
   },
 
-  mounted(){
-    if(this.autoPlay){
+  mounted() {
+    if (this.autoPlay) {
       this.play();
     }
   },
 
-  methods:{
-    stopPlay(){
+  methods: {
+    ...mapMutations([
+      'openBuyDialog'
+    ]),
+    stopPlay() {
       clearInterval(this.timer);
 
       this.timer = null;
     },
 
-    play(){
-      if(this.timer) return;
+    play() {
+      if (this.timer) return;
 
       this.timer = setInterval(() => {
         this.handleRow2ContentChange()
       }, 5000)
     },
 
-    handleRow2ContentChange(type){
-      if(type === "prev"){
-        if(this.row2Index === 0){
+    handleRow2ContentChange(type) {
+      if (type === "prev") {
+        if (this.row2Index === 0) {
           this.row2Index = this.row2ContentLength - 1;
         }
-        else{
+        else {
           this.row2Index--;
         }
       }
-      else{
-        if(this.row2Index === this.row2ContentLength - 1){
+      else {
+        if (this.row2Index === this.row2ContentLength - 1) {
           this.row2Index = 0;
         }
-        else{
+        else {
           this.row2Index++
         }
       }

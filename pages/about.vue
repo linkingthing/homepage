@@ -114,7 +114,7 @@
                 <span>/ WeChat</span>
               </h3>
               <div>
-                <p>linking thing666</p>
+                <p>连星科技（gh_92694d86a5f1）</p>
               </div>
             </li>
           </ul>
