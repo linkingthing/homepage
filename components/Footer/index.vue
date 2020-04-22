@@ -73,7 +73,7 @@
 </template>
 
 <script>
-import qrcode from "~/assets/images/qrcode.png";
+import qrcode from "~/assets/images/qrcode.jpg";
 import search from "~/assets/images/search.png";
 import question from "~/assets/images/question.png";
 

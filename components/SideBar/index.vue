@@ -1,8 +1,10 @@
 <template>
   <div class="side-bar">
-    <label>如何购买</label>
+    <label>
+      <nuxt-link to="/support">如何购买</nuxt-link>
+    </label>
     <div>
-      <img :src="search" />
+      <nuxt-link to="/news"> <img :src="search" /></nuxt-link>
     </div>
     <div>
       <el-popover
@@ -11,7 +13,10 @@
         popper-class="tel"
         content="400-666-789"
       >
-        <img :src="phone" slot="reference"/>
+        <img
+          :src="phone"
+          slot="reference"
+        />
       </el-popover>
     </div>
   </div>

@@ -2,133 +2,12 @@
   <div class="news">
     <BigPicture :url="require('~/assets/images/new-pic.png')" />
     <div class="content">
-      <TitleGroup mainTitle="新闻中心" subtitle="NEWS" />
+      <TitleGroup
+        mainTitle="新闻中心"
+        subtitle="NEWS"
+      />
 
-      <section class="news-list">
-        <ul>
-          <li>
-            <router-link to="/news/info">
-              <div class="news-item">
-                <div
-                  class="news-pic"
-                  :style="`background-image: url(${require('~/assets/images/new-pic.png')})`"
-                ></div>
-                <div class="news-txt">
-                  <h3>这是一个新闻标题最多20字</h3>
-                  <p>这是新闻内容，提取新闻内容前50个字，最多显示两行超出省略，超出省略对减肥很深刻的</p>
-                </div>
-                <div class="news-foot">
-                  <time>
-                    <em>08-26</em>
-                    <span>/ 2019</span>
-                  </time>
-                </div>
-              </div>
-            </router-link>
-          </li>
-          <li>
-            <router-link to="/about">
-              <div class="news-item">
-                <div
-                  class="news-pic"
-                  :style="`background-image: url(${require('~/assets/images/new-pic.png')})`"
-                ></div>
-                <div class="news-txt">
-                  <h3>这是一个新闻标题最多20字</h3>
-                  <p>这是新闻内容，提取新闻内容前50个字，最多显示两行超出省略，超出省略对减肥很深刻的</p>
-                </div>
-                <div class="news-foot">
-                  <time>
-                    <em>08-26</em>
-                    <span>/ 2019</span>
-                  </time>
-                </div>
-              </div>
-            </router-link>
-          </li>
-          <li>
-            <router-link to="/about">
-              <div class="news-item">
-                <div
-                  class="news-pic"
-                  :style="`background-image: url(${require('~/assets/images/new-pic.png')})`"
-                ></div>
-                <div class="news-txt">
-                  <h3>这是一个新闻标题最多20字</h3>
-                  <p>这是新闻内容，提取新闻内容前50个字，最多显示两行超出省略，超出省略对减肥很深刻的</p>
-                </div>
-                <div class="news-foot">
-                  <time>
-                    <em>08-26</em>
-                    <span>/ 2019</span>
-                  </time>
-                </div>
-              </div>
-            </router-link>
-          </li>
-          <li>
-            <router-link to="/about">
-              <div class="news-item">
-                <div
-                  class="news-pic"
-                  :style="`background-image: url(${require('~/assets/images/new-pic.png')})`"
-                ></div>
-                <div class="news-txt">
-                  <h3>这是一个新闻标题最多20字</h3>
-                  <p>这是新闻内容，提取新闻内容前50个字，最多显示两行超出省略，超出省略对减肥很深刻的</p>
-                </div>
-                <div class="news-foot">
-                  <time>
-                    <em>08-26</em>
-                    <span>/ 2019</span>
-                  </time>
-                </div>
-              </div>
-            </router-link>
-          </li>
-          <li>
-            <router-link to="/about">
-              <div class="news-item">
-                <div
-                  class="news-pic"
-                  :style="`background-image: url(${require('~/assets/images/new-pic.png')})`"
-                ></div>
-                <div class="news-txt">
-                  <h3>这是一个新闻标题最多20字</h3>
-                  <p>这是新闻内容，提取新闻内容前50个字，最多显示两行超出省略，超出省略对减肥很深刻的</p>
-                </div>
-                <div class="news-foot">
-                  <time>
-                    <em>08-26</em>
-                    <span>/ 2019</span>
-                  </time>
-                </div>
-              </div>
-            </router-link>
-          </li>
-          <li>
-            <router-link to="/about">
-              <div class="news-item">
-                <div
-                  class="news-pic"
-                  :style="`background-image: url(${require('~/assets/images/new-pic.png')})`"
-                ></div>
-                <div class="news-txt">
-                  <h3>这是一个新闻标题最多20字</h3>
-                  <p>这是新闻内容，提取新闻内容前50个字，最多显示两行超出省略，超出省略对减肥很深刻的</p>
-                </div>
-                <div class="news-foot">
-                  <time>
-                    <em>08-26</em>
-                    <span>/ 2019</span>
-                  </time>
-                </div>
-              </div>
-            </router-link>
-          </li>
-        </ul>
-        <!-- <el-pagination class="page" background layout="prev, pager, next" :total="1000"></el-pagination> -->
-      </section>
+      <NewList />
     </div>
   </div>
 </template>
@@ -136,19 +15,21 @@
 <script>
 import BigPicture from "~/components/BigPicture";
 import TitleGroup from "~/components/TitleGroup";
+import NewList from "~/components/NewList"
 
 export default {
   components: {
     BigPicture,
-    TitleGroup
+    TitleGroup,
+    NewList
   },
   props: {},
   data() {
     return {};
   },
   computed: {},
-  created() {},
-  mounted() {},
+  created() { },
+  mounted() { },
   methods: {},
   watch: {}
 };

@@ -1,8 +1,18 @@
 <template>
   <div class="info wrapper">
-    <div class="content">
-      <h1>工业和信息化部关于开展 2020 年 IPv6 端到端贯通能力提升专项行动的通知</h1>
+    <div class="bread">
+      <el-breadcrumb separator-class="el-icon-arrow-right">
+        <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
+        <el-breadcrumb-item :to="{ path: '/news' }">新闻列表</el-breadcrumb-item>
+        <el-breadcrumb-item>新闻详情</el-breadcrumb-item>
+      </el-breadcrumb>
+    </div>
 
+    <div class="content">
+      <header>
+        <h1>工业和信息化部关于开展 2020 年 IPv6 端到端贯通能力提升专项行动的通知</h1>
+        <p>新闻出处： <a href="http://www.miit.gov.cn/n1146290/n1146402/c7831127/content.html">工信部</a> </p>
+      </header>
       <div>
         <strong>各相关企业：</strong>
         <p>为贯彻落实《推进互联网协议第六版(IPv6)规模部署行动计划》（厅字〔2017〕47 号）
@@ -131,7 +141,9 @@ export default {
   width: 1200px;
   margin: 0 auto;
 }
-
+.bread {
+  padding: 20px 0;
+}
 .content {
   padding: 80px 50px;
   box-shadow: 0 0 10px #eee;
@@ -139,6 +151,13 @@ export default {
   color: #666;
   font-size: 16px;
   line-height: 1.4;
+
+  header {
+    margin-bottom: 40px;
+    p {
+      text-align: right;
+    }
+  }
 
   h1 {
     font-size: 24px;

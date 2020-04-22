@@ -8,11 +8,17 @@
     </BigPicture>
 
     <div class="wrapper">
-      <TitleGroup mainTitle="连星合作伙伴计划" subtitle="PARTNERS PROGRAM" />
+      <TitleGroup
+        mainTitle="连星合作伙伴计划"
+        subtitle="PARTNERS PROGRAM"
+      />
       <p>连星合作伙伴计划可以给您提供相应的解决方案、培训、工具和支持，让您和您的客户在竞争中脱颖而出</p>
       <ul class="auth-list">
         <li>
-          <img src="../../assets/images/channel.png" alt />
+          <img
+            src="../../assets/images/channel.png"
+            alt
+          />
           <div class="auth-item">
             <h3>渠道合作伙伴认证</h3>
             <a href="/cooperate/auth">我要去认证</a>
@@ -20,7 +26,10 @@
         </li>
 
         <li>
-          <img src="../../assets/images/profession.png" alt />
+          <img
+            src="../../assets/images/profession.png"
+            alt
+          />
           <div class="auth-item">
             <h3>专业化认证</h3>
             <a href="/cooperate/cooper">我要去认证</a>
@@ -45,8 +54,8 @@ export default {
     return {};
   },
   computed: {},
-  created() {},
-  mounted() {},
+  created() { },
+  mounted() { },
   methods: {},
   watch: {}
 };
@@ -118,6 +127,7 @@ export default {
           );
           text-align: center;
           text-decoration: none;
+          overflow: hidden;
           &:before {
             content: "";
             position: absolute;

@@ -47,7 +47,7 @@
             main-title="连星最新动态"
             subtitle="LATEST NEWS"
           />
-          <button class="dynamic-header-button">查看全部<i class="el-icon-right" /></button>
+          <nuxt-link class="dynamic-header-button" to="/news">查看全部<i class="el-icon-right" /></nuxt-link>
         </div>
 
         <div class="dynamic-content">
@@ -85,7 +85,7 @@
           </div>
         </div>
 
-        <div class="dynamic-news">
+        <!-- <div class="dynamic-news">
           <div
             class="dynamic-news-item"
             v-for="(item, idx) in newsList"
@@ -104,7 +104,9 @@
               <img :src="arrowRightSrc" />
             </div>
           </div>
-        </div>
+        </div> -->
+
+        <NewList />
       </div>
     </div>
   </div>
@@ -119,9 +121,12 @@ import dynamicImg2 from "~/assets/images/home-page-dynamic-2.png";
 import dynamicImg3 from "~/assets/images/home-page-dynamic-3.png";
 import newSrc from "~/assets/images/home-page-news.png";
 
+import NewList from "~/components/NewList"
+
 export default {
   components: {
-    TitleGroup
+    TitleGroup,
+    NewList
   },
 
   data() {

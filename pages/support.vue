@@ -384,7 +384,6 @@ export default {
     }
     img {
       float: right;
-      border: 1px dashed #ddd;
     }
   }
   .check-confirm {
