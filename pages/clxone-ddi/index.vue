@@ -148,19 +148,19 @@
 
       <div class="solution-list">
         <div class="solution-item">
-          <img :src="solutionSrc" />
+          <img :src="`${require('~/assets/images/solution01.png')}`" />
 
           <div class="solution-item-title">集中管理和自动化DNS</div>
         </div>
 
         <div class="solution-item">
-          <img :src="solutionSrc" />
+          <img :src="`${require('~/assets/images/solution02.png')}`" />
 
           <div class="solution-item-title">以统一的方式管理不同网络环境下的IP地址</div>
         </div>
 
         <div class="solution-item">
-          <img :src="solutionSrc" />
+          <img :src="`${require('~/assets/images/solution03.png')}`" />
 
           <div class="solution-item-title">IPv6 地址规划 工具</div>
         </div>

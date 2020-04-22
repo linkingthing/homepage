@@ -6,7 +6,7 @@
           <div class="news-item">
             <div
               class="news-pic"
-              :style="`background-image: url(${require('~/assets/images/home-page-dynamic-1.png')})`"
+              :style="`background-image: url(${require('~/assets/images/news01.png')})`"
             ></div>
             <div class="news-txt">
               <h3>工业和信息化部关于开展 2020 年 IPv6 端到端贯通能力提升专项行动的通知</h3>
@@ -29,7 +29,7 @@
           <div class="news-item">
             <div
               class="news-pic"
-              :style="`background-image: url(${require('~/assets/images/home-page-dynamic-2.png')})`"
+              :style="`background-image: url(${require('~/assets/images/news02.png')})`"
             ></div>
             <div class="news-txt">
               <h3>IPv6能为物联网带来什么？</h3>
@@ -51,7 +51,7 @@
           <div class="news-item">
             <div
               class="news-pic"
-              :style="`background-image: url(${require('~/assets/images/home-page-dynamic-3.png')})`"
+              :style="`background-image: url(${require('~/assets/images/news03.png')})`"
             ></div>
             <div class="news-txt">
               <h3>工信部将优化提升IPv6网络接入能力</h3>
