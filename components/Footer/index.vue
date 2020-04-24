@@ -45,18 +45,52 @@
         <div class="item-content">
           <div class="website-nav">
             <label>
-              <nuxt-link to="/home" class="link">首页</nuxt-link>
+              <nuxt-link
+                to="/home"
+                class="link"
+              >首页</nuxt-link>
             </label>
-            <label><nuxt-link to="/clxone-ddi" class="link">产品介绍</nuxt-link></label>
-            <label><nuxt-link to="/cooperate" class="link">合作代理</nuxt-link></label>
-            <label><nuxt-link to="/news" class="link">新闻中心</nuxt-link></label>
-            <label><nuxt-link to="/support" class="link">支持中心</nuxt-link></label>
-            <label><nuxt-link to="/about" class="link">关于我们</nuxt-link></label>
+            <label>
+              <nuxt-link
+                to="/clxone-ddi"
+                class="link"
+              >产品介绍</nuxt-link>
+            </label>
+            <label>
+              <nuxt-link
+                to="/cooperate"
+                class="link"
+              >合作代理</nuxt-link>
+            </label>
+            <label>
+              <nuxt-link
+                to="/news"
+                class="link"
+              >新闻中心</nuxt-link>
+            </label>
+            <label>
+              <nuxt-link
+                to="/support"
+                class="link"
+              >支持中心</nuxt-link>
+            </label>
+            <label>
+              <nuxt-link
+                to="/about"
+                class="link"
+              >关于我们</nuxt-link>
+            </label>
           </div>
 
           <div class="website-nav-fun">
-            <img :src="search" />
-            <img :src="question" />
+            <img
+              :src="search"
+              @click="$router.push({path: '/news'})"
+            />
+            <img
+              :src="question"
+              @click="openBuyDialog"
+            />
           </div>
         </div>
       </section>
@@ -76,6 +110,7 @@
 import qrcode from "~/assets/images/qrcode.jpg";
 import search from "~/assets/images/search.png";
 import question from "~/assets/images/question.png";
+import { mapMutations } from 'vuex'
 
 export default {
   data() {
@@ -85,8 +120,13 @@ export default {
       question
     }
   },
+  methods: {
+    ...mapMutations([
+      'openBuyDialog'
+    ]),
+  },
   watch: {
-    "$route" () {
+    "$route"() {
       this.$router.go(0);
     }
   }

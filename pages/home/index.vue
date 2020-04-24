@@ -5,6 +5,7 @@
       height="558px"
       :interval="5000"
       indicator-position="none"
+      arrow="never"
     >
       <el-carousel-item>
         <div class="banner-item-1 banner-item">
