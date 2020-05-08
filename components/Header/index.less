@@ -1,4 +1,4 @@
-@HeaderHight: 80px;
+@HeaderHight: 70px;
 
 .header{
 
@@ -11,14 +11,12 @@
       height: @HeaderHight;
     }
     &-logo{
-        width: 158px;
-        height: 56px;
-        margin: 12px 0;
-        display: inline-block;
-        vertical-align: middle;
-        img {
-          height: 100%;
-        }
+      display: inline-flex;
+      align-items: center;  
+      height: 100%;
+      img {
+        width: 100%;
+      }
     }
 
     .header-menu{
@@ -31,8 +29,8 @@
 
         &>.el-submenu{
             .el-submenu__title{
-                height: 80px;
-                line-height: 80px;
+                height: 70px;
+                line-height: 70px;
             }
 
             .el-submenu__icon-arrow{
@@ -41,7 +39,7 @@
 
             &.is-active{
                 .el-submenu__title{
-                    border-bottom: 4px solid #EE3434;
+                  border-bottom: none;
                 }
 
                 .el-submenu__icon-arrow{
@@ -65,7 +63,7 @@
             }
             
             &.is-active{
-                border-bottom: 4px solid #EE3434;
+              border-bottom: none;
 
                 a{
                     color: #EE3434;

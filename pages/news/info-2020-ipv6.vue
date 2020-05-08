@@ -11,7 +11,7 @@
     <div class="content">
       <header>
         <h1>工业和信息化部关于开展 2020 年 IPv6 端到端贯通能力提升专项行动的通知</h1>
-        <p>新闻出处： <a href="http://www.miit.gov.cn/n1146290/n1146402/c7831127/content.html">工信部</a> </p>
+        <p><time>发布时间： 2020-03-19</time>新闻出处： <a href="http://www.miit.gov.cn/n1146290/n1146402/c7831127/content.html">工信部</a> </p>
       </header>
       <div>
         <strong>各相关企业：</strong>
@@ -106,15 +106,7 @@
           </li>
         </ul>
 
-        <footer>
-          <p> 附件：IPv6 改造相关指标和测试方法说明</p>
-          <dl>
-            <dd>工业和信息化部</dd>
-            <dd>2020 年 3 月 19 日</dd>
-          </dl>
-
-        </footer>
-
+        
       </div>
     </div>
   </div>
@@ -154,8 +146,11 @@ export default {
 
   header {
     margin-bottom: 40px;
-    p {
-      text-align: right;
+     p {
+      text-align: center;
+    }
+    time {
+      padding-right: 30px;
     }
   }
 

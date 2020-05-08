@@ -27,9 +27,41 @@
             class="form-body my-form"
           >
             <div class="group">
-              <h3>公司基本情况</h3>
+              <h3>基本信息</h3>
               <el-row :gutter="36">
 
+                <el-col :span="12">
+                  <el-form-item prop="company">
+                    <el-input
+                      v-model="form.company"
+                      placeholder="姓名*"
+                    ></el-input>
+                  </el-form-item>
+                </el-col>
+                <el-col :span="12">
+                  <el-form-item prop="phone">
+                    <el-input
+                      v-model="form.phone"
+                      placeholder="手机号码*"
+                    ></el-input>
+                  </el-form-item>
+                </el-col>
+                <el-col :span="12">
+                  <el-form-item prop="IDNumber">
+                    <el-input
+                      v-model="form.IDNumber"
+                      placeholder="身份证号码*"
+                    ></el-input>
+                  </el-form-item>
+                </el-col>
+                <el-col :span="12">
+                  <el-form-item prop="email">
+                    <el-input
+                      v-model="form.email"
+                      placeholder="邮箱*"
+                    ></el-input>
+                  </el-form-item>
+                </el-col>
                 <el-col :span="12">
                   <el-form-item prop="company">
                     <el-input
@@ -42,171 +74,21 @@
                   <el-form-item prop="address">
                     <el-input
                       v-model="form.address"
-                      placeholder="公司注册地址*"
+                      placeholder="个人住址*"
                     ></el-input>
                   </el-form-item>
                 </el-col>
                 <el-col :span="12">
-                  <el-form-item prop="registeredCapital">
+                  <el-form-item prop="recommendPeople">
                     <el-input
-                      v-model="form.registeredCapital"
-                      placeholder="注册资金*"
-                    ></el-input>
-                  </el-form-item>
-                </el-col>
-                <el-col :span="12">
-                  <el-form-item prop="establishTime">
-                    <el-input
-                      v-model="form.establishTime"
-                      placeholder="成立时间*"
-                    ></el-input>
-                  </el-form-item>
-                </el-col>
-                <el-col :span="12">
-                  <el-form-item prop="unifiedSocialCreditCode">
-                    <el-input
-                      v-model="form.unifiedSocialCreditCode"
-                      placeholder="统一社会信用代码*"
-                    ></el-input>
-                  </el-form-item>
-                </el-col>
-                <el-col :span="12">
-                  <el-form-item prop="officeAddress">
-                    <el-input
-                      v-model="form.officeAddress"
-                      placeholder="办公地址*"
-                    ></el-input>
-                  </el-form-item>
-                </el-col>
-              </el-row>
-            </div>
-            <div class="group">
-              <h3>公司基本联络信息</h3>
-              <el-row :gutter="36">
-
-                <el-col :span="12">
-                  <el-form-item prop="legalRepresentative">
-                    <el-input
-                      v-model="form.legalRepresentative"
-                      placeholder="公司法人代表姓名*"
-                    ></el-input>
-                  </el-form-item>
-                </el-col>
-                <el-col :span="12">
-                  <el-form-item prop="contacts">
-                    <el-input
-                      v-model="form.contacts"
-                      placeholder="日常联系人姓名*"
-                    ></el-input>
-                  </el-form-item>
-                </el-col>
-                <el-col :span="12">
-                  <el-form-item prop="phone">
-                    <el-input
-                      v-model="form.phone"
-                      placeholder="公司法人代表手机号*"
-                    ></el-input>
-                  </el-form-item>
-                </el-col>
-                <el-col :span="12">
-                  <el-form-item prop="contactPhone">
-                    <el-input
-                      v-model="form.contactPhone"
-                      placeholder="日常联系人手机号*"
-                    ></el-input>
-                  </el-form-item>
-                </el-col>
-                <el-col :span="12">
-                  <el-form-item prop="email">
-                    <el-input
-                      v-model="form.email"
-                      placeholder="公司法人代表邮箱*"
-                    ></el-input>
-                  </el-form-item>
-                </el-col>
-                <el-col :span="12">
-                  <el-form-item prop="contactEmail">
-                    <el-input
-                      v-model="form.contactEmail"
-                      placeholder="日常联系人邮箱*"
+                      v-model="form.recommendPeople"
+                      placeholder="连星推荐人"
                     ></el-input>
                   </el-form-item>
                 </el-col>
               </el-row>
             </div>
 
-            <div class="group">
-              <h3>上传提交资质文件</h3>
-              <el-row :gutter="36">
-
-                <el-col :span="6">
-                  <el-form-item prop="IDFrontPicture">
-                    <el-upload
-                      class="avatar-uploader"
-                      action="/apis/common/upload"
-                      :show-file-list="false"
-                      :on-success="handleIDFrontPictureSuccess"
-                      :before-upload="beforeAvatarUpload"
-                    >
-                      <img
-                        v-if="imageUrlIDFrontPicture"
-                        :src="imageUrlIDFrontPicture"
-                        class="avatar"
-                      />
-                      <i
-                        v-else
-                        class="el-icon-plus avatar-uploader-icon"
-                      ></i>
-                    </el-upload>
-                  </el-form-item>
-                </el-col>
-                <el-col :span="6">
-                  <el-form-item prop="IDBackPicture">
-                    <el-upload
-                      class="avatar-uploader"
-                      action="/apis/common/upload"
-                      :show-file-list="false"
-                      :on-success="handleIDBackPictureSuccess"
-                      :before-upload="beforeAvatarUpload"
-                    >
-                      <img
-                        v-if="imageUrlIDBackPicture"
-                        :src="imageUrlIDBackPicture"
-                        class="avatar"
-                      />
-                      <i
-                        v-else
-                        class="el-icon-plus avatar-uploader-icon"
-                      ></i>
-                    </el-upload>
-                  </el-form-item>
-                </el-col>
-                <el-col :span="6">
-                  <el-form-item prop="licensePicture">
-                    <el-upload
-                      class="avatar-uploader"
-                      action="/apis/common/upload"
-                      :show-file-list="false"
-                      :on-success="handleLicensePictureSuccess"
-                      :before-upload="beforeAvatarUpload"
-                    >
-                      <img
-                        v-if="imageUrllicensePicture"
-                        :src="imageUrllicensePicture"
-                        class="avatar"
-                      />
-                      <i
-                        v-else
-                        class="el-icon-plus avatar-uploader-icon"
-                      ></i>
-                    </el-upload>
-                  </el-form-item>
-                </el-col>
-                <el-col :span="24">
-                  <p>*包括上传营业执照、法人身份证复印件（正反面），复印件需加盖公章，最大不能超过10M</p>
-                </el-col>
-              </el-row>
-            </div>
             <el-form-item>
               <el-button
                 type="danger"
@@ -242,27 +124,8 @@ export default {
           { min: 2, max: 20, message: "长度在 3 到 20 个字符" }
         ],
         address: [{ required: true, message: "请输入公司地址" }],
-        registeredCapital: [{ required: true, message: "请输入注册资金" }], // 注册资金
-        establishTime: [{ required: true, message: "请输入成立时间" }], // 成立时间
-        unifiedSocialCreditCode: [
-          { required: true, message: "请输入统一社会信用代码" }
-        ], // 统一社会信用代码
-        officeAddress: [{ required: true, message: "请输入办公地址" }], // 办公地址
-        legalRepresentative: [{ required: true, message: "请输入法人代表" }], // 法人代表
-        contacts: [{ required: true, message: "请输入联系人" }], // 联系人
         phone: [{ required: true, message: "请输入手机号" }],
-        contactPhone: [{ required: true, message: "请输入联系人手机号" }],
         email: [{ required: true, message: "请输入邮箱" }],
-        contactEmail: [{ required: true, message: "请输入联系人邮箱" }],
-        IDFrontPicture: [
-          { required: true, message: "请上传身份证正面", trigger: "change" }
-        ],
-        IDBackPicture: [
-          { required: true, message: "请上传身份证背面", trigger: "change" }
-        ],
-        licensePicture: [
-          { required: true, message: "请上传执照图片", trigger: "change" }
-        ] // 执照图片
       },
       imageUrlIDFrontPicture: "",
       imageUrlIDBackPicture: "",

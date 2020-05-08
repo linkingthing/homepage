@@ -3,7 +3,7 @@
     <BigPicture :url="require('~/assets/images/cooperate.png')">
       <div class="title">
         <h1>寻找合作伙伴</h1>
-        <p>我们的合作伙伴将与您合作，帮助您集成、构建和购买所需的解决方案、 软件和服务，并为您提供咨询建议</p>
+        <p>连星将竭诚为合作伙伴提供全方位支撑，帮忙合作伙伴构建和培养自己的团队力量、集成和交付能力。合作共赢，共拓市场</p>
       </div>
     </BigPicture>
 

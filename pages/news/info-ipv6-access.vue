@@ -11,7 +11,7 @@
     <div class="content">
       <header>
         <h1>工信部将优化提升IPv6网络接入能力</h1>
-        <p>新闻出处： <a href="http://m.xinhuanet.com/gd/2020-03/23/c_1125755303.htm"> 新华网</a> </p>
+        <p><time>发布时间： 2020-03-23</time>新闻出处： <a href="http://m.xinhuanet.com/gd/2020-03/23/c_1125755303.htm"> 新华网</a> </p>
       </header>
 
       <div>
@@ -66,8 +66,11 @@ export default {
 
   header {
     margin-bottom: 40px;
-    p {
-      text-align: right;
+     p {
+      text-align: center;
+    }
+    time {
+      padding-right: 30px;
     }
   }
 

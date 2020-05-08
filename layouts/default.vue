@@ -33,7 +33,7 @@ export default {
 .main {
   .middle {
     position: absolute;
-    top: 80px;
+    top: 70px;
     bottom: 0;
     width: 100%;
     left: 0;

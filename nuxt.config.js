@@ -66,8 +66,8 @@ module.exports = {
     baseUrl: process.env.BASE_URL //|| 'http://10.0.0.137:8000'
   },
 
-  // server: {
-  //   port: 8082, // default: 3000
-  //   host: '0.0.0.0' // default: localhost,
-  // }
+  server: {
+    // port: 8082, // default: 3000
+    host: '0.0.0.0' // default: localhost,
+  }
 }

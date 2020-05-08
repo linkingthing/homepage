@@ -13,9 +13,8 @@
 
         &-main-text{
             padding-top: 170px;
-            font-size: 44px;
+            font-size: 40px;
             margin-bottom: 10px;
-            font-weight: 600;
             line-height: 1;
             color: #fff;
         }
@@ -75,6 +74,7 @@
     .section-2{
         position: relative;
         margin-top: 73px;
+        margin-bottom: 80px;
 
         &-content{
             height: 410px;
@@ -94,7 +94,7 @@
             img{
                 height: 400px;
                 width: 100%;
-                margin-right: 10px;
+                margin-left: 50px;
             }
 
             &.is-show{
@@ -106,7 +106,8 @@
                 line-height: 1;
                 color:#333;
                 font-size: 18px;
-                margin: 47px 0 40px;
+                font-weight: bold;
+                margin: 5px 0 40px;
             }
 
             .detail-content{
@@ -118,24 +119,25 @@
 
         &-footer{
             position: absolute;
-            right: 10px;
-            bottom: 10px;
+            left: 10px;
+            bottom: 20px;
             z-index: 1;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            width: 482px;
+            width: 472px;
 
             .footer-pager{
                 font-size: 20px;
                 color: #808080;
+                margin-top: -28px;
 
                 label{
                     color: #EE3434;
                     font-size: 48px;
                 }
             }
-
+           
             .footer-arrow-item{
                 cursor: pointer;
                 font-size: 22px;
@@ -162,17 +164,18 @@
         background: url(./../../assets/images/monitor-img-5.png);
         background-size: cover;
         width: 100%;
-        height: 739px;
+        height: 350px;
 
         &-content{
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
+           text-align: center;
         }
 
         &-title{
-            margin-top: 156px;
+            padding-top: 60px;
             margin-right: 32px;
+            color: #fff;
+            font-size: 30px;
+            letter-spacing: 3px;
 
             h2{
                 width: 600px;
@@ -180,18 +183,18 @@
         }
 
         &-text{
-            margin-top: 66px;
-            margin-right: 0;
+            margin-top: 26px;
             line-height: 43px;
             font-size: 14px;
-            color: #808080;
-            width: 629px;
+            color: #fff;
+            letter-spacing: 1px;
         }
 
         .button--red{
-            margin-top:60px;
-            margin-right: 302px;
-            font-size: 16px;
+            margin-top: 40px;
+            font-size: 14px;
+            border-radius: 4px;
+            padding: 0 20px;
         }
     }
 }

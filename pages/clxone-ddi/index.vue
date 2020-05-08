@@ -2,9 +2,9 @@
   <div class="clxone-ddi">
     <div class="banner">
       <div class="banner-text">
-        <div class="banner-text-main">连星可扩展</div>
-        <div class="banner-text-main">企业级云平台(CLXOne™DDI)</div>
-        <div class="banner-text-sub">通过云管理的服务和应用程序形式提供DDI和安全功能等基础服务</div>
+        <div class="banner-text-main">可聚合、可延展企业级云平台</div>
+        <div class="banner-text-main">CLXOne™DDI</div>
+        <div class="banner-text-sub">通过云管理架构，提供DDI网络核心服务，实现IPv6 全自动智能化的平滑演进，让网络安全等基础服务质量得到全面提升</div>
       </div>
     </div>
 
@@ -17,7 +17,7 @@
           />
 
           <p class="row-1-text">连星推动核心网络服务 DDI （DNS、DHCP 和 IP地址管理服务）从简单的数据库到分布式、高可用性解决方案的演进，再到当今创新的 CLXOne™ 云管理架构</p>
-          <p class="row-1-text">CLXOne™ DDI 满足组织当前和未来的所有 DDI 需求。如集中控制 DDI 的同时，实现与云和虚拟化平台无缝集成；通过云管理和本地化部署来从根本上改善远程和分支机构的网络连接等</p>
+          <p class="row-1-text">CLXOne™ DDI 满足客户当前和未来的所有DDI需求。通过对DDI的集中控制，实现与云和虚拟化平台无缝集成；通过云管理和本地化部署，从根本上改善总部和分支机构的网络连接等。</p>
         </div>
 
         <img :src="managementSrc1">
@@ -28,15 +28,14 @@
           <div class="row-2-item">
             <div class="item-top">
               <img :src="managementSrc2" />
-              <label>增强的网络安全性</label>
+              <label>智能便捷的高扩展性</label>
             </div>
 
-            <p>网络免受最广泛的基于DNS的攻击；</p>
-            <p>终端设备的识别和准入管理；</p>
-            <p>快速隔离受感染的设备；</p>
-            <p>网络隔离和访问控制；</p>
-            <p>在现有的威胁和安全基础架构指标之间共享威胁和情报的威胁指标，自动修复问题;</p>
-            <p>通过利用 DDI 数据的实时预测分析来预防问题发生和识别可能的恶意的网络行为。</p>
+            <p>可自动实现任何规模的远程位置的 DNS，DHCP 和 IP 地址配置，并集中进行策略控制;</p>
+            <p>通过 API 轻松与云编排工具集成，以实现自动进行 DNS / IP 配置管理;</p>
+            <p>通过自动化从核心网络服务收集和分析数据的过程来获得实时可行的策略;</p>
+            <p>简化和自动化报告，以确保符合内部政策和法规要求;</p>
+            <p>通过增强的可见性和控制来自动执行向 IPv6 和云的迁移。</p>
           </div>
 
           <div class="row-2-item">
@@ -57,11 +56,13 @@
               <label>增强的网络安全性</label>
             </div>
 
-            <p>可自动实现任何规模的远程位置的 DNS，DHCP 和 IP 地址配置，并集中进行策略控制;</p>
-            <p>通过 API 轻松与云编排工具集成，以实现自动进行 DNS / IP 配置管理;</p>
-            <p>通过自动化从核心网络服务收集和分析数据的过程来获得实时可行的策略;</p>
-            <p>简化和自动化报告，以确保符合内部政策和法规要求;</p>
-            <p>通过增强的可见性和控制来自动执行向 IPv6 和云的迁移。</p>
+            <p>网络免受最广泛的基于DNS的攻击；</p>
+            <p>终端设备的识别和准入管理；</p>
+            <p>快速隔离受感染的设备；</p>
+            <p>网络隔离和访问控制；</p>
+            <p>在现有的威胁和安全基础架构指标之间共享威胁和情报的威胁指标，自动修复问题;</p>
+            <p>通过利用 DDI 数据的实时预测分析来预防问题发生和识别可能的恶意的网络行为。</p>
+
           </div>
         </div>
 
@@ -72,7 +73,7 @@
       </div>
 
       <div class="ddi-management-row-3">
-        <div class="row-3-main">优秀产品助您发掘 CLXOne™ DDI 的全部价值</div>
+        <div class="row-3-main">优秀的产品助您发掘 CLXOne™ DDI 的全部价值</div>
         <div class="row-3-sub">CLXOne™ DDI 可通过硬件设备，VM 或容器进行水平扩展</div>
         <img :src="managementSrc5" />
         <button
@@ -93,15 +94,15 @@
         <div class="ddi-section">
           <div class="feature-left">
             <div class="feature-item">
-              <div class="feature-title">一致的集中式用户界面</div>
+              <div class="feature-title">集中统一的用户界面</div>
               <div class="feature-content">通过用于DNS，DHCP，IPAM，DNS流量控制和DNS安全性的统一 UI 整合管理。</div>
             </div>
             <div class="feature-item">
-              <div class="feature-title">灵活的元数据标记</div>
+              <div class="feature-title">灵活的元数据管理</div>
               <div class="feature-content">利用可扩展的元数据属性来标记关键 IP 资源，以更有效地组织和共享数据。</div>
             </div>
             <div class="feature-item">
-              <div class="feature-title">自定义报告和警报</div>
+              <div class="feature-title">自定义报告模板和预警</div>
               <div class="feature-content">获得针对设备，IP地址和其他网络资产的多功能报告和警报功能。</div>
             </div>
             <div class="feature-item">
@@ -110,7 +111,7 @@
             </div>
             <div class="feature-item">
               <div class="feature-title">可定制的模板</div>
-              <div class="feature-content">快速配置新服务并减少配置开销，如具有多宿主、多网络视图的接口的 DNS 和 DHCP 超级主机分组，IPv4 Filter 模板、DHCP Option/Space 模板、ACL模板等。</div>
+              <div class="feature-content">快速配置新服务并减少配置开销，如具有多宿主、多网络视图接口的 DNS 和 DHCP 超级主机分组，IPv4 Filter 模板、DHCP Option/Space 模板、ACL模板等。</div>
             </div>
             <div class="feature-item">
               <div class="feature-title">资源委派</div>
@@ -133,10 +134,10 @@
             </div>
             <div class="feature-item">
               <div class="feature-title">专用设备</div>
-              <div class="feature-content">连星科技提供专业的硬件设备。</div>
+              <div class="feature-content">提供专业的工业级硬件产品。</div>
             </div>
             <div class="feature-item">
-              <div class="feature-title">规模</div>
+              <div class="feature-title">多平台可移植性</div>
               <div class="feature-content">CLXOne™ DDI 可通过硬件设备，VM 或容器进行水平扩展。</div>
             </div>
             <div class="feature-item">
@@ -145,7 +146,7 @@
             </div>
             <div class="feature-item">
               <div class="feature-title">高可用性</div>
-              <div class="feature-content">远程位置的两个 CLXOne™ DDI 实例共享信息和职责，因此，如果由于某种原因一 个出现故障，另一个实例将接管该站点的 DDI 服务职责。</div>
+              <div class="feature-content">远程位置的两个 CLXOne™ DDI 实例共享信息和职责，因此，如果由于某种原因一个实例出现故障，另一个实例将接管该站点的 DDI 服务职责。</div>
             </div>
             <div class="feature-item">
               <div class="feature-title">零接触配置（ZTP）</div>
@@ -163,19 +164,28 @@
       />
 
       <div class="solution-list">
-        <div class="solution-item"  @click="$router.push({path: '/support/download', query: {title: 'CLXOne DNS'}})">
+        <div
+          class="solution-item"
+          @click="$router.push({path: '/support/download', query: {title: 'CLXOne DNS'}})"
+        >
           <img :src="`${require('~/assets/images/solution01.png')}`" />
 
           <div class="solution-item-title">集中管理和自动化DNS</div>
         </div>
 
-        <div class="solution-item"  @click="$router.push({path: '/support/download', query: {title: 'CLXOne IPAM'}})">
+        <div
+          class="solution-item"
+          @click="$router.push({path: '/support/download', query: {title: 'CLXOne IPAM'}})"
+        >
           <img :src="`${require('~/assets/images/solution02.png')}`" />
 
-          <div class="solution-item-title">以统一的方式管理不同网络环境下的IP地址</div>
+          <div class="solution-item-title">以统一的方式管理异构组网环境下的IP地址</div>
         </div>
 
-        <div class="solution-item"  @click="$router.push({path: '/support#download'})">
+        <div
+          class="solution-item"
+          @click="$router.push({path: '/support#download'})"
+        >
           <img :src="`${require('~/assets/images/solution03.png')}`" />
 
           <div class="solution-item-title">IPv6 地址规划工具</div>

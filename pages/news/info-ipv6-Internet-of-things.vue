@@ -11,7 +11,7 @@
     <div class="content">
       <header>
         <h1>IPv6能为物联网带来什么？</h1>
-        <p>新闻出处： <a href="https://iot.ofweek.com/2020-03/ART-132207-8500-30431781.html">OFweek物联网</a> </p>
+        <p><time>发布时间： 2020-03-16</time>新闻出处： <a href="https://iot.ofweek.com/2020-03/ART-132207-8500-30431781.html">OFweek物联网</a> </p>
       </header>
 
       <div>
@@ -213,8 +213,11 @@ export default {
 
   header {
     margin-bottom: 40px;
-    p {
-      text-align: right;
+     p {
+      text-align: center;
+    }
+    time {
+      padding-right: 30px;
     }
   }
 

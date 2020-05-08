@@ -2,17 +2,26 @@
   <div class="about">
     <div class="banner bg"></div>
     <div class="introduce bg">
-      <div class="intro-content">
-        <TitleGroup
-          mainTitle="关于我们"
-          subtitle="ABOUT US"
-        />
-        <section class>
-          <p>北京连星科技有限公司聚焦下一代信息技术数据服务，围绕IPv6技术的数据化、网络化、智能化的突出特征做深度挖掘</p>
-          <p>公司坚持技术创新，运用新一代通信技术、数据挖掘、人工智能和云计算等新技术，实现各种技术的相互渗透和融合，为用户搭建终端、网络、数据和应用互连互通的超融合数字服务平台，协同推进信息技术产业和服务的代际升迁</p>
-          <img :src="require('~/assets/images/bar.png')" alt="" style="margin-top: 46px">
-        </section>
-      </div>
+
+      <section class="intro-content wrapper">
+        <div class="introduce-slogan">
+          <TitleGroup
+            mainTitle="关于我们"
+            subtitle="ABOUT US"
+          />
+          <q> 我们相信，存在这样一个未来：每一个网络都是自我防御的、可动态配置的、可无限扩展的，而且永远不衰落。我们正在为这个未来而不断努力!</q>
+          <img
+            :src="require('~/assets/images/bar.png')"
+            alt=""
+            style="margin-top: 46px"
+          >
+        </div>
+        <div class="introduce-text">
+          <p>北京连星科技有限公司，聚焦下一代信息技术数据服务，围绕下一代信息技术的数据化、网络化、智能化的突出特征，坚持技术创新，运用新一代通信技术、数据挖掘、人工智能和云计算等新技术，对客户的网络基础核心服务进行深度挖掘，实现各种技术的相互渗透和融合，为用户搭建终端、网络、数据和应用互连互通的超融合数据服务平台，协同推进信息技术产业和服务的代际升迁。</p>
+          <p>基于新一代信息网络的资源性特征，连星科技打造创新的CLX（Control Links Possibility）网络数据服务理念，远不止于分配空间和地址，其核心是透析IP地址全生命周期的管理，洞察网络上的设备、用户/应用与网络之间的实时连接数据，提供近实时的、精准的网络数字资产视图，动态掌控网络运行状况，进而提供面向新一代信息技术网络的超融合数据服务解决方案。其中包括专业的数字资产治理，网络和应用的自适应能力评测评估，新一代信息技术网络的代际升迁，新一代通信网络质量管理和优化，企业信息化发展建设的专业化、集约化和扁平化，企业数字化发展建设的标准和规范体系。</p>
+          <p>连星科技以技术促创新，以实践促成长，以服务促共赢，提供定制化的敏捷服务。让数字化网络基础设施井然有序，仅仅是新一代信息科技一体化变革的开始。我们期待与您一起，牢牢把握新一代信息技术的技术发展，共同制定更长远的资源建设和发展战略，推动新一代信息技术的应用落地和推广。</p>
+        </div>
+      </section>
     </div>
     <div class="contact wrapper">
       <div class="guesbook">
@@ -99,8 +108,8 @@
               </h3>
               <div>
                 <dl>
-                  <dd>北京市石景山区古城金融街长安中心城通街26号院4号楼1305</dd>
-                  <dd>成都市·高新区·天府三街大源国际中心B2栋1404</dd>
+                  <dd>北京市 · 石景山区 · 古城金融街长安中心城通街26号院4号楼1305</dd>
+                  <dd>成都市 · 高新区 · 天府三街大源国际中心B2栋1404</dd>
                 </dl>
               </div>
             </li>
@@ -195,23 +204,67 @@ export default {
 
 .introduce {
   position: relative;
-  height: 680px;
+  height: 927px;
   padding-top: 140px;
   background-image: url("../assets/images/bg-about.png");
 
   .intro-content {
-    position: absolute;
-    left: 50%;
-    width: 500px;
+    display: flex;
+    justify-content: space-between;
+
+    .introduce-slogan {
+      padding-top: 80px;
+
+      width: 540px;
+      q {
+        position: relative;
+        display: block;
+        width: 100%;
+        font-size: 18px;
+        font-style: italic;
+        letter-spacing: 2px;
+        color: #333;
+        line-height: 34px;
+        padding: 34px 26px 0;
+        margin: 80px 0 128px;
+        &::after {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          content: "";
+          display: block;
+          width: 20px;
+          height: 18px;
+          background-image: url("../assets/images/q-end.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        &::before {
+          position: absolute;
+          left: 0;
+          top: 0;
+          content: "";
+          display: block;
+          width: 20px;
+          height: 18px;
+          background-image: url("../assets/images/q-start.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+    .introduce-text {
+      width: 580px;
+    }
   }
-  section {
-    padding-top: 80px;
-  }
+
   p {
     font-size: 14px;
     line-height: 34px;
-    color: #808080;
+    color: #666;
     margin-bottom: 40px;
+    text-indent: 2em;
   }
 }
 .contact {

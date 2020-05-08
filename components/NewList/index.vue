@@ -2,6 +2,27 @@
   <section class="news-list">
     <ul>
       <li>
+        <router-link to="/news/complete-the-network-infrastructure">
+          <div class="news-item">
+            <div
+              class="news-pic"
+              :style="`background-image: url(${require('~/assets/images/news04.png')})`"
+            ></div>
+            <div class="news-txt">
+              <h3>工信部、广电总局：三季度末全面完成网络基础设施IPv6改造</h3>
+              <p>工信部办公厅、国家广播电视总局办公厅发布关于推进互联网电视业务IPv6改造的通知</p>
+            </div>
+            <div class="news-foot">
+              <time>
+                <em>04-26 </em>
+                <span> / 2020</span>
+              </time>
+              <img src="~/assets/images/home-page-news-arrow.png" />
+            </div>
+          </div>
+        </router-link>
+      </li>
+      <li>
         <router-link to="/news/info-2020-ipv6">
           <div class="news-item">
             <div
@@ -46,7 +67,7 @@
           </div>
         </router-link>
       </li>
-      <li>
+      <li v-if="!!!count">
         <router-link to="/news/info-ipv6-access">
           <div class="news-item">
             <div
@@ -74,7 +95,7 @@
 
 <script>
 export default {
-
+  props: ["count"]
 }
 </script>
 
@@ -86,6 +107,7 @@ export default {
   li {
     list-style: none;
     padding: 0;
+    margin-bottom: 26px;
   }
   a {
     text-decoration: none;
@@ -108,7 +130,9 @@ export default {
     .news-foot {
       color: #ee3434 !important;
       img {
-        display: block;
+        opacity: 1;
+        margin-right: 0;
+        // display: block;
       }
     }
   }
@@ -120,6 +144,7 @@ export default {
     transition: all 1.2s;
     &:hover {
       background-position: center right;
+      background-size: 400px auto;
     }
   }
   .news-txt {
@@ -163,9 +188,11 @@ export default {
     }
 
     img {
-      display: none;
+      opacity: 0;
+      margin-right: 20px;
       float: right;
       margin-top: 7px;
+      transition: all 0.8s ease;
     }
   }
 }

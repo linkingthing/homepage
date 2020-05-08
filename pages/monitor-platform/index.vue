@@ -6,14 +6,14 @@
           懂你的网络，更懂你的压力
         </div>
         <div class="banner-sub-text">
-          全面监测和深入分析，掌控IPv6发展状况
+          全面监测和深入分析，掌控IPv6部署和发展
         </div>
       </div>
     </section>
 
     <TitleGroup
       class="platform-section"
-      main-title="CLXOne™ IPv6监测让您能够更智能地开展工作"
+      main-title="CLXOne™ IPv6监测让您更智慧地开展工作"
       subtitle="TO BEGIN THE WORK"
     />
 
@@ -22,12 +22,12 @@
 
       <div class="section-1-content">
         <p>
-          IPv6规模部署工作时间紧、任务重、跨度长、技术性强。组织在整个IPv6代际升迁的过程中，需要承担诸多职责、满足各种需求。您必须始终掌控持续动态的网络状况，以及安全、简单而灵活地应对方案。所有的这一切，是基于对您当前IPv6发展状况的了解。CLXOne™ IPv6发展监测平台让您更智能更安全的开展工作。
+          IPv6规模部署工作时间紧、任务重、跨度长、技术性强。在整个IPv6代际升迁的过程中，需要承担诸多职责、满足各种需求。必须时刻掌控持续变化的动态的网络状况，以提出安全、简单而灵活的应对方案和解决方案。所有的这一切，都必须是基于对当前IPv6发展状况的了解。CLXOne IPv6发展监测平台使您更智慧更安全的开展工作。 IPv6发展监测平台让您更智能更安全的开展工作。
         </p>
 
         <div>对互联网网络、应用、终端、用户、流量等IPv6发展情况全面监测和分析</div>
         <div>对IPv6支持度和部署率进行全面、多维度的监测及评估，定期发布监测报告</div>
-        <div>为IPv6规模部署工作推动提供技术支持和决策参考</div>
+        <div>为推动IPv6规模部署工作提供技术支持和决策参考</div>
 
         <button
           class="button--red"
@@ -54,11 +54,12 @@
             :key="idx"
             :class="{'is-show': idx === row2Index}"
           >
-            <img :src="item.img">
             <div class="content-item-detail">
               <p class="detail-title">{{item.title}}</p>
               <p class="detail-content">{{item.content}}</p>
             </div>
+            <img :src="item.img">
+
           </div>
         </template>
 
@@ -84,15 +85,14 @@
 
     <section class="section-3">
       <div class="section-3-content platform-section">
-        <TitleGroup
-          class="section-3-title"
-          main-title="利用连星CLXOne™ IPv6 监测平台 加速您的创新"
-          subtitle="ACCELORATE INNOVATION"
-        />
+        <h3 class="section-3-title">利用连星CLXOne™ IPv6 监测平台 <br/>加速您的创新</h3>
+  
+        <div class="section-3-text">利用我们的专家指导、最佳实践的经验和多种创新实用工具，您可以充满信心地快速平滑迁移到下一代新技术网络</div>
 
-        <div class="section-3-text">利用我们的专家指导、久经验证的经验、最佳实践和创新工具，您可以充满信心地迁移到下一代新技术网络</div>
-
-        <button class="button--red" @click="openBuyDialog">平台定制服务，请联系我们的业务专家</button>
+        <button
+          class="button--red"
+          @click="openBuyDialog"
+        >平台定制服务，请联系我们的业务专家</button>
       </div>
     </section>
   </div>
@@ -119,7 +119,7 @@ export default {
       row2Content: [
         {
           img: src2,
-          title: "国家IPV6发展检测平台",
+          title: "国家IPV6发展监测平台",
           content: `国家IPv6发展监测平台通过主动监测采集
 我国IPv6基础资源、网络基础设施、应用基础设施、互联网应用、IPv6用户等信息，
 客观、准确、全面的反映当前我国IPv6发展现状，为推进IPv6规模部署提供必要的依据，
@@ -127,13 +127,13 @@ export default {
         },
         {
           img: src3,
-          title: "海南IPV6发展检测平台",
+          title: "海南IPV6发展监测平台",
           content: `海南IPv6发展监测平台通过主动监测采集海南省内Pv6基础资源、网络基础设施、应用基础设施、互联网应用、IPv6用户等信息，客观、准确、全面的反映当前海南IPv6发展现状，为推进IPv6规模部署提供必要的依据，并最终形成海南IPv6发展监测体系`
         },
         {
           img: src4,
-          title: "金融行业IPV6发展检测平台",
-          content: `人民银行运用“互联网+”思维，建设金融行业IPv6发展监测平台。实现金融行业2000多个监测点的动态监测，分地区、分类型的展示功能助力人民银行各级机构开展核查，可满足“定期开展企业、行业、区域应用情况评测”的需要，鼓励金融服务机构开展对照自查，在实现基本改造目标的前提下精益求精，提高门户网站和子域名网站及应用系统规模部署改造效果。`
+          title: "金融行业IPV6发展监测平台",
+          content: `人民银行运用“互联网+人民银行运用“互联网+”思维，建设金融行业IPv6发展监测平台。实现金融行业2000多个监测点的动态监测，分地区、分类型的展示功能助力人民银行各级机构开展核查，可满足国家“IPv6规模部署行动计划”、“定期开展企业、行业、区域应用情况评测”的需要，鼓励金融服务机构开展对照自查，在实现基本改造目标的前提下精益求精，提高门户网站和子域名网站及应用系统规模部署改造效果。`
         }
       ],
       row2ContentLength: 3,
