@@ -113,7 +113,6 @@ export default {
 <style lang="less">
 .download {
   position: relative;
-  z-index: -1;
   height: 988px;
   background-repeat: no-repeat;
   background-size: cover;
