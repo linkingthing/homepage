@@ -174,7 +174,7 @@
                     class="card"
                     title="CLXOne DNS"
                   >
-                    <h3 title="CLXOne DNS">CLXOne DNS</h3>
+                    <h3 title="CLXOne DNS">CLXOne™ DNS</h3>
                     <p title="CLXOne DNS">高效管理的DNS服务，驱动您的数字业务</p>
                   </div>
                 </el-col>
@@ -183,7 +183,7 @@
                     class="card"
                     title="CLXOne IPAM"
                   >
-                    <h3 title="CLXOne IPAM">CLXOne IPAM</h3>
+                    <h3 title="CLXOne IPAM">CLXOne™ IPAM</h3>
                     <p title="CLXOne IPAM">CLXOne™ DHCP/IPAM 可以轻松应对最具挑战性的IPAM和DHCP要求</p>
                   </div>
                 </el-col>
@@ -193,7 +193,7 @@
                     title="产品规格"
                   >
                     <h3 title="产品规格">产品规格</h3>
-                    <p title="产品规格">连星 LT CLX 6100（S）、LT CLX 6100H产品规格</p>
+                    <p title="产品规格">连星 LT CLXOne™ 5600、LT CLXOne™ 7600 产品规格</p>
                   </div>
                 </el-col>
               </el-row>

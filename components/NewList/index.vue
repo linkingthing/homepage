@@ -1,101 +1,46 @@
 <template>
   <section class="news-list">
     <ul>
-      <li>
-        <router-link to="/news/complete-the-network-infrastructure">
+
+      <li
+        v-for="item in data.slice(0,count)"
+        :key="item.url"
+      >
+        <router-link :to="item.path">
           <div class="news-item">
             <div
               class="news-pic"
-              :style="`background-image: url(${require('~/assets/images/news04.png')})`"
+              :style="`background-image: url(${item.image})`"
             ></div>
             <div class="news-txt">
-              <h3>工信部、广电总局：三季度末全面完成网络基础设施IPv6改造</h3>
-              <p>工信部办公厅、国家广播电视总局办公厅发布关于推进互联网电视业务IPv6改造的通知</p>
+              <h3>{{item.title}}</h3>
+              <p>{{item.info}}</p>
             </div>
             <div class="news-foot">
               <time>
-                <em>04-26 </em>
-                <span> / 2020</span>
+                <em>{{item.date}} </em>
+                <span> / {{item.year}}</span>
               </time>
               <img src="~/assets/images/home-page-news-arrow.png" />
             </div>
           </div>
         </router-link>
       </li>
-      <li>
-        <router-link to="/news/info-2020-ipv6">
-          <div class="news-item">
-            <div
-              class="news-pic"
-              :style="`background-image: url(${require('~/assets/images/news01.png')})`"
-            ></div>
-            <div class="news-txt">
-              <h3>工业和信息化部关于开展 2020 年 IPv6 端到端贯通能力提升专项行动的通知</h3>
-              <p>为贯彻落实《推进互联网协议第六版(IPv6)规模部署行动计划》（厅字〔2017〕47 号） 任务要求，加快提升 IPv6 端到端贯通能力，持续提升 IPv6 活跃用户和网络流量规模，我部 决定于 2020 年开展 IPv6 端到端贯通能力提升专项行动。有关事项通知如下：</p>
-            </div>
-            <div class="news-foot">
-              <time>
-                <em>03-19</em>
-                <span>/ 2020</span>
-              </time>
-              <img src="~/assets/images/home-page-news-arrow.png" />
-
-            </div>
-          </div>
-        </router-link>
-      </li>
-
-      <li>
-        <router-link to="/news/info-ipv6-Internet-of-things">
-          <div class="news-item">
-            <div
-              class="news-pic"
-              :style="`background-image: url(${require('~/assets/images/news02.png')})`"
-            ></div>
-            <div class="news-txt">
-              <h3>IPv6能为物联网带来什么？</h3>
-              <p>随着互联网时代的到来，人们的工作、生活等习惯发生了翻天覆地的变化，而人们享受着互联网带来的便利性。</p>
-            </div>
-            <div class="news-foot">
-              <time>
-                <em>03-16</em>
-                <span>/ 2020</span>
-              </time>
-              <img src="~/assets/images/home-page-news-arrow.png" />
-
-            </div>
-          </div>
-        </router-link>
-      </li>
-      <li v-if="!!!count">
-        <router-link to="/news/info-ipv6-access">
-          <div class="news-item">
-            <div
-              class="news-pic"
-              :style="`background-image: url(${require('~/assets/images/news03.png')})`"
-            ></div>
-            <div class="news-txt">
-              <h3>工信部将优化提升IPv6网络接入能力</h3>
-              <p>新华社北京3月23日电（记者张辛欣）记者23日从工信部获悉，工信部已经发文部署开展2020年IPv6端到端贯通能力提升专项行动，特别提出要优化提升IPv6网络接入能力，全面扩大数据中心IPv6覆盖范围，到2020年底IPv6活跃连接数达到11</p>
-            </div>
-            <div class="news-foot">
-              <time>
-                <em>03-23</em>
-                <span>/ 2020</span>
-              </time>
-              <img src="~/assets/images/home-page-news-arrow.png" />
-            </div>
-          </div>
-        </router-link>
-      </li>
-
     </ul>
   </section>
 </template>
 
 <script>
+
+import data from "./_data";
+
 export default {
-  props: ["count"]
+  props: ["count"],
+  data() {
+    return {
+      data
+    }
+  }
 }
 </script>
 
