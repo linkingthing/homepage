@@ -1,13 +1,14 @@
 export default [
   {
-    path: "/news/what-is-the-progress-of-IPv6-scale-deployment-in-China",
-    title: "我国IPv6规模部署进展如何？",
+    path: "/news/notice-Industrial-Internet-2020",
+    title: "关于印发《工业互联网专项工作组2020年工作计划》的通知",
     info:
-      "2019年11月25日，负责英国、欧洲、中东和部分中亚地区互联网资源分配的欧洲网络协调中心（RIPE NCC）宣布，其最后的IPv4地址空间储备池在UTC + 1 15:35 完全耗尽，所有43亿个IPv4地址已分配完毕。这意味着没有更多的IPv4地址可以分配给ISP和其他大型网络基础设施提供商。",
-    date: "06-28",
+      "工业互联网专项工作组成员单位办公厅（办公室、综合司）：现将《工业互联网专项工作组2020年工作计划》印发给你们，请认真贯彻落实。",
+    date: "07-10",
     year: "2020",
-    image: "/face-what-is-the-progress-of-IPv6-scale-deployment-in-China.png"
+    image: "/notice-Industrial-Internet-2020.jpg"
   },
+
   {
     path: "/news/shanghai-Promoting-IPv6-scale-deployment",
     title: "上海市委网信办等四部门印发三年行动计划，推进IPv6规模部署",
@@ -16,6 +17,15 @@ export default [
     date: "07-01",
     year: "2020",
     image: "/face-shanghai-Promoting-IPv6-scale-deployment.png"
+  },
+  {
+    path: "/news/what-is-the-progress-of-IPv6-scale-deployment-in-China",
+    title: "我国IPv6规模部署进展如何？",
+    info:
+      "2019年11月25日，负责英国、欧洲、中东和部分中亚地区互联网资源分配的欧洲网络协调中心（RIPE NCC）宣布，其最后的IPv4地址空间储备池在UTC + 1 15:35 完全耗尽，所有43亿个IPv4地址已分配完毕。这意味着没有更多的IPv4地址可以分配给ISP和其他大型网络基础设施提供商。",
+    date: "06-28",
+    year: "2020",
+    image: "/face-what-is-the-progress-of-IPv6-scale-deployment-in-China.png"
   },
   {
     path: "/news/In-May-2020-the-global-IPv6-penetration-rate-will-exceed-0.32",
@@ -38,6 +48,15 @@ export default [
     image: "/news04.png"
   },
   {
+    path: "/news/info-ipv6-access",
+    title: "工信部将优化提升IPv6网络接入能力",
+    info:
+      "新华社北京3月23日电（记者张辛欣）记者23日从工信部获悉，工信部已经发文部署开展2020年IPv6端到端贯通能力提升专项行动，特别提出要优化提升IPv6网络接入能力，全面扩大数据中心IPv6覆盖范围，到2020年底IPv6活跃连接数达到11",
+    date: "03-23",
+    year: "2020",
+    image: "/news03.png"
+  },
+  {
     path: "/news/info-2020-ipv6",
     title:
       "工业和信息化部关于开展 2020 年 IPv6 端到端贯通能力提升专项行动的通知",
@@ -47,6 +66,7 @@ export default [
     year: "2020",
     image: "/news01.png"
   },
+
   {
     path: "/news/info-ipv6-Internet-of-things",
     title: "IPv6能为物联网带来什么？",
@@ -55,15 +75,5 @@ export default [
     date: "03-16",
     year: "2020",
     image: "/news02.png"
-  },
-  {
-    path: "/news/info-ipv6-access",
-    title: "工信部将优化提升IPv6网络接入能力",
-    info:
-      "新华社北京3月23日电（记者张辛欣）记者23日从工信部获悉，工信部已经发文部署开展2020年IPv6端到端贯通能力提升专项行动，特别提出要优化提升IPv6网络接入能力，全面扩大数据中心IPv6覆盖范围，到2020年底IPv6活跃连接数达到11",
-    date: "03-23",
-    year: "2020",
-    image: "/news03.png"
-  },
-  
+  }
 ];
