@@ -39,6 +39,9 @@
         <el-menu-item index="/support">
           <nuxt-link to="/support">支持中心</nuxt-link>
         </el-menu-item>
+         <el-menu-item index="/insight">
+          <nuxt-link to="/insight">行业洞察</nuxt-link>
+        </el-menu-item>
         <!-- <el-menu-item index="6"><nuxt-link to="/download">下载中心</nuxt-link></el-menu-item> -->
         <el-menu-item index="/about">
           <nuxt-link to="/about">关于我们</nuxt-link>

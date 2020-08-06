@@ -1,72 +1,62 @@
 <template>
-  <section class="news-list">
-    <ul>
+  <div class="news">
+    <BigPicture :url="require('~/assets/images/insight-pic.jpg')" />
+    <div class="content">
+      <TitleGroup
+        mainTitle="行业洞察"
+        subtitle="INDUSTRY INSIGHT"
+      />
 
-      <li
-        v-for="item in data.slice(0,count)"
-        :key="item.url"
-      >
-        <router-link :to="item.path">
-          <div class="news-item">
-            <div
-              class="news-pic"
-              :style="`background-image: url(${item.image})`"
-            ></div>
-            <div class="news-txt">
-              <h3>{{item.title}}</h3>
-              <p>{{item.info}}</p>
-            </div>
-            <div class="news-foot">
-              <time>
-                <em>{{item.date}} </em>
-                <span> / {{item.year}}</span>
-              </time>
-              <img src="~/assets/images/home-page-news-arrow.png" />
-            </div>
-          </div>
-        </router-link>
-      </li>
-    </ul>
-  </section>
+      <NewList />
+    </div>
+  </div>
 </template>
 
 <script>
-
-import data from "./_data";
+import BigPicture from "~/components/BigPicture";
+import TitleGroup from "~/components/TitleGroup";
+import NewList from "~/components/InsightList"
 
 export default {
-  props: ["count"],
+  components: {
+    BigPicture,
+    TitleGroup,
+    NewList
+  },
+  props: {},
   data() {
-    return {
-      data
-    }
-  }
-}
+    return {};
+  },
+  computed: {},
+  created() { 
+  },
+  mounted() { },
+  methods: {},
+  watch: {}
+};
 </script>
 
 <style lang="less" scoped>
+.content {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 110px 0;
+}
+
 .news-list {
   padding-top: 60px;
-  width: 1200px;
   ul,
   li {
     list-style: none;
     padding: 0;
-    margin-bottom: 26px;
   }
   a {
     text-decoration: none;
   }
   ul {
-    overflow: hidden;
-  }
-  li {
-    float: left;
-    margin-right: 30px;
-
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 .news-item {
@@ -80,11 +70,6 @@ export default {
     p,
     .news-foot {
       color: #ee3434 !important;
-      img {
-        opacity: 1;
-        margin-right: 0;
-        // display: block;
-      }
     }
   }
   .news-pic {
@@ -95,7 +80,6 @@ export default {
     transition: all 1.2s;
     &:hover {
       background-position: center right;
-      background-size: 400px auto;
     }
   }
   .news-txt {
@@ -136,14 +120,6 @@ export default {
     }
     span {
       font-size: 12px;
-    }
-
-    img {
-      opacity: 0;
-      margin-right: 20px;
-      float: right;
-      margin-top: 7px;
-      transition: all 0.8s ease;
     }
   }
 }

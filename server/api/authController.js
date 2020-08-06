@@ -14,6 +14,9 @@ const User = require('../modal/userModal')
  * 
  * @apiSuccess {String} username 姓名.
  */
+
+
+
 router.post('/login', (req, res) => {
     console.log(req.body)
     console.log(req.session)
@@ -39,7 +42,7 @@ router.post('/login', (req, res) => {
         else {
             res.json({
                 code: 401.1,
-                message: '改账户不存在'
+                message: '账户不存在'
             })
         }
     })
