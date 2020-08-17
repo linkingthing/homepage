@@ -1,4 +1,23 @@
 export default [
+  
+  {
+    path: "/insight/Analysis-on-the-development-status-and-problems-of-IPv6-in-China",
+    title: "我国IPv6发展现状与问题分析",
+    info:
+      "2017年11月，中共中央办公厅、国务院办公厅联合印发了《推进互联网协议第六版（IPv6）规模部署行动计划》（以下简称《行动计划》），明确提出未来5~10年我国基于IPv6的下一代互联网发展的总体目标、路线图、时间表和重点任务，这是加快推进我国IPv6规模部署、促进互联网演进升级和健康创新发展的行动指南[1]。",
+    date: "08-14",
+    year: "2020",
+    image: "/Analysis-on-the-development-status-and-problems-of-IPv6-in-China.jpg"
+  },  
+  {
+    path: "/insight/Technology-and-standard-IPv6-address-planning-and-management-practice",
+    title: "技术与标准丨IPv6地址规划及管理实践",
+    info:
+      "通过对大型央企网络地址规划需求进行分析，结合IPv6地址结构特点,提出层次化、语义化的企业地址设计模型和实践方法；梳理了典型应用场景，围绕以IPv6地址为核心的企业数字资产管理，给出了从规划设计到分配、管理、追踪全链条能力的建议。",
+    date: "08-07",
+    year: "2020",
+    image: "/Technology-and-standard-IPv6-address-planning-and-management-practice.jpg"
+  },
   {
     path: "/insight/Nibble-boundary-principle-of-IPv6-address-planning",
     title: "IPv6地址规划的nibble boundary原则",
