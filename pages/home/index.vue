@@ -1,11 +1,15 @@
 <template>
   <div class="home-page">
+    <img
+      style="display: none"
+      src="~/static/baidu-show.jpg"
+      alt=""
+    >
     <el-carousel
       class="home-page-banner"
       height="450px"
-      :interval="5000"
-      indicator-position="none"
-      arrow="never"
+      :interval="3000"
+      trigger="click"
     >
       <el-carousel-item>
         <div class="banner-item-1 banner-item">
@@ -32,16 +36,21 @@
         </div>
       </el-carousel-item>
 
-      <!-- <el-carousel-item>
-        <div class="banner-item-2 banner-item">
+      <el-carousel-item>
+        <nuxt-link
+          class="banner-item-2 banner-item"
+          :style="`background-image:url(ipv6-talk.png)`"
+          to="/news/Lianxing-technology-puts-forward-the-industry-leading-full-life-cycle-management-scheme-of-IPv6-smooth-evolution"
+        >
+
           <div class="banner-item-content">
-            <div class="banner-pager">
+            <!-- <div class="banner-pager">
               <span>02</span>
               /02
-            </div>
+            </div> -->
           </div>
-        </div>
-      </el-carousel-item> -->
+        </nuxt-link>
+      </el-carousel-item>
     </el-carousel>
 
     <div class="home-page-dynamic">
@@ -113,7 +122,10 @@
           </div>
         </div> -->
 
-        <NewList style="margin-bottom: 20px;padding-top: 0" :count="3"/>
+        <NewList
+          style="margin-bottom: 20px;padding-top: 0"
+          :count="3"
+        />
       </div>
     </div>
   </div>

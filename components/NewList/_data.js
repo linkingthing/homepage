@@ -1,4 +1,16 @@
 export default [
+
+  {
+    path: "/news/Lianxing-technology-puts-forward-the-industry-leading-full-life-cycle-management-scheme-of-IPv6-smooth-evolution",
+    title: "连星科技提出业内领先的IPv6平滑演进全生命周期管理方案",
+    info:
+      "由“推进IPv6规模部署专家委员会”主办，中国信通院、CERNET网络中心、赛尔网络与华为技术有限公司协办的“2020中国IPv6发展论坛”于2020年8月28日在北京下一代互联网及重大应用技术创新园举行。 ",
+    date: "08-28",
+    year: "2020",
+    image: "/Lianxing-technology-puts-forward-the-industry-leading-full-life-cycle-management-scheme-of-IPv6-smooth-evolution.jpg"
+  },
+
+
   {
     path: "/news/notice-Industrial-Internet-2020",
     title: "关于印发《工业互联网专项工作组2020年工作计划》的通知",
