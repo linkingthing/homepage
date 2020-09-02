@@ -80,12 +80,15 @@
           <div>
             <div class="dynamic-sub-img dynamic-hover">
 
-              <nuxt-link to="/monitor-platform">
+              <nuxt-link to="/insight">
 
-                <img :src="dynamicImg2">
+                <img src="~/static/insight.jpg">
                 <div class="dynamic-content-text">
-                  全面监测和深入分析，掌控IPv6部署和发展
-                  <div class="dynamic-content-text-sub">用实测运行数据支撑IPv6部署，掌握网络运行和发展状况</div>
+                  <!-- 全面监测和深入分析，掌控IPv6部署和发展 -->
+                  <!-- <div class="dynamic-content-text-sub">用实测运行数据支撑IPv6部署，掌握网络运行和发展状况</div> -->
+
+                  行业洞察
+                  <div class="dynamic-content-text-sub">洞察行业趋势，预见前沿技术</div>
                 </div>
               </nuxt-link>
             </div>

@@ -23,9 +23,9 @@
           <el-menu-item index="/clxone-ddi">
             <nuxt-link to="/clxone-ddi">CLXOne™ DDI</nuxt-link>
           </el-menu-item>
-          <el-menu-item index="/monitor-platform">
+          <!-- <el-menu-item index="/monitor-platform">
             <nuxt-link to="/monitor-platform">IPV6发展监测平台</nuxt-link>
-          </el-menu-item>
+          </el-menu-item> -->
           <el-menu-item index="/promotion-manage">
             <nuxt-link to="/promotion-manage">代际升迁管理</nuxt-link>
           </el-menu-item>
