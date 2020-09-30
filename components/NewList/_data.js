@@ -1,6 +1,16 @@
 export default [
 
   {
+    path: "/news/Lianxing-technology-winning-bid-a-project-of-CAICT",
+    title: "连星科技中标中国信息通信研究院项目",
+    info:
+      "北京连星科技有限公司（以下简称“连星科技”）于近期成功中标中国信息通信研究院重大科研基础平台-国家IPv6发展监测平台购置项目",
+    date: "09-30",
+    year: "2020",
+    image: "/Lianxing-technology-winning-bid-a-project-of-CAICT.jpg"
+  },
+
+  {
     path: "/news/Lianxing-technology-puts-forward-the-industry-leading-full-life-cycle-management-scheme-of-IPv6-smooth-evolution",
     title: "连星科技提出业内领先的IPv6平滑演进全生命周期管理方案",
     info:
@@ -9,7 +19,6 @@ export default [
     year: "2020",
     image: "/Lianxing-technology-puts-forward-the-industry-leading-full-life-cycle-management-scheme-of-IPv6-smooth-evolution.jpg"
   },
-
 
   {
     path: "/news/notice-Industrial-Internet-2020",

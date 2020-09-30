@@ -1,5 +1,13 @@
 export default [
-  
+  {
+    path: "/insight/China-IPv6-development-has-entered-a-golden-age",
+    title: "中国IPv6发展步入黄金时代",
+    info:
+      "7月30日下午，广州南沙。满头银发的邬贺铨院士一行匆匆走进“2020年下一代互联网峰会”的会场，在落座前他停顿了一下，专门跟CERNET网络中心副主任李星教授握了下手。这次有意无意的握手未必会被摄影器材抓拍下来",
+    date: "09-30",
+    year: "2020",
+    image: "/China-IPv6-development-has-entered-a-golden-age.jpg"
+  },    
   {
     path: "/insight/Analysis-on-the-development-status-and-problems-of-IPv6-in-China",
     title: "我国IPv6发展现状与问题分析",
