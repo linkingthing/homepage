@@ -1,4 +1,22 @@
 export default [
+  {
+    path: "/news/ipv6-shenzhen-application",
+    title: "IPv6技术与应用论坛在深圳开讲，为高校IPv6部署提供经验",
+    info:
+      "12月2日，中国教育和科研计算机网CERNET第二十七届学术年会IPv6技术与应用分论坛在深圳举行。      IPv6技术与应用论坛由北京邮电大学教授马严主持，来自清华大学、中国科学技术大学、北京邮电大学",
+    date: "12-11",
+    year: "2020",
+    image: "ipv6-shenzhen-application-bg.jpg"
+  },
+  {
+    path: "/news/are-you-use-ipv6",
+    title: "IPv6规模部署进行时，你的网站用上IPv6了吗？",
+    info:
+      "我国IPv6规模部署取得重大进展。      在日前举行的第二届中国互联网基础资源大会上，中国工程院院士邬贺铨发表了《开发IPv6功能，增强网络设施能力》主题演讲。邬贺铨介绍，我国IPv6用户快速增长。据数据统计，2020年8月，我国IPv6活跃用户数达3.65亿，占互联网用户之比达40.32%。",
+    date: "12-11",
+    year: "2020",
+    image: "/are-you-use-ipv6-bg.jpg"
+  },
 
   {
     path: "/news/Lianxing-technology-winning-bid-a-project-of-CAICT",
@@ -11,13 +29,15 @@ export default [
   },
 
   {
-    path: "/news/Lianxing-technology-puts-forward-the-industry-leading-full-life-cycle-management-scheme-of-IPv6-smooth-evolution",
+    path:
+      "/news/Lianxing-technology-puts-forward-the-industry-leading-full-life-cycle-management-scheme-of-IPv6-smooth-evolution",
     title: "连星科技提出业内领先的IPv6平滑演进全生命周期管理方案",
     info:
       "由“推进IPv6规模部署专家委员会”主办，中国信通院、CERNET网络中心、赛尔网络与华为技术有限公司协办的“2020中国IPv6发展论坛”于2020年8月28日在北京下一代互联网及重大应用技术创新园举行。 ",
     date: "08-28",
     year: "2020",
-    image: "/Lianxing-technology-puts-forward-the-industry-leading-full-life-cycle-management-scheme-of-IPv6-smooth-evolution.jpg"
+    image:
+      "/Lianxing-technology-puts-forward-the-industry-leading-full-life-cycle-management-scheme-of-IPv6-smooth-evolution.jpg"
   },
 
   {
