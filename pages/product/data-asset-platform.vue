@@ -323,10 +323,11 @@ export default {
 }
 
 .high-available {
+  padding-top: 110px;
+  padding-bottom: 124px;
   .high-available-content {
     display: flex;
     margin-top: 70px;
-    margin-bottom: 124px;
   }
   img {
     width: 704px;
