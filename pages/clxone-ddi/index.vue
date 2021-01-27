@@ -3,7 +3,7 @@
     <div class="banner">
       <div class="banner-text">
         <div class="banner-text-main">可聚合、可延展企业级云平台</div>
-        <div class="banner-text-main">CLXOne™DDI</div>
+        <div class="banner-text-main">CLXOne®DDI</div>
         <div class="banner-text-sub">通过云管理架构，提供DDI网络核心服务，实现IPv6 全自动智能化的平滑演进，让网络安全等基础服务质量得到全面提升</div>
       </div>
     </div>
@@ -12,12 +12,12 @@
       <div class="ddi-management-row-1">
         <div>
           <TitleGroup
-            main-title="创新的 CLXOne™ DDI 云管理"
+            main-title="创新的 CLXOne® DDI 云管理"
             subtitle="CLOUD MANAGEMENT"
           />
 
-          <p class="row-1-text">连星推动核心网络服务 DDI （DNS、DHCP 和 IP地址管理服务）从简单的数据库到分布式、高可用性解决方案的演进，再到当今创新的 CLXOne™ 云管理架构</p>
-          <p class="row-1-text">CLXOne™ DDI 满足客户当前和未来的所有DDI需求。通过对DDI的集中控制，实现与云和虚拟化平台无缝集成；通过云管理和本地化部署，从根本上改善总部和分支机构的网络连接等。</p>
+          <p class="row-1-text">连星推动核心网络服务 DDI （DNS、DHCP 和 IP地址管理服务）从简单的数据库到分布式、高可用性解决方案的演进，再到当今创新的 CLXOne® 云管理架构</p>
+          <p class="row-1-text">CLXOne® DDI 满足客户当前和未来的所有DDI需求。通过对DDI的集中控制，实现与云和虚拟化平台无缝集成；通过云管理和本地化部署，从根本上改善总部和分支机构的网络连接等。</p>
         </div>
 
         <img :src="managementSrc1">
@@ -73,8 +73,8 @@
       </div>
 
       <div class="ddi-management-row-3">
-        <div class="row-3-main">优秀的产品助您发掘 CLXOne™ DDI 的全部价值</div>
-        <div class="row-3-sub">CLXOne™ DDI 可通过硬件设备，VM 或容器进行水平扩展</div>
+        <div class="row-3-main">优秀的产品助您发掘 CLXOne® DDI 的全部价值</div>
+        <div class="row-3-sub">CLXOne® DDI 可通过硬件设备，VM 或容器进行水平扩展</div>
         <img :src="managementSrc5" />
         <button
           class="button--red"
@@ -130,7 +130,7 @@
             </div>
             <div class="feature-item">
               <div class="feature-title">虚拟设备</div>
-              <div class="feature-content">CLXOne™ DDI 在 VMware上可用作虚拟机（VM），在Docker上可用作容器。</div>
+              <div class="feature-content">CLXOne® DDI 在 VMware上可用作虚拟机（VM），在Docker上可用作容器。</div>
             </div>
             <div class="feature-item">
               <div class="feature-title">专用设备</div>
@@ -138,19 +138,19 @@
             </div>
             <div class="feature-item">
               <div class="feature-title">多平台可移植性</div>
-              <div class="feature-content">CLXOne™ DDI 可通过硬件设备，VM 或容器进行水平扩展。</div>
+              <div class="feature-content">CLXOne® DDI 可通过硬件设备，VM 或容器进行水平扩展。</div>
             </div>
             <div class="feature-item">
               <div class="feature-title">灵活的 API</div>
-              <div class="feature-content">通过用户可访问的 API 支持所有 UI 功能。 API 调用是针对云的，而不是直接针对 CLXOne™ DDI 设备。 使用 API 需要用户凭据，并且需要相应的权限。</div>
+              <div class="feature-content">通过用户可访问的 API 支持所有 UI 功能。 API 调用是针对云的，而不是直接针对 CLXOne® DDI 设备。 使用 API 需要用户凭据，并且需要相应的权限。</div>
             </div>
             <div class="feature-item">
               <div class="feature-title">高可用性</div>
-              <div class="feature-content">远程位置的两个 CLXOne™ DDI 实例共享信息和职责，因此，如果由于某种原因一个实例出现故障，另一个实例将接管该站点的 DDI 服务职责。</div>
+              <div class="feature-content">远程位置的两个 CLXOne® DDI 实例共享信息和职责，因此，如果由于某种原因一个实例出现故障，另一个实例将接管该站点的 DDI 服务职责。</div>
             </div>
             <div class="feature-item">
               <div class="feature-title">零接触配置（ZTP）</div>
-              <div class="feature-content">ZTP可以实现自动化，并极大地简化了CLXOne™ DDI 的大规模部署。 CLXOne™ DDI 设备可通过在所有远程站点上进行全局身份验证，下载和部署配置。</div>
+              <div class="feature-content">ZTP可以实现自动化，并极大地简化了CLXOne® DDI 的大规模部署。 CLXOne® DDI 设备可通过在所有远程站点上进行全局身份验证，下载和部署配置。</div>
             </div>
           </div>
         </div>

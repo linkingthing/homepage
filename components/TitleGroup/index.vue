@@ -1,13 +1,15 @@
 <template>
   <header class="titleGroup">
+    <h2 v-if="topTitle" style="margin-bottom: 0;">{{topTitle}}</h2>
     <h2>{{mainTitle}}</h2>
-    <p>{{subtitle}}</p>
+    <p>{{subtitle.toLocaleUpperCase()}}</p>
   </header>
 </template>
 
 <script>
 export default {
   props: {
+    topTitle: "",
     mainTitle: "",
     subtitle: ""
   }

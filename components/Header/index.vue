@@ -21,13 +21,39 @@
         >
           <template slot="title">产品介绍</template>
           <el-menu-item index="/clxone-ddi">
-            <nuxt-link to="/clxone-ddi">CLXOne™ DDI</nuxt-link>
+            <nuxt-link to="/clxone-ddi">CLXOne® DDI</nuxt-link>
           </el-menu-item>
           <!-- <el-menu-item index="/monitor-platform">
             <nuxt-link to="/monitor-platform">IPV6发展监测平台</nuxt-link>
           </el-menu-item> -->
           <el-menu-item index="/promotion-manage">
             <nuxt-link to="/promotion-manage">代际升迁管理</nuxt-link>
+          </el-menu-item>
+
+          <el-menu-item index="/product/monitor-platform">
+            <nuxt-link to="/product/monitor-platform">监控平台</nuxt-link>
+          </el-menu-item>
+          <el-menu-item index="/product/data-asset-platform">
+            <nuxt-link to="/product/data-asset-platform">数据资产平台</nuxt-link>
+          </el-menu-item>
+          <el-menu-item index="/product/detect-cloud-services">
+            <nuxt-link to="/product/detect-cloud-services">IPv6检测云服务</nuxt-link>
+          </el-menu-item>
+
+        </el-submenu>
+        <el-submenu
+          index="/solution"
+          popper-class="header-menu-popper"
+        >
+          <template slot="title">解决方案</template>
+          <el-menu-item index="/solution/clxone">
+            <nuxt-link to="/solution/clxone">CLXOne®</nuxt-link>
+          </el-menu-item>
+          <el-menu-item index="/solution/too">
+            <nuxt-link to="/solution/too">311</nuxt-link>
+          </el-menu-item>
+          <el-menu-item index="/solution/sot">
+            <nuxt-link to="/solution/sot">sot</nuxt-link>
           </el-menu-item>
         </el-submenu>
         <el-menu-item index="/cooperate">
@@ -39,7 +65,7 @@
         <el-menu-item index="/support">
           <nuxt-link to="/support">支持中心</nuxt-link>
         </el-menu-item>
-         <el-menu-item index="/insight">
+        <el-menu-item index="/insight">
           <nuxt-link to="/insight">行业洞察</nuxt-link>
         </el-menu-item>
         <!-- <el-menu-item index="6"><nuxt-link to="/download">下载中心</nuxt-link></el-menu-item> -->
@@ -68,7 +94,7 @@ export default {
         },
         {
           path: "/clxone-ddi",
-          label: "CLXOne™DDI",
+          label: "CLXOne®DDI",
           index: "2-1"
         },
         {

@@ -1,5 +1,8 @@
 <template>
-  <div class="bigPic" :style="`background-image: url(${url})`">
+  <div
+    class="bigPic"
+    :style="`background-image: url(${url})`"
+  >
     <slot></slot>
   </div>
 </template>
@@ -21,5 +24,24 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   height: 450px;
+}
+</style>
+<style lang="less">
+.bigPic {
+  color: #fff;
+  display: flex;
+  align-items: center;
+
+  .banner-title {
+    font-size: 40px;
+    & + .banner-info {
+      margin-top: 20px;
+    }
+  }
+  .banner-info {
+    width: 937px;
+    line-height: 26px;
+    font-size: 16px;
+  }
 }
 </style>

@@ -166,7 +166,7 @@
                     title="CLXOne DDI 概要"
                   >
                     <h3 title="CLXOne DDI 概要">CLXOne DDI 概要</h3>
-                    <p title="CLXOne DDI 概要">连星 CLXOne™ DDI 构建了国内第一个可扩展企业级云平台，该平台通过云管 理的服务和应用程序形式提供DDI和安全功能等</p>
+                    <p title="CLXOne DDI 概要">连星 CLXOne® DDI 构建了国内第一个可扩展企业级云平台，该平台通过云管 理的服务和应用程序形式提供DDI和安全功能等</p>
                   </div>
                 </el-col>
                 <el-col :span="12">
@@ -174,7 +174,7 @@
                     class="card"
                     title="CLXOne DNS"
                   >
-                    <h3 title="CLXOne DNS">CLXOne™ DNS</h3>
+                    <h3 title="CLXOne DNS">CLXOne® DNS</h3>
                     <p title="CLXOne DNS">高效管理的DNS服务，驱动您的数字业务</p>
                   </div>
                 </el-col>
@@ -183,8 +183,8 @@
                     class="card"
                     title="CLXOne IPAM"
                   >
-                    <h3 title="CLXOne IPAM">CLXOne™ IPAM</h3>
-                    <p title="CLXOne IPAM">CLXOne™ DHCP/IPAM 可以轻松应对最具挑战性的IPAM和DHCP要求</p>
+                    <h3 title="CLXOne IPAM">CLXOne® IPAM</h3>
+                    <p title="CLXOne IPAM">CLXOne® DHCP/IPAM 可以轻松应对最具挑战性的IPAM和DHCP要求</p>
                   </div>
                 </el-col>
                 <el-col :span="12">
@@ -193,7 +193,7 @@
                     title="产品规格"
                   >
                     <h3 title="产品规格">产品规格</h3>
-                    <p title="产品规格">连星 LT CLXOne™ 5600、LT CLXOne™ 7600 产品规格</p>
+                    <p title="产品规格">连星 LT CLXOne® 5600、LT CLXOne® 7600 产品规格</p>
                   </div>
                 </el-col>
               </el-row>
@@ -215,7 +215,7 @@
                     title="CLXOne IPv6代际升迁解决方案"
                   >
                     <h3 title="CLXOne IPv6代际升迁解决方案">CLXOne IPv6代际升迁解决方案</h3>
-                    <p title="CLXOne IPv6代际升迁解决方案">CLXOne™ IPv6代际升迁是一个IPv4向IPv6演进升迁各阶段管理的平台， 实现 以IPv6地址管理为权威源和业务流程</p>
+                    <p title="CLXOne IPv6代际升迁解决方案">CLXOne® IPv6代际升迁是一个IPv4向IPv6演进升迁各阶段管理的平台， 实现 以IPv6地址管理为权威源和业务流程</p>
                   </div>
                 </el-col>
                 <el-col :span="12">
@@ -224,7 +224,7 @@
                     title="CLXOne IPv6监测解决方案"
                   >
                     <h3 title="CLXOne IPv6监测解决方案">CLXOne IPv6监测解决方案</h3>
-                    <p title="CLXOne IPv6监测解决方案">CLXOne™ IPv6发展监测平台，全面监测和深入分析互联网网络、应用、终端、 用户、流量等IPv6发展情况</p>
+                    <p title="CLXOne IPv6监测解决方案">CLXOne® IPv6发展监测平台，全面监测和深入分析互联网网络、应用、终端、 用户、流量等IPv6发展情况</p>
                   </div>
                 </el-col>
                 <!-- <el-col :span="12">

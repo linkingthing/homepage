@@ -13,7 +13,7 @@
 
     <TitleGroup
       class="platform-section"
-      main-title="CLXOne™ IPv6监测让您更智慧地开展工作"
+      main-title="CLXOne® IPv6监测让您更智慧地开展工作"
       subtitle="TO BEGIN THE WORK"
     />
 
@@ -38,7 +38,7 @@
 
     <TitleGroup
       class="platform-section"
-      main-title="通过 CLXOne™ IPv6 监测展示创新成果"
+      main-title="通过 CLXOne® IPv6 监测展示创新成果"
       subtitle="INNOVATION RESULTS"
     />
 
@@ -85,7 +85,7 @@
 
     <section class="section-3">
       <div class="section-3-content platform-section">
-        <h3 class="section-3-title">利用连星CLXOne™ IPv6 监测平台 <br/>加速您的创新</h3>
+        <h3 class="section-3-title">利用连星CLXOne® IPv6 监测平台 <br/>加速您的创新</h3>
   
         <div class="section-3-text">利用我们的专家指导、最佳实践的经验和多种创新实用工具，您可以充满信心地快速平滑迁移到下一代新技术网络</div>
 

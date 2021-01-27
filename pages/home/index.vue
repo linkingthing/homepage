@@ -15,13 +15,14 @@
         <div class="banner-item-1 banner-item">
           <div class="banner-item-content">
             <div class="main-title">
-              <div>CLXOne™ DDI</div>
-              <div>驱动新一代信息技术代际升迁</div>
+              <div>CLXOne®</div>
+              <div>IPv6检测云服务</div>
+              <div>助力企业快速升级到IPv6基础架构</div>
             </div>
-
+<!-- 
             <div class="sub-title">
               贴合现状的实践向导、自顶向下的分解目标、平滑迭代的演进路线、繁杂有序的过程追踪、上下统一的技术标准、持续优化的升级保障...
-            </div>
+            </div> -->
 
             <button
               class="button--red"
@@ -71,7 +72,7 @@
             <nuxt-link to="/clxone-ddi">
               <img :src="dynamicImg1">
               <div class="dynamic-content-text">
-                CLXOne™ DDI 国内领先的可聚合、可延展的企业云平台
+                CLXOne® DDI 国内领先的可聚合、可延展的企业云平台
                 <div class="dynamic-content-text-sub">通过云管理的服务和应用程序提供DDI和安全功能等基础服务</div>
               </div>
             </nuxt-link>
@@ -82,21 +83,21 @@
 
               <nuxt-link to="/insight">
 
-                <img src="~/static/insight.jpg">
+                <img src="~/static/home-sot.jpg">
                 <div class="dynamic-content-text">
                   <!-- 全面监测和深入分析，掌控IPv6部署和发展 -->
                   <!-- <div class="dynamic-content-text-sub">用实测运行数据支撑IPv6部署，掌握网络运行和发展状况</div> -->
 
-                  行业洞察
+                  IPAM真实源SoT（Source of Truth）
                   <div class="dynamic-content-text-sub">洞察行业趋势，预见前沿技术</div>
                 </div>
               </nuxt-link>
             </div>
             <div class="dynamic-sub-img dynamic-hover">
               <nuxt-link to="/promotion-manage">
-                <img :src="dynamicImg3">
+                <img src="~/static/ipv6-monitor.jpg">
                 <div class="dynamic-content-text">
-                  协同推进IPv6代际升迁
+                  IPv6发展监测平台
                   <div class="dynamic-content-text-sub">智能的过程管理，实现前所未有的可见性</div>
                 </div>
               </nuxt-link>
@@ -139,8 +140,6 @@ import TitleGroup from "~/components/TitleGroup";
 
 import arrowRightSrc from "~/assets/images/home-page-news-arrow.png";
 import dynamicImg1 from "~/assets/images/home-page-dynamic-1.png";
-import dynamicImg2 from "~/assets/images/home-page-dynamic-2.png";
-import dynamicImg3 from "~/assets/images/home-page-dynamic-3.png";
 import newSrc from "~/assets/images/home-page-news.png";
 
 import NewList from "~/components/NewList"
@@ -154,8 +153,6 @@ export default {
   data() {
     return {
       dynamicImg1,
-      dynamicImg2,
-      dynamicImg3,
       arrowRightSrc,
       newsList: [
         {
