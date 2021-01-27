@@ -1,5 +1,5 @@
 <template>
-  <header class="titleGroup">
+  <header class="titleGroup" :style="{color: theme}">
     <h2 v-if="topTitle" style="margin-bottom: 0;">{{topTitle}}</h2>
     <h2>{{mainTitle}}</h2>
     <p>{{subtitle.toLocaleUpperCase()}}</p>
@@ -11,7 +11,11 @@ export default {
   props: {
     topTitle: "",
     mainTitle: "",
-    subtitle: ""
+    subtitle: "",
+    theme: {
+      type: String,
+      default: "#333"
+    }
   }
 };
 </script>
