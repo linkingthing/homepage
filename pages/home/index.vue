@@ -19,14 +19,14 @@
               <div>IPv6检测云服务</div>
               <div>助力企业快速升级到IPv6基础架构</div>
             </div>
-<!-- 
+            <!-- 
             <div class="sub-title">
               贴合现状的实践向导、自顶向下的分解目标、平滑迭代的演进路线、繁杂有序的过程追踪、上下统一的技术标准、持续优化的升级保障...
             </div> -->
 
             <button
               class="button--red"
-              @click="$router.push({path: '/clxone-ddi'})"
+              @click="$router.push({path: '/product/detect-cloud-services'})"
             >了解详情</button>
 
             <!-- <div class="banner-pager">
@@ -45,12 +45,37 @@
         >
 
           <div class="banner-item-content">
-            <!-- <div class="banner-pager">
-              <span>02</span>
-              /02
-            </div> -->
+
+ 
+
           </div>
         </nuxt-link>
+      </el-carousel-item>
+      <el-carousel-item>
+        <div
+          class=" banner-item"
+          :style="`background-image:url(bg-home.png)`"
+          to="/news/Lianxing-technology-puts-forward-the-industry-leading-full-life-cycle-management-scheme-of-IPv6-smooth-evolution"
+        >
+
+          <div class="banner-item-content">
+
+            <div class="main-title">
+              <div style="font-size: 24px">CLXOne® 数字基础设施平台</div>
+              <div>轻松启动新一代信息技术网络</div>
+            </div>
+
+            <div class="sub-title">
+              建立在云基础之上，以云为动力实现数据中心、云、网络和边缘IPv6代际升迁统一管理。
+            </div>
+
+            <button
+              class="button--red"
+              @click="$router.push({path: '/solution/clxone'})"
+            >了解详情</button>
+
+          </div>
+        </div>
       </el-carousel-item>
     </el-carousel>
 
@@ -69,11 +94,11 @@
 
         <div class="dynamic-content">
           <div class="dynamic-main-img dynamic-hover">
-            <nuxt-link to="/clxone-ddi">
+            <nuxt-link to="/product/data-asset-platform">
               <img :src="dynamicImg1">
               <div class="dynamic-content-text">
-                CLXOne® DDI 国内领先的可聚合、可延展的企业云平台
-                <div class="dynamic-content-text-sub">通过云管理的服务和应用程序提供DDI和安全功能等基础服务</div>
+                CLXOne® 数据资产治理平台
+                <div class="dynamic-content-text-sub">通过自动化和洞察力智能管理IP数据资产，实现数据资产治理</div>
               </div>
             </nuxt-link>
 
@@ -81,7 +106,7 @@
           <div>
             <div class="dynamic-sub-img dynamic-hover">
 
-              <nuxt-link to="/insight">
+              <nuxt-link to="/solution/sot">
 
                 <img src="~/static/home-sot.jpg">
                 <div class="dynamic-content-text">
@@ -89,16 +114,16 @@
                   <!-- <div class="dynamic-content-text-sub">用实测运行数据支撑IPv6部署，掌握网络运行和发展状况</div> -->
 
                   IPAM真实源SoT（Source of Truth）
-                  <div class="dynamic-content-text-sub">洞察行业趋势，预见前沿技术</div>
+                  <div class="dynamic-content-text-sub">提供一种权威或声明性的方法来管理用于设备配置和管理清单的数据。</div>
                 </div>
               </nuxt-link>
             </div>
             <div class="dynamic-sub-img dynamic-hover">
-              <nuxt-link to="/promotion-manage">
+              <nuxt-link to="/product/monitor-platform">
                 <img src="~/static/ipv6-monitor.jpg">
                 <div class="dynamic-content-text">
                   IPv6发展监测平台
-                  <div class="dynamic-content-text-sub">智能的过程管理，实现前所未有的可见性</div>
+                  <div class="dynamic-content-text-sub">融合深度应用检测技术，实现对网站、APP应用的全方位发展监测。</div>
                 </div>
               </nuxt-link>
             </div>

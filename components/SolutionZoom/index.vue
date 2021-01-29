@@ -29,12 +29,14 @@ export default {
     background: url("../../assets/images/solution-ceiling.png");
     background-size: cover;
     margin-bottom: -278px;
+    background-position: center;
   }
   .floor {
     height: 370px;
     background: url("../../assets/images/solution-floor.png");
     background-size: cover;
     margin-top: -370px;
+    background-position: center;
   }
 }
 </style>

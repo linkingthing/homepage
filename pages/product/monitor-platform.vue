@@ -93,30 +93,37 @@ export default {
 }
 
 .platform-components {
-  height: 525px;
+  height: 540px;
   padding-top: 90px;
 
   ul {
     border-top: 1px solid #bfbfbf;
+    border-bottom: 1px solid #bfbfbf;
     margin-top: 40px;
-    padding: 40px 0;
+    padding: 50px 0;
     display: flex;
     justify-content: space-between;
     li {
       list-style: none;
       width: 330px;
       strong {
-        display: block;
+        display: inline-block;
         position: relative;
         font-size: 48px;
         color: #222;
         margin-bottom: 16px;
-        &:before {
+        line-height: 1;
+        z-index: 10;
+        &::before {
+          content: "";
           position: absolute;
           display: block;
-          width: 100%;
+          width: 96%;
           height: 12px;
-          background: #EE3434;
+          background: #ee3434;
+          bottom: 0;
+          left: 2%;
+          z-index: -1;
         }
       }
       h3 {
@@ -138,6 +145,5 @@ export default {
   background-image: url("../../assets/images/monitor-components.png");
   background-size: cover;
   background-position: center;
-  
 }
 </style>

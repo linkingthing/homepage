@@ -27,7 +27,7 @@
             alt=""
           />
           <strong>02</strong>
-          <h3>灵活的IPAM地址规划管理 支撑IPv6规模部署和演进升级</h3>
+          <h3>灵活的IPAM地址规划管理<br /> 支撑IPv6规模部署和演进升级</h3>
           <p>提供完善的IP地址流程规划和管理工具，支持IPv6代际升迁全周期管理。企业可以从自身组织架构和业务需求出发，灵活地进行IPv6演进规划、地址分配和过程管理，并提供全网网络监测和诊断服务，有效支撑IPv6演进升级过程。</p>
         </li>
 
@@ -48,23 +48,34 @@
           subtitle="Key product components"
         />
 
-        <div>
+        <div class="product-show">
           <aside>
-            <ul>
-              <li>
-
+            <ul class="product-menu">
+              <li
+                v-for="item in productShow"
+                :key="item.id"
+                :class="{active: item.id === currentMenu}"
+                @click="handleChangeMenu(item)"
+              >
+                {{item.title}}
               </li>
             </ul>
           </aside>
-          <div>
-            <img
-              src=""
-              alt=""
-            >
+          <div class="product-content">
+            <div class="product-image">
+              <img
+                :src="require(`~/assets/images/product-show-${currentMenu}.png`)"
+                alt=""
+              >
+            </div>
             <div>
               <h3>
-                网络智能探测与感知
+                {{productShow[currentMenu-1].title}}
+                <span>0{{currentMenu}}</span>
               </h3>
+              <p>
+                {{productShow[currentMenu-1].description}}
+              </p>
             </div>
 
           </div>
@@ -182,14 +193,50 @@ export default {
   },
   props: {},
   data() {
+    this.productShow = [{
+      id: 1,
+      title: "智能IPv6地址规划",
+      image: "",
+      description: "针对IPv6地址难以规划和管理的问题，CLXOne®提供完全自动化且灵活的IPv6地址规划方式，可根据区域、部门、业务等不同维度定义语义树，并为不同语义节点分配合适的地址块，实现企业的组织或业务架构与IPv6地址空间的映射关系，支持“一键规划”和“自定义规划”，支持总部和分支机构实行分级地址规划，并形成统一的IPv6地址规划地图。"
+    }, {
+      id: 2,
+      title: "IP地址全生命周期管理",
+      image: "",
+      description: "CLXOne®提供IP地址的全生命周期管理，包括IP地址规划、IP地址分配、IP地址跟踪、IP地址监测、IP地址回收等，实现自动化和可视化的IP地址管理，支持详细的数据统计和分析，简化管理流程，大幅提升IP地址的利用率。连星自研高性能DHCP服务器，提供业界领先的海量地址分发能力，支持DHCPv4、DHCPv6、DHCPv6-PD等多种地址分配方式，满足园区网、移动网络、物联网、工业互联网等应用场景下双栈地址分配的需求。"
+    }, {
+      id: 3,
+      title: "网络智能探测与感知",
+      image: "",
+      description: "CLXOne®通过多种探测方式，智能感知IP数据资产的位置和运行状态。利用网络设备的SNMP能力和DHCP租约数据，CLXOne®可以主动发现网络中所有的IP资产，定位其所处的上联设备/端口/VLAN，跟踪资产状态变化情况，纳入统一的可视化资产管理。并根据内置指纹库，智能识别IP资产的类型、厂商等信息，可联动认证准入系统，实现精细化的安全准入策略控制。"
+    }, {
+      id: 4,
+      title: "融合异构网络管理",
+      image: "",
+      description: "异构网络是企业网络的常态，来自不同厂商的设备组成了不同功能的网络基础设施，如生产网络、无线网络、混合云、IoT等。CLXOne®通过统一集中平台提供自动化、高可用性、易于部署的融合网络服务管理，以实现扩展到所有领域的集中可见性；覆盖物理、虚拟或基于云的、嵌入设备，VMWare和OpenStack等网络。"
+    }, {
+      id: 5,
+      title: "多视角IP数据资产画像",
+      image: "",
+      description: "CLXOne® IPAM通过智能的建模和分析，建立不同数据之间的深度关联关系，从设计、部署到检查、委派阶段，形成多视角IP数据资产画像，并支持用户行为分析。不管是通过域名或者IP地址，管理员可以查看完整可视的资产画像：域名访问源地址TOP10、IP状态、IP规划/地址池（语义树）、终端信息（上联设备/上联端口/VLAN/机柜位置）等，通过对IP资产的行为分析，审计和控制，可以实时感知网络的运行状态，并预测可能的故障风险和安全威胁。"
+    }, {
+      id: 6,
+      title: "扩展性与开放性",
+      image: "",
+      description: "CLXOne®支持广泛的开放性，依赖于多样化的底层基础设施（本地、云、边缘等），融合网络设备管理、终端管理和应用管理，并支持标准、开放的协议规划和数据接口，可对接第三方用户认证系统、大数据分析平台、运维管理系统等，为用户提供完整、融合、开放、可扩展的融合方案。"
+    }]
     return {
+      currentMenu: 1
     };
   },
   computed: {},
   watch: {},
   created() { },
   mounted() { },
-  methods: {}
+  methods: {
+    handleChangeMenu(item) {
+      this.currentMenu = item.id;
+    }
+  }
 };
 </script>
 
@@ -205,7 +252,7 @@ export default {
   }
   ul {
     padding: 60px 0 0;
-    width: 1000px;
+    width: 994px;
     margin: 0 auto;
   }
   li {
@@ -242,10 +289,13 @@ export default {
         display: block;
         float: none;
         margin-bottom: 20px;
+        margin-top: 100px;
+        margin-left: 640px;
       }
       h3 {
         margin-left: 640px;
         margin-bottom: 26px;
+        line-height: 24px;
       }
       p {
         margin-left: 640px;
@@ -260,6 +310,7 @@ export default {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-top: 90px;
 }
 
 .deploy {
@@ -360,6 +411,71 @@ export default {
       font-size: 14px;
       color: #464647;
       line-height: 30px;
+    }
+  }
+}
+
+.product-show {
+  display: flex;
+
+  height: 670px;
+  background-color: rgba(246, 246, 246, 0.1);
+  border-radius: 8px;
+
+  margin-top: 60px;
+
+  .product-menu {
+    padding: 90px 30px;
+    li {
+      list-style: none;
+      display: block;
+      height: 46px;
+      width: 188px;
+      text-align: center;
+      color: #fff;
+      border-radius: 4px;
+      font-size: 14px;
+      line-height: 26px;
+      padding: 10px;
+      margin-bottom: 45px;
+      cursor: pointer;
+      &.active {
+        background-color: #217aff;
+      }
+      &:hover {
+        background-color: #217aff;
+      }
+    }
+  }
+
+  .product-content {
+    flex: 1;
+    padding: 40px 50px;
+    border-left: 1px solid rgba(246, 246, 246, 0.3);
+    .product-image {
+      height: 285px;
+      margin-bottom: 20px;
+    }
+    img {
+      height: 285px;
+      min-width: 10px;
+    }
+    h3 {
+      font-size: 18px;
+      color: #fefefe;
+      line-height: 70px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      margin-bottom: 20px;
+      span {
+        float: right;
+        font-size: 36px;
+        font-weight: bold;
+      }
+    }
+    p {
+      color: #fff;
+      font-size: 14px;
+      line-height: 36px;
     }
   }
 }

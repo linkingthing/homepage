@@ -91,14 +91,13 @@ export default {
       font-size: 14px;
       color: #141414;
       line-height: 27px;
-      padding: 30px 0 38px;
+      padding: 50px 0;
       strong {
         float: left;
         font-size: 48px;
         color: #222;
-        border-bottom: 4px solid #ee3434;
+        border-bottom: 6px solid #ee3434;
         padding-bottom: 20px;
-        letter-spacing: 4px;
         margin-top: 10px;
       }
       p {
@@ -110,7 +109,7 @@ export default {
 .sot-core {
   img {
     display: block;
-    margin: 70px auto;
+    margin: 74px auto;
     width: 641px;
     height: 422px;
   }

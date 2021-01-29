@@ -104,6 +104,7 @@ export default {
       height: 278px;
       padding: 50px 30px;
       background-size: contain;
+      box-shadow: 0 0 15px rgba(33, 33, 33, 0.1);
       h3 {
         color: #333;
         font-size: 16px;
@@ -148,7 +149,7 @@ export default {
       }
       span {
         font-size: 14px;
-        opacity: .5;
+        opacity: 0.5;
       }
     }
   }

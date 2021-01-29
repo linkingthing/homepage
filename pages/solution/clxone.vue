@@ -99,7 +99,7 @@ export default {
       font-size: 14px;
       color: #141414;
       line-height: 27px;
-      padding: 30px 0 38px;
+      padding: 50px 0;
       img {
         width: 60px;
         height: 60px;
