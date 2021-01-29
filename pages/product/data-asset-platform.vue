@@ -171,7 +171,7 @@
               <dl>
                 <dd>管理HA \ DHCP节点HA </dd>
                 <dd>DNS节点HA </dd>
-                <dd>DNS节点AnyCas</dd>
+                <dd>DNS节点AnyCast</dd>
               </dl>
             </li>
           </ul>
