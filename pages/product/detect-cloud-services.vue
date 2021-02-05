@@ -4,7 +4,15 @@
       <div class="title wrapper">
         <h1 class="banner-title">连星CLXOne®</h1>
         <h1 class="banner-title">IPv6检测云服务</h1>
+
+        <a
+          style="margin-top: 60px"
+          class="button--red"
+          href="https://ipv6.linkingthing.com/"
+          target="_blank"
+        >进入云服务</a>
       </div>
+
     </BigPicture>
     <section class="cloud-service-info">
       <TitleGroup
