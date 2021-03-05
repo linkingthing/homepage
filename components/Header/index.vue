@@ -64,6 +64,9 @@
         <el-menu-item index="/about">
           <nuxt-link to="/about">关于我们</nuxt-link>
         </el-menu-item>
+        <el-menu-item index="/join">
+          <nuxt-link to="/join">加入我们</nuxt-link>
+        </el-menu-item>
       </el-menu>
     </div>
 
