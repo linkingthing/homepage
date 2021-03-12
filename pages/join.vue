@@ -71,7 +71,7 @@ export default {
 
     this.recruitments = [{
       id: 1,
-      title: "IPv6产品经理",
+      title: "高级产品经理",
       salary: "10K-25K",
       responsibility: [{
         content: "岗位方向：负责工业互联网网络评估评测平台产品的设计、规划和管理；"
@@ -204,7 +204,7 @@ export default {
     },
     {
       id: 6,
-      title: "售前工程师",
+      title: "解决方案工程师",
       salary: "8K-20K",
       responsibility: [{
         content: "企业网、IPv6、工业互联网领域相关产品和解决方案的售前支持；"
