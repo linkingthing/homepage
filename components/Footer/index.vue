@@ -99,7 +99,21 @@
     <div class="footer-bottom">
       <div class="footer-section">
         <label>版权所有：北京连星科技有限公司</label>
-        <label><a href="http://www.beian.miit.gov.cn" target="_black">京ICP备20015021号</a></label>
+        <label><a
+            href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010702002122"
+            target="_black"
+          >
+            <img
+              style="vertical-align: middle;margin-bottom: 4px;"
+              src="./emblem.png"
+              alt=""
+            > 京公网安备 11010702002122号</a></label>
+        <label><a
+            href="https://beian.miit.gov.cn/#/Integrated/index?search=京ICP备20015021号"
+            target="_black"
+          >
+            京ICP备20015021号</a></label>
+
         <label>Powered by LinkingThing</label>
       </div>
     </div>
